@@ -1,0 +1,50 @@
+module actividad05(
+	input [31:0]a,
+	input [31:0]b,
+	input []sel,
+	input enable,
+	output reg [31:0]salida
+);
+wire [5:0]c;
+compAnd cA(
+	.a(a),
+	.b(b),
+	.enable(enable),
+	.salida(c[0]),
+);
+
+compOr cO(
+	.a(a),
+	.b(b),
+	.enable(enable),
+	.salida(c[1]),
+);
+
+compNand cN(
+	.a(a),
+	.b(b),
+	.enable(enable),
+	.salida(c[2]),
+);
+
+suma s(
+	.a(a),
+	.b(b),
+	.enable(enable),
+	.salida(c[3]),
+);
+
+resta r(
+	.a(a),
+	.b(b),
+	.enable(enable),
+	.salida(c[4]),
+);
+
+multiplicacion m(
+	.a(a),
+	.b(b),
+	.enable(enable),
+	.salida(c[5]),
+);
+endmodule

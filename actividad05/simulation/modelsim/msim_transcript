@@ -1,0 +1,89 @@
+# do actividad05_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/jorozco/intelFPGA_lite/19.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/suma.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:18:53 on Feb 18,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad05" /home/jorozco/Documentos/semArq/actividad05/suma.v 
+# -- Compiling module suma
+# 
+# Top level modules:
+# 	suma
+# End time: 16:18:53 on Feb 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/resta.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:18:53 on Feb 18,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad05" /home/jorozco/Documentos/semArq/actividad05/resta.v 
+# -- Compiling module resta
+# 
+# Top level modules:
+# 	resta
+# End time: 16:18:53 on Feb 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/multiplicacion.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:18:53 on Feb 18,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad05" /home/jorozco/Documentos/semArq/actividad05/multiplicacion.v 
+# -- Compiling module multiplicacion
+# 
+# Top level modules:
+# 	multiplicacion
+# End time: 16:18:53 on Feb 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/compAnd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:18:53 on Feb 18,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad05" /home/jorozco/Documentos/semArq/actividad05/compAnd.v 
+# -- Compiling module compAnd
+# 
+# Top level modules:
+# 	compAnd
+# End time: 16:18:53 on Feb 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/compOr.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:18:53 on Feb 18,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad05" /home/jorozco/Documentos/semArq/actividad05/compOr.v 
+# -- Compiling module compOr
+# 
+# Top level modules:
+# 	compOr
+# End time: 16:18:53 on Feb 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/compNand.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:18:53 on Feb 18,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad05" /home/jorozco/Documentos/semArq/actividad05/compNand.v 
+# -- Compiling module compNand
+# 
+# Top level modules:
+# 	compNand
+# End time: 16:18:53 on Feb 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/actividad05.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:18:53 on Feb 18,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad05" /home/jorozco/Documentos/semArq/actividad05/actividad05.v 
+# -- Compiling module actividad05
+# ** Error: (vlog-13069) /home/jorozco/Documentos/semArq/actividad05/actividad05.v(14): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# ** Error: (vlog-13069) /home/jorozco/Documentos/semArq/actividad05/actividad05.v(21): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# ** Error: (vlog-13069) /home/jorozco/Documentos/semArq/actividad05/actividad05.v(28): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# ** Error: (vlog-13069) /home/jorozco/Documentos/semArq/actividad05/actividad05.v(35): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# ** Error: (vlog-13069) /home/jorozco/Documentos/semArq/actividad05/actividad05.v(42): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# ** Error: (vlog-13069) /home/jorozco/Documentos/semArq/actividad05/actividad05.v(49): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# End time: 16:18:53 on Feb 18,2020, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: /home/jorozco/intelFPGA_lite/19.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./actividad05_run_msim_rtl_verilog.do line 14
+# /home/jorozco/intelFPGA_lite/19.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05 {/home/jorozco/Documentos/semArq/actividad05/actividad05.v}"

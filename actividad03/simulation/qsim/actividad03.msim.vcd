@@ -1,0 +1,106 @@
+$comment
+	File created using the following command:
+		vcd file actividad03.msim.vcd -direction
+$end
+$date
+	Tue Feb 11 07:28:34 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module actividad03_vlg_vec_tst $end
+$var reg 1 ! entrada1 $end
+$var reg 1 " entrada2 $end
+$var wire 1 # salidaand $end
+$var wire 1 $ salidanand $end
+$var wire 1 % salidanor $end
+$var wire 1 & salidanot $end
+$var wire 1 ' salidaor $end
+$var wire 1 ( salidaxnor $end
+$var wire 1 ) salidaxor $end
+$var wire 1 * salidayes $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 entrada2~combout $end
+$var wire 1 2 entrada1~combout $end
+$var wire 1 3 salidaand~0_combout $end
+$var wire 1 4 salidaor~0_combout $end
+$var wire 1 5 salidaxor~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+1$
+1%
+1&
+0'
+1(
+0)
+0*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+$end
+#160000
+1"
+11
+15
+14
+1*
+1)
+1'
+0%
+0(
+#320000
+1!
+0"
+12
+01
+0*
+0&
+#480000
+1"
+11
+05
+13
+1*
+0)
+1#
+0$
+1(
+#640000
+0!
+0"
+02
+01
+04
+03
+0*
+1&
+0'
+0#
+1$
+1%
+#1000000

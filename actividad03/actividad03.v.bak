@@ -1,0 +1,7 @@
+module compuertas(
+	input entrada1,
+	input entrada2,
+	output salida1
+);
+assign salida1 = entrada1 & entrada2;
+endmodule

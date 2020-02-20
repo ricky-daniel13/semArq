@@ -1,0 +1,82 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "01/30/2020 10:08:18"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          actividad03
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module actividad03_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg entrada1;
+reg entrada2;
+// wires                                               
+wire salidaand;
+wire salidanand;
+wire salidanor;
+wire salidanot;
+wire salidaor;
+wire salidaxnor;
+wire salidaxor;
+wire salidayes;
+
+// assign statements (if any)                          
+actividad03 i1 (
+// port map - connection between master ports and signals/registers   
+	.entrada1(entrada1),
+	.entrada2(entrada2),
+	.salidaand(salidaand),
+	.salidanand(salidanand),
+	.salidanor(salidanor),
+	.salidanot(salidanot),
+	.salidaor(salidaor),
+	.salidaxnor(salidaxnor),
+	.salidaxor(salidaxor),
+	.salidayes(salidayes)
+);
+initial 
+begin 
+#1000000 $stop;
+end 
+
+// entrada1
+initial
+begin
+	entrada1 = 1'b0;
+	entrada1 = #20000 1'b1;
+	entrada1 = #280000 1'b0;
+	entrada1 = #60000 1'b1;
+	entrada1 = #240000 1'b0;
+end 
+
+// entrada2
+initial
+begin
+	entrada2 = 1'b0;
+	entrada2 = #20000 1'b1;
+	entrada2 = #280000 1'b0;
+end 
+endmodule
+

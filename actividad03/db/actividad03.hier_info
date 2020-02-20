@@ -1,0 +1,21 @@
+|actividad03
+entrada1 => salidaand.IN0
+entrada1 => salidaor.IN0
+entrada1 => salidaxor.IN0
+entrada1 => salidaxnor.IN0
+entrada1 => salidanot.DATAIN
+entrada2 => salidaand.IN1
+entrada2 => salidaor.IN1
+entrada2 => salidaxor.IN1
+entrada2 => salidaxnor.IN1
+entrada2 => salidayes.DATAIN
+salidaand << salidaand.DB_MAX_OUTPUT_PORT_TYPE
+salidaor << salidaor.DB_MAX_OUTPUT_PORT_TYPE
+salidaxor << salidaxor.DB_MAX_OUTPUT_PORT_TYPE
+salidanot << entrada1.DB_MAX_OUTPUT_PORT_TYPE
+salidanand << salidaand.DB_MAX_OUTPUT_PORT_TYPE
+salidayes << entrada2.DB_MAX_OUTPUT_PORT_TYPE
+salidanor << salidaor.DB_MAX_OUTPUT_PORT_TYPE
+salidaxnor << salidaxnor.DB_MAX_OUTPUT_PORT_TYPE
+
+

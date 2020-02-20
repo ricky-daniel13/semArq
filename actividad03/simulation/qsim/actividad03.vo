@@ -1,0 +1,283 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
+
+// DATE "02/11/2020 07:28:32"
+
+// 
+// Device: Altera 5M40ZE64C4 Package EQFP64
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module actividad03 (
+	entrada1,
+	entrada2,
+	salidaand,
+	salidaor,
+	salidaxor,
+	salidanot,
+	salidanand,
+	salidayes,
+	salidanor,
+	salidaxnor);
+input 	entrada1;
+input 	entrada2;
+output 	salidaand;
+output 	salidaor;
+output 	salidaxor;
+output 	salidanot;
+output 	salidanand;
+output 	salidayes;
+output 	salidanor;
+output 	salidaxnor;
+
+// Design Ports Information
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \entrada2~combout ;
+wire \entrada1~combout ;
+wire \salidaand~0_combout ;
+wire \salidaor~0_combout ;
+wire \salidaxor~0_combout ;
+
+
+// Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \entrada2~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\entrada2~combout ),
+	.padio(entrada2));
+// synopsys translate_off
+defparam \entrada2~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \entrada1~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\entrada1~combout ),
+	.padio(entrada1));
+// synopsys translate_off
+defparam \entrada1~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X4_Y1_N5
+maxv_lcell \salidaand~0 (
+// Equation(s):
+// \salidaand~0_combout  = ((\entrada2~combout  & ((\entrada1~combout ))))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\entrada2~combout ),
+	.datac(vcc),
+	.datad(\entrada1~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\salidaand~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \salidaand~0 .lut_mask = "cc00";
+defparam \salidaand~0 .operation_mode = "normal";
+defparam \salidaand~0 .output_mode = "comb_only";
+defparam \salidaand~0 .register_cascade_mode = "off";
+defparam \salidaand~0 .sum_lutc_input = "datac";
+defparam \salidaand~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X4_Y1_N2
+maxv_lcell \salidaor~0 (
+// Equation(s):
+// \salidaor~0_combout  = ((\entrada2~combout ) # ((\entrada1~combout )))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\entrada2~combout ),
+	.datac(vcc),
+	.datad(\entrada1~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\salidaor~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \salidaor~0 .lut_mask = "ffcc";
+defparam \salidaor~0 .operation_mode = "normal";
+defparam \salidaor~0 .output_mode = "comb_only";
+defparam \salidaor~0 .register_cascade_mode = "off";
+defparam \salidaor~0 .sum_lutc_input = "datac";
+defparam \salidaor~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X4_Y1_N4
+maxv_lcell \salidaxor~0 (
+// Equation(s):
+// \salidaxor~0_combout  = (\entrada2~combout  $ (((\entrada1~combout ))))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\entrada2~combout ),
+	.datac(vcc),
+	.datad(\entrada1~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\salidaxor~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \salidaxor~0 .lut_mask = "33cc";
+defparam \salidaxor~0 .operation_mode = "normal";
+defparam \salidaxor~0 .output_mode = "comb_only";
+defparam \salidaxor~0 .register_cascade_mode = "off";
+defparam \salidaxor~0 .sum_lutc_input = "datac";
+defparam \salidaxor~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_52,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidaand~I (
+	.datain(\salidaand~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidaand));
+// synopsys translate_off
+defparam \salidaand~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidaor~I (
+	.datain(\salidaor~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidaor));
+// synopsys translate_off
+defparam \salidaor~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidaxor~I (
+	.datain(\salidaxor~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidaxor));
+// synopsys translate_off
+defparam \salidaxor~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidanot~I (
+	.datain(!\entrada1~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidanot));
+// synopsys translate_off
+defparam \salidanot~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_50,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidanand~I (
+	.datain(!\salidaand~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidanand));
+// synopsys translate_off
+defparam \salidanand~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidayes~I (
+	.datain(\entrada2~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidayes));
+// synopsys translate_off
+defparam \salidayes~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidanor~I (
+	.datain(!\salidaor~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidanor));
+// synopsys translate_off
+defparam \salidanor~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \salidaxnor~I (
+	.datain(!\salidaxor~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(salidaxnor));
+// synopsys translate_off
+defparam \salidaxnor~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule

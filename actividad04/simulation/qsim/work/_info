@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jorozco/Documentos/semArq/actividad04/simulation/qsim
+vadder4B
+Z1 !s110 1581570015
+!i10b 1
+!s100 [Vk;kfR6I2if87MGD8RKA3
+I36cH<_7leoLBKmJkUfh4W1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1581570014
+Z3 8actividad04.vo
+Z4 Factividad04.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1581570015.000000
+Z8 !s107 actividad04.vo|
+Z9 !s90 -work|work|actividad04.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+nadder4@b
+vadder4B_vlg_vec_tst
+R1
+!i10b 1
+!s100 DnK9<MfK0B7R7mSA`g8HR3
+ITUgVA4ImLijIBOfS_5<JT0
+R2
+R0
+w1581570013
+Z12 8halfAdder.vwf.vt
+Z13 FhalfAdder.vwf.vt
+Z14 L0 30
+R6
+r1
+!s85 0
+31
+R7
+Z15 !s107 halfAdder.vwf.vt|
+Z16 !s90 -work|work|halfAdder.vwf.vt|
+!i113 1
+R10
+R11
+nadder4@b_vlg_vec_tst
+vadder8B
+Z17 !s110 1581878312
+!i10b 1
+!s100 OF^UGIMQUUQdb]bhneZGf2
+I[dX[IO<`P:dcbe^ESbcLn3
+R2
+R0
+w1581878311
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1581878312.000000
+R8
+R9
+!i113 1
+R10
+R11
+nadder8@b
+vadder8B_vlg_vec_tst
+R17
+!i10b 1
+!s100 ?Xhnd^czfUWFlVPn;V_m72
+I6<Vn_8Z<oRHCD4S@3G6:b0
+R2
+R0
+w1581878309
+8adder8B.vwf.vt
+Fadder8B.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R18
+!s107 adder8B.vwf.vt|
+!s90 -work|work|adder8B.vwf.vt|
+!i113 1
+R10
+R11
+nadder8@b_vlg_vec_tst
+vfullAdder
+Z19 !s110 1581557909
+!i10b 1
+!s100 SedSJ9DQB?Mm0U5Wh^NKi3
+IoL<8HUV_m`G]]QGS6@PkK1
+R2
+R0
+w1581557908
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1581557909.000000
+R8
+R9
+!i113 1
+R10
+R11
+nfull@adder
+vfullAdder_vlg_vec_tst
+R19
+!i10b 1
+!s100 TX;il@3^?oYQlo>EVl5zm0
+IT2QXYe9oYb?ldOnVR^nke2
+R2
+R0
+w1581557907
+8fullAdder.vwf.vt
+FfullAdder.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R20
+!s107 fullAdder.vwf.vt|
+!s90 -work|work|fullAdder.vwf.vt|
+!i113 1
+R10
+R11
+nfull@adder_vlg_vec_tst
+vhalfAdder
+Z21 !s110 1581569434
+!i10b 1
+!s100 eDP108hVGl^D`RbYF[9GG2
+I_n:[z2fLB@][KGk`ozAPi0
+R2
+R0
+w1581569433
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z22 !s108 1581569434.000000
+R8
+R9
+!i113 1
+R10
+R11
+nhalf@adder
+vhalfAdder_vlg_vec_tst
+R21
+!i10b 1
+!s100 XB9]KkgB_Jn<YbLcO=jMa3
+IZ;ck6WWXc2EYc[EdQ6OLK2
+R2
+R0
+w1581569432
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R22
+R15
+R16
+!i113 1
+R10
+R11
+nhalf@adder_vlg_vec_tst

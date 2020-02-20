@@ -1,0 +1,360 @@
+Analysis & Synthesis report for actividad05
+Tue Feb 18 16:47:10 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "multiplicacion:m"
+ 10. Port Connectivity Checks: "resta:r"
+ 11. Port Connectivity Checks: "suma:s"
+ 12. Port Connectivity Checks: "compNand:cN"
+ 13. Port Connectivity Checks: "compOr:cO"
+ 14. Port Connectivity Checks: "compAnd:cA"
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Feb 18 16:47:10 2020       ;
+; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name               ; actividad05                                 ;
+; Top-level Entity Name       ; actividad05                                 ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 26                                          ;
+; Total pins                  ; 100                                         ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; actividad05        ; actividad05        ;
+; Family name                                                      ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; suma.v                           ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad05/suma.v           ;         ;
+; resta.v                          ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad05/resta.v          ;         ;
+; multiplicacion.v                 ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad05/multiplicacion.v ;         ;
+; compAnd.v                        ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad05/compAnd.v        ;         ;
+; compOr.v                         ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad05/compOr.v         ;         ;
+; compNand.v                       ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad05/compNand.v       ;         ;
+; actividad05.v                    ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad05/actividad05.v    ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Total logic elements                        ; 26     ;
+;     -- Combinational with no register       ; 26     ;
+;     -- Register only                        ; 0      ;
+;     -- Combinational with a register        ; 0      ;
+;                                             ;        ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 22     ;
+;     -- 3 input functions                    ; 2      ;
+;     -- 2 input functions                    ; 2      ;
+;     -- 1 input functions                    ; 0      ;
+;     -- 0 input functions                    ; 0      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 26     ;
+;     -- arithmetic mode                      ; 0      ;
+;     -- qfbk mode                            ; 0      ;
+;     -- register cascade mode                ; 0      ;
+;     -- synchronous clear/load mode          ; 0      ;
+;     -- asynchronous clear/load mode         ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+; I/O pins                                    ; 100    ;
+; Maximum fan-out node                        ; sel[1] ;
+; Maximum fan-out                             ; 2      ;
+; Total fan-out                               ; 99     ;
+; Average fan-out                             ; 0.79   ;
++---------------------------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name      ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------+-------------+--------------+
+; |actividad05               ; 26 (4)      ; 0            ; 0          ; 100  ; 0            ; 26 (4)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |actividad05             ; actividad05 ; work         ;
+;    |compNand:cN|           ; 22 (22)     ; 0            ; 0          ; 0    ; 0            ; 22 (22)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |actividad05|compNand:cN ; compNand    ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicacion:m"                                                                                                             ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; salida ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "salida[31..1]" have no fanouts ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "resta:r"                                                                                                                      ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; salida ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "salida[31..1]" have no fanouts ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "suma:s"                                                                                                                       ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; salida ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "salida[31..1]" have no fanouts ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compNand:cN"                                                                                                                  ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; salida ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "salida[31..1]" have no fanouts ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compOr:cO"                                                                                                                    ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; salida ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "salida[31..1]" have no fanouts ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compAnd:cA"                                                                                                                   ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; salida ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "salida[31..1]" have no fanouts ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Tue Feb 18 16:47:00 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad05 -c actividad05
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file suma.v
+    Info (12023): Found entity 1: suma File: /home/jorozco/Documentos/semArq/actividad05/suma.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file suma_tb.v
+    Info (12023): Found entity 1: suma_tb File: /home/jorozco/Documentos/semArq/actividad05/suma_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file resta.v
+    Info (12023): Found entity 1: resta File: /home/jorozco/Documentos/semArq/actividad05/resta.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file resta_tb.v
+    Info (12023): Found entity 1: resta_tb File: /home/jorozco/Documentos/semArq/actividad05/resta_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file multiplicacion.v
+    Info (12023): Found entity 1: multiplicacion File: /home/jorozco/Documentos/semArq/actividad05/multiplicacion.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplicacion_tb.v
+    Info (12023): Found entity 1: multiplicacion_tb File: /home/jorozco/Documentos/semArq/actividad05/multiplicacion_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file compAnd.v
+    Info (12023): Found entity 1: compAnd File: /home/jorozco/Documentos/semArq/actividad05/compAnd.v Line: 1
+Warning (12019): Can't analyze file -- file compAnd_tb.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file compOr.v
+    Info (12023): Found entity 1: compOr File: /home/jorozco/Documentos/semArq/actividad05/compOr.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file compNand.v
+    Info (12023): Found entity 1: compNand File: /home/jorozco/Documentos/semArq/actividad05/compNand.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file actividad05.v
+    Info (12023): Found entity 1: actividad05 File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file actividad05_tb.v
+    Info (12023): Found entity 1: actividad05_tb File: /home/jorozco/Documentos/semArq/actividad05/actividad05_tb.v Line: 3
+Info (12127): Elaborating entity "actividad05" for the top level hierarchy
+Info (12128): Elaborating entity "compAnd" for hierarchy "compAnd:cA" File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 14
+Info (12128): Elaborating entity "compOr" for hierarchy "compOr:cO" File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 21
+Info (12128): Elaborating entity "compNand" for hierarchy "compNand:cN" File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 28
+Info (12128): Elaborating entity "suma" for hierarchy "suma:s" File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 35
+Info (12128): Elaborating entity "resta" for hierarchy "resta:r" File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 42
+Info (12128): Elaborating entity "multiplicacion" for hierarchy "multiplicacion:m" File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 49
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "salida[1]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[2]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[3]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[4]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[5]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[6]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[7]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[8]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[9]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[10]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[11]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[12]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[13]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[14]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[15]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[16]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[17]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[18]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[19]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[20]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[21]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[22]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[23]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[24]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[25]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[26]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[27]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[28]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[29]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[30]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+    Warning (13410): Pin "salida[31]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad05/actividad05.v Line: 7
+Info (21057): Implemented 126 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 68 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 26 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 903 megabytes
+    Info: Processing ended: Tue Feb 18 16:47:10 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
+
+

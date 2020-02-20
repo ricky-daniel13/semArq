@@ -1,0 +1,145 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jorozco/Documentos/semArq/actividad05/simulation/modelsim
+vcompAnd
+Z1 !s110 1582064333
+!i10b 1
+!s100 Q39IJBLgS9e3`8L:gVkCl2
+IB9Fz5H3EXf_?n8aNC?GV51
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1582058247
+8/home/jorozco/Documentos/semArq/actividad05/compAnd.v
+F/home/jorozco/Documentos/semArq/actividad05/compAnd.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1582064333.000000
+!s107 /home/jorozco/Documentos/semArq/actividad05/compAnd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad05|/home/jorozco/Documentos/semArq/actividad05/compAnd.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad05
+Z7 tCvgOpt 0
+ncomp@and
+vcompNand
+R1
+!i10b 1
+!s100 ><a@lN?P8?Gd=4J><KZC@1
+Iz[EC3oAcg=SmaA<Z8fC3N0
+R2
+R0
+w1582061263
+8/home/jorozco/Documentos/semArq/actividad05/compNand.v
+F/home/jorozco/Documentos/semArq/actividad05/compNand.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad05/compNand.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad05|/home/jorozco/Documentos/semArq/actividad05/compNand.v|
+!i113 1
+R5
+R6
+R7
+ncomp@nand
+vcompOr
+R1
+!i10b 1
+!s100 `K1L@l2z=WWlgA[XUR7T71
+IYIPb4h4VSO2WLYTRE:A1`1
+R2
+R0
+w1582058717
+8/home/jorozco/Documentos/semArq/actividad05/compOr.v
+F/home/jorozco/Documentos/semArq/actividad05/compOr.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad05/compOr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad05|/home/jorozco/Documentos/semArq/actividad05/compOr.v|
+!i113 1
+R5
+R6
+R7
+ncomp@or
+vmultiplicacion
+R1
+!i10b 1
+!s100 c_lanA<n;PX9Z`KCDn5NU2
+IXGc_2RYaCD1D@0Pk]h[ji2
+R2
+R0
+w1582056033
+8/home/jorozco/Documentos/semArq/actividad05/multiplicacion.v
+F/home/jorozco/Documentos/semArq/actividad05/multiplicacion.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad05/multiplicacion.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad05|/home/jorozco/Documentos/semArq/actividad05/multiplicacion.v|
+!i113 1
+R5
+R6
+R7
+vresta
+R1
+!i10b 1
+!s100 :;cJc3>cO:JMVKYOQWSg43
+I>XCZm7D2Tca>BLRje2V2>0
+R2
+R0
+w1582043970
+8/home/jorozco/Documentos/semArq/actividad05/resta.v
+F/home/jorozco/Documentos/semArq/actividad05/resta.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad05/resta.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad05|/home/jorozco/Documentos/semArq/actividad05/resta.v|
+!i113 1
+R5
+R6
+R7
+vsuma
+R1
+!i10b 1
+!s100 Ih4hZP:AH_n[Mf^ooZJdA2
+I=eaPn^8CTF36ko5W3M5iV2
+R2
+R0
+w1582043829
+8/home/jorozco/Documentos/semArq/actividad05/suma.v
+F/home/jorozco/Documentos/semArq/actividad05/suma.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad05/suma.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad05|/home/jorozco/Documentos/semArq/actividad05/suma.v|
+!i113 1
+R5
+R6
+R7

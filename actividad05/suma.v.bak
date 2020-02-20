@@ -1,0 +1,11 @@
+module suma(
+	input [31:0]a,
+	input [31:0]b,
+	input enable,
+	output salida
+);
+always@*
+begin
+	
+end
+endmodule

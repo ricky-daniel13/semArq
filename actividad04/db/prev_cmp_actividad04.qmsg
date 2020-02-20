@@ -1,0 +1,13 @@
+{ "Info" "0" "" "qar.tcl version #1" {  } {  } 0 0 "qar.tcl version #1" 0 0 "0" 0 0 1581878827592 ""}
+{ "Info" "0" "" "Including '-use_file_set basic' by default" {  } {  } 0 0 "Including '-use_file_set basic' by default" 0 0 "0" 0 0 1581878827691 ""}
+{ "Info" "0" "" "All project revisions will be stored in common archive actividad04_tmp_archive.qar" {  } {  } 0 0 "All project revisions will be stored in common archive actividad04_tmp_archive.qar" 0 0 "0" 0 0 1581878827692 ""}
+{ "Info" "0" "" "Initializing files for 'actividad04' revision" {  } {  } 0 0 "Initializing files for 'actividad04' revision" 0 0 "0" 0 0 1581878827752 ""}
+{ "Info" "0" "" "File Set 'Source control' contains:" { { "Info" "0" "" "Project source and settings files" {  } {  } 0 0 "Project source and settings files" 0 0 "0" 0 0 1581878827756 ""} { "Info" "0" "" "Automatically detected source files" {  } {  } 0 0 "Automatically detected source files" 0 0 "0" 0 0 1581878827756 ""}  } {  } 0 0 "File Set 'Source control' contains:" 0 0 "0" 0 0 1581878827756 ""}
+{ "Warning" "0" "" "Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver" {  } {  } 0 0 "Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver" 0 0 "0" 0 0 1581878827780 ""}
+{ "Info" "0" "" "Archive will store files relative to the closest common parent directory" {  } {  } 0 0 "Archive will store files relative to the closest common parent directory" 0 0 "0" 0 0 1581878827797 ""}
+{ "Info" "IPRJ_ARC_TCL_TCL_USING_COMMON_DIR" "/home/jorozco/Documentos/semArq/actividad04/ " "Using common directory /home/jorozco/Documentos/semArq/actividad04/" {  } {  } 0 13213 "Using common directory %1!s!" 0 0 "Design Software" 0 -1 1581878827803 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1581878827807 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1581878827807 ""}
+{ "Info" "0" "" "Generated archive 'actividad04_tmp_archive.qar'" {  } {  } 0 0 "Generated archive 'actividad04_tmp_archive.qar'" 0 0 "0" 0 0 1581878827807 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1581878827807 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1581878827807 ""}

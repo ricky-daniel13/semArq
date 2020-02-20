@@ -1,0 +1,12 @@
+module fullAdder(
+	input entrada1,
+	input entrada2,
+	input entAcarreo,
+	output suma,
+	output acarreo,
+);
+wire cable1;
+wire cable2;
+wire cabAcarreo;
+halfAdder half1(.entrada1(entrada1),.entrada2(entrada2));
+endmodule

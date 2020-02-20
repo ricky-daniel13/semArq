@@ -1,0 +1,271 @@
+|adder8B
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+entAcarreo => entAcarreo.IN1
+sum[0] << adder4B:addr1.s1
+sum[1] << adder4B:addr1.s2
+sum[2] << adder4B:addr1.s3
+sum[3] << adder4B:addr1.s4
+sum[4] << adder4B:addr2.s1
+sum[5] << adder4B:addr2.s2
+sum[6] << adder4B:addr2.s3
+sum[7] << adder4B:addr2.s4
+salAcarreo << adder4B:addr2.salAcarreo
+
+
+|adder8B|adder4B:addr1
+a1 => a1.IN1
+a2 => a2.IN1
+a3 => a3.IN1
+a4 => a4.IN1
+b1 => b1.IN1
+b2 => b2.IN1
+b3 => b3.IN1
+b4 => b4.IN1
+entAcarreo => entAcarreo.IN1
+s1 <= fullAdder:full1.suma
+s2 <= fullAdder:full2.suma
+s3 <= fullAdder:full3.suma
+s4 <= fullAdder:full4.suma
+salAcarreo <= fullAdder:full4.acarreo
+
+
+|adder8B|adder4B:addr1|fullAdder:full1
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full1|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full1|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full2
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full2|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full2|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full3
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full3|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full3|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full4
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full4|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr1|fullAdder:full4|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2
+a1 => a1.IN1
+a2 => a2.IN1
+a3 => a3.IN1
+a4 => a4.IN1
+b1 => b1.IN1
+b2 => b2.IN1
+b3 => b3.IN1
+b4 => b4.IN1
+entAcarreo => entAcarreo.IN1
+s1 <= fullAdder:full1.suma
+s2 <= fullAdder:full2.suma
+s3 <= fullAdder:full3.suma
+s4 <= fullAdder:full4.suma
+salAcarreo <= fullAdder:full4.acarreo
+
+
+|adder8B|adder4B:addr2|fullAdder:full1
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full1|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full1|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full2
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full2|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full2|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full3
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full3|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full3|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full4
+entrada1 => entrada1.IN1
+entrada2 => entrada2.IN1
+entAcarreo => entAcarreo.IN1
+suma <= halfAdder:half2.suma
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full4|halfAdder:half1
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder8B|adder4B:addr2|fullAdder:full4|halfAdder:half2
+entrada1 => suma.IN0
+entrada1 => acarreo.IN0
+entrada2 => suma.IN1
+entrada2 => acarreo.IN1
+suma <= suma.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= acarreo.DB_MAX_OUTPUT_PORT_TYPE
+
+

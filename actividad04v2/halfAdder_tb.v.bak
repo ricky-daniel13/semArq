@@ -1,0 +1,24 @@
+´timescale 1ns / 1ns
+
+module halfAdder_tb();
+
+//wires y registros
+wire 
+	salida,
+	salidaAcarreo;
+reg 
+	r1, 
+	r2;
+halfAdder ha(
+		.entrada1(r1),
+		.entrada2(r2),
+		.suma(salida),
+		.acarreo(salidaAcarreo)
+);
+initial
+begin
+	r1 = 1'b1;
+	r1 = 1'b0;
+	#100;
+end
+endmodule

@@ -1,0 +1,20 @@
+`timescale 1ns/1ns
+
+module suma_tb();
+reg [31:0]a;
+reg [31:0]b;
+reg en;
+wire [31:0]sum;
+suma s(
+	.a(a),
+	.b(b),
+	.enable(en),
+	.salida(sum)
+);
+initial
+begin
+	a = 32'd8;
+	b = 32'd16;
+	#100;
+end
+endmodule

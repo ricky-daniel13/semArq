@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jorozco/Documentos/semArq/actividad03/simulation/qsim
+vactividad03
+Z1 !s110 1581427714
+!i10b 1
+!s100 aV;[^W9Z=HaM`@j<j6V4M2
+IV5F5GG_BWm0fOj7^gVa4N1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1581427712
+8actividad03.vo
+Factividad03.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1581427713.000000
+!s107 actividad03.vo|
+!s90 -work|work|actividad03.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vactividad03_vlg_vec_tst
+R1
+!i10b 1
+!s100 Xh_[O?lOiS6>OW[7GcOQ^3
+I==7[HdNd<mHPC<<H0RJUQ3
+R2
+R0
+w1581427711
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1581427714.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

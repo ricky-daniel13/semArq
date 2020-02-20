@@ -1,0 +1,125 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jorozco/Documentos/semArq/actividad04v2/simulation/modelsim
+vadder4B
+Z1 !s110 1582204725
+!i10b 1
+!s100 bHIl:AWP]z6F@n[oXDbOB3
+I]6A:5PNao6cXH?;<eSU]m2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1581518492
+8/home/jorozco/Documentos/semArq/actividad04v2/adder4B.v
+F/home/jorozco/Documentos/semArq/actividad04v2/adder4B.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1582204725.000000
+!s107 /home/jorozco/Documentos/semArq/actividad04v2/adder4B.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad04v2|/home/jorozco/Documentos/semArq/actividad04v2/adder4B.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad04v2
+Z7 tCvgOpt 0
+nadder4@b
+vadder8B
+R1
+!i10b 1
+!s100 G[iOF^G8k]D821WOF^@f81
+ICeBbYe]ATF5nXzMX_AHV90
+R2
+R0
+w1581567386
+8/home/jorozco/Documentos/semArq/actividad04v2/adder8B.v
+F/home/jorozco/Documentos/semArq/actividad04v2/adder8B.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad04v2/adder8B.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad04v2|/home/jorozco/Documentos/semArq/actividad04v2/adder8B.v|
+!i113 1
+R5
+R6
+R7
+nadder8@b
+vadder8B_tb
+R1
+!i10b 1
+!s100 W?@X@>VOlhDd26X8^nV350
+IELohX7I3h20S<T[Vn<8J00
+R2
+R0
+w1581980747
+8/home/jorozco/Documentos/semArq/actividad04v2/adder8B_tb.v
+F/home/jorozco/Documentos/semArq/actividad04v2/adder8B_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad04v2/adder8B_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad04v2|/home/jorozco/Documentos/semArq/actividad04v2/adder8B_tb.v|
+!i113 1
+R5
+R6
+R7
+nadder8@b_tb
+vfullAdder
+R1
+!i10b 1
+!s100 DA5Ei2LDP4d86Ef6Ce]5P3
+ImzlK9^;V=CA0:EgEI][Q02
+R2
+R0
+w1581517814
+8/home/jorozco/Documentos/semArq/actividad04v2/fullAdder.v
+F/home/jorozco/Documentos/semArq/actividad04v2/fullAdder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad04v2/fullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad04v2|/home/jorozco/Documentos/semArq/actividad04v2/fullAdder.v|
+!i113 1
+R5
+R6
+R7
+nfull@adder
+vhalfAdder
+R1
+!i10b 1
+!s100 4HQFUh>X@8Nm8R@[0^B7<1
+IRAzd:B701XEBo:=c`j6ol3
+R2
+R0
+w1581516657
+8/home/jorozco/Documentos/semArq/actividad04v2/halfAdder.v
+F/home/jorozco/Documentos/semArq/actividad04v2/halfAdder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad04v2/halfAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad04v2|/home/jorozco/Documentos/semArq/actividad04v2/halfAdder.v|
+!i113 1
+R5
+R6
+R7
+nhalf@adder
