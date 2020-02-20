@@ -1,6 +1,7 @@
+#!/bin/sh    
 #SINCRONIZA AUTOMATICAMENTE LOS PROYECTOS DE SEMINARIO DE ARQUITECTURA A GITHUB
 #Orozco Torrez José Iván
-
+cd ~/Documentos/semArq
 clean=$(git status | grep "nothing to commit (working directory clean)")
 if [ -z "$clean" ]; then
     git pull
