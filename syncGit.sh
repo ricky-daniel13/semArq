@@ -6,7 +6,7 @@ i=0;
 while [ -z "$itest" ] 
     do
     sleep 5
-    itest=$(fping google.com | grep alive)
+    itest=$(fping github.com | grep alive)
     if [ $i -eq 4 ];
     then
         echo "no tienes conexion"
