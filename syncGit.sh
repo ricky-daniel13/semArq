@@ -16,7 +16,7 @@ while [ "$itest" == "" ]
 done
 echo Conectado
 cd ~/Documentos/semArq
-clean=$(git status | grep "nothing to commit, working tree clean")
+clean=$(git status | grep "nothing to commit")
 if [ -z "$clean" ]; then
     git pull
     git add .
