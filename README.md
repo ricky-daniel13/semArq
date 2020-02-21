@@ -1,2 +1,3 @@
 # semArq
-Ultimo cambio, tras esto, debe actualizarse siempre que inicie sesion
+
+Repositorio en el cual se encuentran mis trabajos y un Script bash que actualiza automaticamente los trabajos de la materia Seminario de Solucion de Problemas de Arquitectura de Computadoras
