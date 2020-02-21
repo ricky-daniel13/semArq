@@ -3,7 +3,7 @@
 #Orozco Torrez José Iván
 itest=$(fping google.com | grep alive)
 i=0;
-while [ "$itest" == "" ] 
+while [ -z "$itest" ] 
     do
     sleep 5
     itest=$(fping google.com | grep alive)
