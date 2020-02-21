@@ -1,2 +1,2 @@
 # semArq
-Aber si jalo aber xd
+Ultimo cambio, tras esto, debe actualizarse siempre que inicie sesion
