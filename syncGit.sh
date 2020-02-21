@@ -1,7 +1,7 @@
 #!/bin/sh    
 #SINCRONIZA AUTOMATICAMENTE LOS PROYECTOS DE SEMINARIO DE ARQUITECTURA A GITHUB
 #Orozco Torrez José Iván
-itest=$(fping google.com | grep alive)
+itest=$(fping github.com | grep alive)
 i=0;
 while [ -z "$itest" ] 
     do
