@@ -1,18 +1,18 @@
 #!/bin/sh    
 #SINCRONIZA AUTOMATICAMENTE LOS PROYECTOS DE SEMINARIO DE ARQUITECTURA A GITHUB
 #Orozco Torrez José Iván
-itest=$(fping google.com | grep conectado)
+itest=$(fping google.com | grep alive)
 i=0;
 while [ "$itest" == "" ] 
     do
     sleep 5
-    itest=$(fping google.com | grep conectado)
-    if [$i == 9];
+    itest=$(fping google.com | grep alive)
+    if [ $i -eq 4 ];
     then
         echo "no tienes conexion"
-        exit 1
+        exit $?
     fi
-    $i ++
+    let "i++"
 done
 echo Conectado
 cd ~/Documentos/semArq
