@@ -8,7 +8,7 @@ always@*
 begin
 	if(enable)
 	begin
-		salida = ~(a&&b);
+		salida = ~(a&b);
 	end
 	else
 	begin

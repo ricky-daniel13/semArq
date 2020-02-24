@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/home/jorozco/Documentos/semArq/actividad05/simulation/modelsim
 vactividad05
-Z1 !s110 1582562135
+Z1 !s110 1582582203
 !i10b 1
 !s100 W3<[7;Gmc?>j`[77CHR082
 IGZ_iEAS8GV3DV5el^:9VG1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1582562090
+w1582581256
 8/home/jorozco/Documentos/semArq/actividad05/actividad05.v
 F/home/jorozco/Documentos/semArq/actividad05/actividad05.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1582562135.000000
+Z4 !s108 1582582203.000000
 !s107 /home/jorozco/Documentos/semArq/actividad05/actividad05.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad05|/home/jorozco/Documentos/semArq/actividad05/actividad05.v|
 !i113 1
@@ -33,11 +33,11 @@ Z7 tCvgOpt 0
 vactividad05_tb
 R1
 !i10b 1
-!s100 IGY@VSoZ5aBWZJQMCM0]k1
-I6`zC1AhT>WFKodoU<61?l2
+!s100 [RbV<5Jb;YFc;KW:3Dkd93
+I9TSS_:bTKU5?Ia@ANFdB42
 R2
 R0
-w1582560679
+w1582582164
 8/home/jorozco/Documentos/semArq/actividad05/actividad05_tb.v
 F/home/jorozco/Documentos/semArq/actividad05/actividad05_tb.v
 L0 3
@@ -55,11 +55,11 @@ R7
 vcompAnd
 R1
 !i10b 1
-!s100 Q39IJBLgS9e3`8L:gVkCl2
-IB9Fz5H3EXf_?n8aNC?GV51
+!s100 VZdGEGIXE8><RR]lGB@nb2
+IjHkH>A_UU7O6S?`XUZVo=0
 R2
 R0
-w1582058247
+w1582581705
 8/home/jorozco/Documentos/semArq/actividad05/compAnd.v
 F/home/jorozco/Documentos/semArq/actividad05/compAnd.v
 L0 1
@@ -78,11 +78,11 @@ ncomp@and
 vcompNand
 R1
 !i10b 1
-!s100 ><a@lN?P8?Gd=4J><KZC@1
-Iz[EC3oAcg=SmaA<Z8fC3N0
+!s100 @@dJ18L1z13J9bN7SQB7H3
+IOfoeNV2CDZdANMUYU>Zgj0
 R2
 R0
-w1582061263
+w1582581702
 8/home/jorozco/Documentos/semArq/actividad05/compNand.v
 F/home/jorozco/Documentos/semArq/actividad05/compNand.v
 L0 1
@@ -101,11 +101,11 @@ ncomp@nand
 vcompOr
 R1
 !i10b 1
-!s100 `K1L@l2z=WWlgA[XUR7T71
-IYIPb4h4VSO2WLYTRE:A1`1
+!s100 bUSH2cZ=:lM1oEc^?caL83
+IaZY`NhcDce:4LnDdK>RI22
 R2
 R0
-w1582058717
+w1582581698
 8/home/jorozco/Documentos/semArq/actividad05/compOr.v
 F/home/jorozco/Documentos/semArq/actividad05/compOr.v
 L0 1

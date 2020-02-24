@@ -56,17 +56,17 @@ multiplicacion m(
 always @*
 begin
 	case(sel)
-		3'b000:
+		3'b000:	//Seleccion AND
 			salida = c;
-		3'b001:
+		3'b001:	//Seleccion OR
 			salida = c1;
-		3'b100:
+		3'b100:	//Seleccion NAND
 			salida = c2;
-		3'b010:
+		3'b010:	//Seleccion Suma
 			salida = c3;
-		3'b011:
+		3'b011:	//Seleccion Resta
 			salida = c4;
-		3'b111:
+		3'b111:	//Seleccion Multiplicacion
 			salida = c5;
 		default:
 			salida = 0;
