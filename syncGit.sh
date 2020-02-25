@@ -1,6 +1,18 @@
 #!/bin/bash
 #SINCRONIZA AUTOMATICAMENTE LOS PROYECTOS DE SEMINARIO DE ARQUITECTURA A GITHUB
 #Orozco Torrez José Iván
+check=$(ps aux | grep quartus | grep -v grep)
+while [ -z "$check" ]
+    do
+    check=$(ps aux | grep quartus | grep -v grep)
+done
+
+check=$(ps aux | grep quartus | grep -v grep)
+while [ ! -z "$check" ]
+    do
+    check=$(ps aux | grep quartus | grep -v grep)
+done
+
 itest=$(fping github.com | grep alive)
 i=0;
 while [ -z "$itest" ] 
