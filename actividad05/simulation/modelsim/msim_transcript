@@ -110,3 +110,5 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 07:42:15 on Feb 25,2020, Elapsed time: 0:17:49
+# Errors: 0, Warnings: 1
