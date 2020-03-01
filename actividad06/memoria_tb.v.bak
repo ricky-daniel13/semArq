@@ -1,0 +1,10 @@
+´timescale 1ns/1ns;
+
+module memoria_tb();
+reg 
+	clk,
+	en;
+reg [1:0]dir;
+reg [7:0]datoEntrada;
+wire [7:0]datoSalida;
+endmodule

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad06
-Sun Mar  1 15:34:15 2020
+Sun Mar  1 16:46:31 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -13,12 +13,9 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 12. lpm_mult Parameter Settings by Entity Instance
- 13. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +42,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Mar  1 15:34:15 2020       ;
+; Analysis & Synthesis Status ; Successful - Sun Mar  1 16:46:31 2020       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; actividad06                                 ;
-; Top-level Entity Name       ; ALU                                         ;
+; Top-level Entity Name       ; memoria                                     ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 197                                         ;
-; Total pins                  ; 28                                          ;
+; Total logic elements        ; 1,860                                       ;
+; Total pins                  ; 25                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -62,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; ALU                ; actividad06        ;
+; Top-level entity name                                            ; memoria            ; actividad06        ;
 ; Family name                                                      ; MAX V              ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -143,34 +140,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
-; ALU.v                            ; yes             ; Auto-Found Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad06/ALU.v                                     ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf        ;         ;
-; aglobal191.inc                   ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc      ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.inc     ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/multcore.inc        ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/bypassff.inc        ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altshift.inc        ;         ;
-; db/mult_lls.tdf                  ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf                           ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
-; db/lpm_divide_2tl.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/lpm_divide_2tl.tdf                     ;         ;
-; db/sign_div_unsign_fkh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/sign_div_unsign_fkh.tdf                ;         ;
-; db/alt_u_div_tfe.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/alt_u_div_tfe.tdf                      ;         ;
-; db/add_sub_i4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_i4c.tdf                        ;         ;
-; db/add_sub_j4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_j4c.tdf                        ;         ;
-; db/add_sub_k4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_k4c.tdf                        ;         ;
-; db/add_sub_l4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_l4c.tdf                        ;         ;
-; db/add_sub_m4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_m4c.tdf                        ;         ;
-; db/add_sub_n4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_n4c.tdf                        ;         ;
-; db/add_sub_o4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_o4c.tdf                        ;         ;
-; db/add_sub_p4c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/jorozco/Documentos/semArq/actividad06/db/add_sub_p4c.tdf                        ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; memoria.v                        ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad06/memoria.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -178,56 +154,153 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Total logic elements                        ; 197    ;
-;     -- Combinational with no register       ; 197    ;
+; Total logic elements                        ; 1860   ;
+;     -- Combinational with no register       ; 1860   ;
 ;     -- Register only                        ; 0      ;
 ;     -- Combinational with a register        ; 0      ;
 ;                                             ;        ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 78     ;
-;     -- 3 input functions                    ; 61     ;
-;     -- 2 input functions                    ; 38     ;
-;     -- 1 input functions                    ; 20     ;
+;     -- 4 input functions                    ; 752    ;
+;     -- 3 input functions                    ; 1106   ;
+;     -- 2 input functions                    ; 2      ;
+;     -- 1 input functions                    ; 0      ;
 ;     -- 0 input functions                    ; 0      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 129    ;
-;     -- arithmetic mode                      ; 68     ;
+;     -- normal mode                          ; 1860   ;
+;     -- arithmetic mode                      ; 0      ;
 ;     -- qfbk mode                            ; 0      ;
 ;     -- register cascade mode                ; 0      ;
 ;     -- synchronous clear/load mode          ; 0      ;
 ;     -- asynchronous clear/load mode         ; 0      ;
 ;                                             ;        ;
 ; Total registers                             ; 0      ;
-; Total logic cells in carry chains           ; 86     ;
-; I/O pins                                    ; 28     ;
-; Maximum fan-out node                        ; sel[0] ;
-; Maximum fan-out                             ; 20     ;
-; Total fan-out                               ; 600    ;
-; Average fan-out                             ; 2.67   ;
+; I/O pins                                    ; 25     ;
+; Maximum fan-out node                        ; dir[2] ;
+; Maximum fan-out                             ; 256    ;
+; Total fan-out                               ; 6338   ;
+; Average fan-out                             ; 3.36   ;
 +---------------------------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                           ;
-+----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                        ; Entity Name         ; Library Name ;
-+----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |ALU                                   ; 197 (64)    ; 0            ; 0          ; 28   ; 0            ; 197 (64)     ; 0 (0)             ; 0 (0)            ; 86 (9)          ; 0 (0)      ; |ALU                                                                                                                       ; ALU                 ; work         ;
-;    |lpm_divide:Div0|                   ; 85 (0)      ; 0            ; 0          ; 0    ; 0            ; 85 (0)       ; 0 (0)             ; 0 (0)            ; 51 (0)          ; 0 (0)      ; |ALU|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
-;       |lpm_divide_2tl:auto_generated|  ; 85 (0)      ; 0            ; 0          ; 0    ; 0            ; 85 (0)       ; 0 (0)             ; 0 (0)            ; 51 (0)          ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated                                                                         ; lpm_divide_2tl      ; work         ;
-;          |sign_div_unsign_fkh:divider| ; 85 (0)      ; 0            ; 0          ; 0    ; 0            ; 85 (0)       ; 0 (0)             ; 0 (0)            ; 51 (0)          ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider                                             ; sign_div_unsign_fkh ; work         ;
-;             |alt_u_div_tfe:divider|    ; 85 (32)     ; 0            ; 0          ; 0    ; 0            ; 85 (32)      ; 0 (0)             ; 0 (0)            ; 51 (0)          ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_tfe:divider                       ; alt_u_div_tfe       ; work         ;
-;                |add_sub_k4c:add_sub_2| ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 6 (6)           ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_tfe:divider|add_sub_k4c:add_sub_2 ; add_sub_k4c         ; work         ;
-;                |add_sub_l4c:add_sub_3| ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 7 (7)           ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_tfe:divider|add_sub_l4c:add_sub_3 ; add_sub_l4c         ; work         ;
-;                |add_sub_m4c:add_sub_4| ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 8 (8)           ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_tfe:divider|add_sub_m4c:add_sub_4 ; add_sub_m4c         ; work         ;
-;                |add_sub_n4c:add_sub_5| ; 9 (9)       ; 0            ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 9 (9)           ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_tfe:divider|add_sub_n4c:add_sub_5 ; add_sub_n4c         ; work         ;
-;                |add_sub_o4c:add_sub_6| ; 10 (10)     ; 0            ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 10 (10)         ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_tfe:divider|add_sub_o4c:add_sub_6 ; add_sub_o4c         ; work         ;
-;                |add_sub_p4c:add_sub_7| ; 13 (13)     ; 0            ; 0          ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; 11 (11)         ; 0 (0)      ; |ALU|lpm_divide:Div0|lpm_divide_2tl:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_tfe:divider|add_sub_p4c:add_sub_7 ; add_sub_p4c         ; work         ;
-;    |lpm_mult:Mult0|                    ; 48 (0)      ; 0            ; 0          ; 0    ; 0            ; 48 (0)       ; 0 (0)             ; 0 (0)            ; 26 (0)          ; 0 (0)      ; |ALU|lpm_mult:Mult0                                                                                                        ; lpm_mult            ; work         ;
-;       |mult_lls:auto_generated|        ; 48 (48)     ; 0            ; 0          ; 0    ; 0            ; 48 (48)      ; 0 (0)             ; 0 (0)            ; 26 (26)         ; 0 (0)      ; |ALU|lpm_mult:Mult0|mult_lls:auto_generated                                                                                ; mult_lls            ; work         ;
-+----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |memoria                   ; 1860 (1860) ; 0            ; 0          ; 25   ; 0            ; 1860 (1860)  ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memoria            ; memoria     ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                  ;
++-------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                            ; Latch Enable Signal ; Free of Timing Hazards ;
++-------------------------------------------------------+---------------------+------------------------+
+; datoSalida[0]$latch                                   ; en                  ; yes                    ;
+; datoSalida[1]$latch                                   ; en                  ; yes                    ;
+; datoSalida[2]$latch                                   ; en                  ; yes                    ;
+; datoSalida[3]$latch                                   ; en                  ; yes                    ;
+; datoSalida[4]$latch                                   ; en                  ; yes                    ;
+; datoSalida[5]$latch                                   ; en                  ; yes                    ;
+; datoSalida[6]$latch                                   ; en                  ; yes                    ;
+; datoSalida[7]$latch                                   ; en                  ; yes                    ;
+; dato~304                                              ; rtl~0               ; yes                    ;
+; dato~296                                              ; rtl~1               ; yes                    ;
+; dato~288                                              ; rtl~2               ; yes                    ;
+; dato~312                                              ; rtl~3               ; yes                    ;
+; dato~328                                              ; rtl~4               ; yes                    ;
+; dato~336                                              ; rtl~5               ; yes                    ;
+; dato~320                                              ; rtl~6               ; yes                    ;
+; dato~344                                              ; rtl~7               ; yes                    ;
+; dato~264                                              ; rtl~8               ; yes                    ;
+; dato~272                                              ; rtl~9               ; yes                    ;
+; dato~256                                              ; rtl~10              ; yes                    ;
+; dato~280                                              ; rtl~11              ; yes                    ;
+; dato~368                                              ; rtl~12              ; yes                    ;
+; dato~360                                              ; rtl~13              ; yes                    ;
+; dato~352                                              ; rtl~14              ; yes                    ;
+; dato~376                                              ; rtl~15              ; yes                    ;
+; dato~176                                              ; rtl~16              ; yes                    ;
+; dato~208                                              ; rtl~17              ; yes                    ;
+; dato~144                                              ; rtl~18              ; yes                    ;
+; dato~240                                              ; rtl~19              ; yes                    ;
+; dato~200                                              ; rtl~20              ; yes                    ;
+; dato~168                                              ; rtl~21              ; yes                    ;
+; dato~136                                              ; rtl~22              ; yes                    ;
+; dato~232                                              ; rtl~23              ; yes                    ;
+; dato~160                                              ; rtl~24              ; yes                    ;
+; dato~192                                              ; rtl~25              ; yes                    ;
+; dato~128                                              ; rtl~26              ; yes                    ;
+; dato~224                                              ; rtl~27              ; yes                    ;
+; dato~216                                              ; rtl~28              ; yes                    ;
+; dato~184                                              ; rtl~29              ; yes                    ;
+; dato~152                                              ; rtl~30              ; yes                    ;
+; dato~248                                              ; rtl~31              ; yes                    ;
+; dato~80                                               ; rtl~32              ; yes                    ;
+; dato~72                                               ; rtl~33              ; yes                    ;
+; dato~64                                               ; rtl~34              ; yes                    ;
+; dato~88                                               ; rtl~35              ; yes                    ;
+; dato~40                                               ; rtl~36              ; yes                    ;
+; dato~48                                               ; rtl~37              ; yes                    ;
+; dato~32                                               ; rtl~38              ; yes                    ;
+; dato~56                                               ; rtl~39              ; yes                    ;
+; dato~16                                               ; rtl~40              ; yes                    ;
+; dato~8                                                ; rtl~41              ; yes                    ;
+; dato~0                                                ; rtl~42              ; yes                    ;
+; dato~24                                               ; rtl~43              ; yes                    ;
+; dato~104                                              ; rtl~44              ; yes                    ;
+; dato~112                                              ; rtl~45              ; yes                    ;
+; dato~96                                               ; rtl~46              ; yes                    ;
+; dato~120                                              ; rtl~47              ; yes                    ;
+; dato~424                                              ; rtl~48              ; yes                    ;
+; dato~456                                              ; rtl~49              ; yes                    ;
+; dato~392                                              ; rtl~50              ; yes                    ;
+; dato~488                                              ; rtl~51              ; yes                    ;
+; dato~464                                              ; rtl~52              ; yes                    ;
+; dato~432                                              ; rtl~53              ; yes                    ;
+; dato~400                                              ; rtl~54              ; yes                    ;
+; dato~496                                              ; rtl~55              ; yes                    ;
+; dato~448                                              ; rtl~56              ; yes                    ;
+; dato~416                                              ; rtl~57              ; yes                    ;
+; dato~384                                              ; rtl~58              ; yes                    ;
+; dato~480                                              ; rtl~59              ; yes                    ;
+; dato~440                                              ; rtl~60              ; yes                    ;
+; dato~472                                              ; rtl~61              ; yes                    ;
+; dato~408                                              ; rtl~62              ; yes                    ;
+; dato~504                                              ; rtl~63              ; yes                    ;
+; dato~688                                              ; rtl~64              ; yes                    ;
+; dato~720                                              ; rtl~65              ; yes                    ;
+; dato~656                                              ; rtl~66              ; yes                    ;
+; dato~752                                              ; rtl~67              ; yes                    ;
+; dato~712                                              ; rtl~68              ; yes                    ;
+; dato~680                                              ; rtl~69              ; yes                    ;
+; dato~648                                              ; rtl~70              ; yes                    ;
+; dato~744                                              ; rtl~71              ; yes                    ;
+; dato~672                                              ; rtl~72              ; yes                    ;
+; dato~704                                              ; rtl~73              ; yes                    ;
+; dato~640                                              ; rtl~74              ; yes                    ;
+; dato~736                                              ; rtl~75              ; yes                    ;
+; dato~728                                              ; rtl~76              ; yes                    ;
+; dato~696                                              ; rtl~77              ; yes                    ;
+; dato~664                                              ; rtl~78              ; yes                    ;
+; dato~760                                              ; rtl~79              ; yes                    ;
+; dato~816                                              ; rtl~80              ; yes                    ;
+; dato~808                                              ; rtl~81              ; yes                    ;
+; dato~800                                              ; rtl~82              ; yes                    ;
+; dato~824                                              ; rtl~83              ; yes                    ;
+; dato~840                                              ; rtl~84              ; yes                    ;
+; dato~848                                              ; rtl~85              ; yes                    ;
+; dato~832                                              ; rtl~86              ; yes                    ;
+; dato~856                                              ; rtl~87              ; yes                    ;
+; dato~776                                              ; rtl~88              ; yes                    ;
+; dato~784                                              ; rtl~89              ; yes                    ;
+; dato~768                                              ; rtl~90              ; yes                    ;
+; dato~792                                              ; rtl~91              ; yes                    ;
+; Number of user-specified and inferred latches = 1032  ;                     ;                        ;
++-------------------------------------------------------+---------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -245,195 +318,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |ALU|Mux0                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0                 ;
-+------------------------------------------------+----------+---------------------+
-; Parameter Name                                 ; Value    ; Type                ;
-+------------------------------------------------+----------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 8        ; Untyped             ;
-; LPM_WIDTHB                                     ; 8        ; Untyped             ;
-; LPM_WIDTHP                                     ; 16       ; Untyped             ;
-; LPM_WIDTHR                                     ; 16       ; Untyped             ;
-; LPM_WIDTHS                                     ; 1        ; Untyped             ;
-; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped             ;
-; LPM_PIPELINE                                   ; 0        ; Untyped             ;
-; LATENCY                                        ; 0        ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped             ;
-; USE_EAB                                        ; OFF      ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5        ; Untyped             ;
-; DEVICE_FAMILY                                  ; MAX V    ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL   ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_lls ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped             ;
-+------------------------------------------------+----------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                ;
-; LPM_WIDTHD             ; 8              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_2tl ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance         ;
-+---------------------------------------+----------------+
-; Name                                  ; Value          ;
-+---------------------------------------+----------------+
-; Number of entity instances            ; 1              ;
-; Entity Instance                       ; lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 8              ;
-;     -- LPM_WIDTHB                     ; 8              ;
-;     -- LPM_WIDTHP                     ; 16             ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED       ;
-;     -- INPUT_A_IS_CONSTANT            ; NO             ;
-;     -- INPUT_B_IS_CONSTANT            ; NO             ;
-;     -- USE_EAB                        ; OFF            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
-+---------------------------------------+----------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Mar  1 15:34:01 2020
+    Info: Processing started: Sun Mar  1 16:46:14 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad06 -c actividad06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Warning (12019): Can't analyze file -- file ../actividad05/ALU.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file ALU_tb.v
     Info (12023): Found entity 1: ALU_tb File: /home/jorozco/Documentos/semArq/actividad06/ALU_tb.v Line: 3
-Warning (12125): Using design file ALU.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ALU File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 1
-Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 18
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 20
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 18
-Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 18
-    Info (12134): Parameter "LPM_WIDTHA" = "8"
-    Info (12134): Parameter "LPM_WIDTHB" = "8"
-    Info (12134): Parameter "LPM_WIDTHP" = "16"
-    Info (12134): Parameter "LPM_WIDTHR" = "16"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_lls.tdf
-    Info (12023): Found entity 1: mult_lls File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 29
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 20
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 20
-    Info (12134): Parameter "LPM_WIDTHN" = "8"
-    Info (12134): Parameter "LPM_WIDTHD" = "8"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_2tl.tdf
-    Info (12023): Found entity 1: lpm_divide_2tl File: /home/jorozco/Documentos/semArq/actividad06/db/lpm_divide_2tl.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_fkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_fkh File: /home/jorozco/Documentos/semArq/actividad06/db/sign_div_unsign_fkh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_tfe.tdf
-    Info (12023): Found entity 1: alt_u_div_tfe File: /home/jorozco/Documentos/semArq/actividad06/db/alt_u_div_tfe.tdf Line: 39
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_i4c.tdf
-    Info (12023): Found entity 1: add_sub_i4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_i4c.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_j4c.tdf
-    Info (12023): Found entity 1: add_sub_j4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_j4c.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_k4c.tdf
-    Info (12023): Found entity 1: add_sub_k4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_k4c.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_l4c.tdf
-    Info (12023): Found entity 1: add_sub_l4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_l4c.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_m4c.tdf
-    Info (12023): Found entity 1: add_sub_m4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_m4c.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_n4c.tdf
-    Info (12023): Found entity 1: add_sub_n4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_n4c.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_o4c.tdf
-    Info (12023): Found entity 1: add_sub_o4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_o4c.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_p4c.tdf
-    Info (12023): Found entity 1: add_sub_p4c File: /home/jorozco/Documentos/semArq/actividad06/db/add_sub_p4c.tdf Line: 25
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following LCELL buffer node(s):
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le3a[9]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 43
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le5a[9]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 45
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le5a[8]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 45
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le5a[4]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 45
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[9]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[8]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[7]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[6]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[5]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[4]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[3]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le6a[2]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 46
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[8]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[7]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[6]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[5]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[4]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[3]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[2]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le7a[1]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 47
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following LCELL buffer node(s):
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le3a[8]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 43
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le4a[9]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 44
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le4a[8]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 44
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le4a[7]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 44
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le4a[6]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 44
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le5a[7]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 45
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le5a[6]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 45
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_lls:auto_generated|le5a[5]" File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 45
-Info (13014): Ignored 54 buffer(s)
-    Info (13019): Ignored 54 SOFT buffer(s)
-Info (21057): Implemented 225 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 197 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 935 megabytes
-    Info: Processing ended: Sun Mar  1 15:34:15 2020
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:29
+Info (12021): Found 1 design units, including 1 entities, in source file memoria.v
+    Info (12023): Found entity 1: memoria File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memoria_tb.v
+    Info (12023): Found entity 1: memoria_tb File: /home/jorozco/Documentos/semArq/actividad06/memoria_tb.v Line: 3
+Info (12127): Elaborating entity "memoria" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at memoria.v(12): inferring latch(es) for variable "datoSalida", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 12
+Info (10041): Inferred latch for "datoSalida[0]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Info (10041): Inferred latch for "datoSalida[1]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Info (10041): Inferred latch for "datoSalida[2]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Info (10041): Inferred latch for "datoSalida[3]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Info (10041): Inferred latch for "datoSalida[4]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Info (10041): Inferred latch for "datoSalida[5]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Info (10041): Inferred latch for "datoSalida[6]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Info (10041): Inferred latch for "datoSalida[7]" at memoria.v(18) File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 18
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: /home/jorozco/Documentos/semArq/actividad06/memoria.v Line: 4
+Info (21057): Implemented 1885 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 1860 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 905 megabytes
+    Info: Processing ended: Sun Mar  1 16:46:31 2020
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
 
 
