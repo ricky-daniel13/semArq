@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad06
-Thu Feb 27 11:31:53 2020
+Sun Mar  1 15:34:15 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Feb 27 11:31:53 2020       ;
+; Analysis & Synthesis Status ; Successful - Sun Mar  1 15:34:15 2020       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; actividad06                                 ;
 ; Top-level Entity Name       ; ALU                                         ;
@@ -148,7 +148,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                          ; Library ;
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
-; ../actividad05/ALU.v             ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad05/ALU.v                                     ;         ;
+; ALU.v                            ; yes             ; Auto-Found Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad06/ALU.v                                     ;         ;
 ; lpm_mult.tdf                     ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf        ;         ;
 ; aglobal191.inc                   ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc      ;         ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.inc     ;         ;
@@ -338,18 +338,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Feb 27 11:31:37 2020
+    Info: Processing started: Sun Mar  1 15:34:01 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad06 -c actividad06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /home/jorozco/Documentos/semArq/actividad05/ALU.v
-    Info (12023): Found entity 1: ALU File: /home/jorozco/Documentos/semArq/actividad05/ALU.v Line: 1
+Warning (12019): Can't analyze file -- file ../actividad05/ALU.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ALU_tb.v
+    Info (12023): Found entity 1: ALU_tb File: /home/jorozco/Documentos/semArq/actividad06/ALU_tb.v Line: 3
+Warning (12125): Using design file ALU.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ALU File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: /home/jorozco/Documentos/semArq/actividad05/ALU.v Line: 18
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: /home/jorozco/Documentos/semArq/actividad05/ALU.v Line: 20
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: /home/jorozco/Documentos/semArq/actividad05/ALU.v Line: 18
-Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: /home/jorozco/Documentos/semArq/actividad05/ALU.v Line: 18
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 18
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 20
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 18
+Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 18
     Info (12134): Parameter "LPM_WIDTHA" = "8"
     Info (12134): Parameter "LPM_WIDTHB" = "8"
     Info (12134): Parameter "LPM_WIDTHP" = "16"
@@ -361,8 +364,8 @@ Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following para
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_lls.tdf
     Info (12023): Found entity 1: mult_lls File: /home/jorozco/Documentos/semArq/actividad06/db/mult_lls.tdf Line: 29
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: /home/jorozco/Documentos/semArq/actividad05/ALU.v Line: 20
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: /home/jorozco/Documentos/semArq/actividad05/ALU.v Line: 20
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 20
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 20
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -427,10 +430,10 @@ Info (21057): Implemented 225 device resources after synthesis - the final resou
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 197 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
     Info: Peak virtual memory: 935 megabytes
-    Info: Processing ended: Thu Feb 27 11:31:53 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Processing ended: Sun Mar  1 15:34:15 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
 
 

@@ -1,5 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, /home/jorozco/Documentos/semArq/actividad05/ALU.v
+source_file = 1, ../actividad05/ALU.v
+source_file = 1, /home/jorozco/Documentos/semArq/actividad06/ALU_tb.v
+source_file = 1, /home/jorozco/Documentos/semArq/actividad06/ALU.v
 source_file = 1, /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf
 source_file = 1, /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc
 source_file = 1, /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.inc

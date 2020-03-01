@@ -1,0 +1,7 @@
+module memoria(
+	input 
+		en,
+		clk,
+	input [7:0]dir,
+	output reg dato
+)
