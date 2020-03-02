@@ -1,0 +1,34 @@
+module actividad06(
+	input [7:0]
+		a,
+		b,
+	input [2:0]sel,
+	input
+		en,
+		clk,
+	output reg [7:0]datoSalida,
+	output reg zeroFlag
+);
+wire [7:0]dato;
+
+ALU alu(
+	.a(a),
+	.b(b),
+	.sel(sel),
+	.zeroFlag(zeroFlag),
+	.res(dato)
+);
+
+memoria mem(
+	.en(en),
+	.clk(clk),
+	.dir(b),
+	.datoEntrada(dato),
+	.datoSalida(datoSalida)
+);
+
+always #10
+begin
+	clk = !clk;
+end
+endmodule

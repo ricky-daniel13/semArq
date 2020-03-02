@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Mar  1 16:46:53 2020
+Fitter Status : Successful - Mon Mar  2 08:06:06 2020
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : actividad06
-Top-level Entity Name : memoria
+Top-level Entity Name : actividad06
 Family : MAX V
 Device : 5M2210ZF256C4
 Timing Models : Final
-Total logic elements : 1,860 / 2,210 ( 84 % )
-Total pins : 25 / 203 ( 12 % )
+Total logic elements : 2,056 / 2,210 ( 93 % )
+Total pins : 30 / 203 ( 15 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

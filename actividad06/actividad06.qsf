@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY memoria
+set_global_assignment -name TOP_LEVEL_ENTITY actividad06
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:01:33  FEBRUARY 27, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
@@ -65,3 +65,5 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id memoria_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME memoria_tb -section_id memoria_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE ALU_tb.v -section_id ALU_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE memoria_tb.v -section_id memoria_tb
+set_global_assignment -name VERILOG_FILE actividad06.v
+set_global_assignment -name VERILOG_FILE actividad06_tb.v

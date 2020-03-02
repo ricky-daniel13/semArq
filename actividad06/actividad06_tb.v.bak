@@ -1,0 +1,29 @@
+module actividad06_v();
+reg [7:0]
+	a,
+	b;
+reg [2:0]sel;
+reg
+	en,
+	clk;
+wire [7:0]
+	datoSalida,
+	dato;
+wire zeroFlag;
+
+ALU alu(
+	.a(a),
+	.b(b),
+	.sel(sel),
+	.zeroFlag(zeroFlag),
+	.res(dato)
+);
+
+memoria mem(
+	.en(en),
+	.clk(clk),
+	.dir(b),
+	.datoEntrada(dato),
+	.datoSalida(datoSalida)
+);
+endmodule

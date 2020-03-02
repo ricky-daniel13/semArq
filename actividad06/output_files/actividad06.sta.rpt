@@ -1,5 +1,5 @@
 Timing Analyzer report for actividad06
-Sun Mar  1 16:47:02 2020
+Mon Mar  2 08:06:16 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -97,7 +97,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 33.79 MHz ; 33.79 MHz       ; en         ;      ;
+; 34.32 MHz ; 34.32 MHz       ; en         ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -107,7 +107,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+---------+---------------+
 ; Clock ; Slack   ; End Point TNS ;
 +-------+---------+---------------+
-; en    ; -14.299 ; -109.279      ;
+; en    ; -14.067 ; -109.494      ;
 +-------+---------+---------------+
 
 
@@ -116,7 +116,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; en    ; 7.025 ; 0.000         ;
+; en    ; 7.698 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -141,220 +141,220 @@ No paths to report.
 +-------+--------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Setup: 'en'                                                                                                     ;
-+---------+-----------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack   ; From Node ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+---------+-----------+---------------------+--------------+-------------+--------------+------------+------------+
-; -14.299 ; dato~279  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.385     ; 9.496      ;
-; -14.204 ; dato~784  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -2.499     ; 10.280     ;
-; -14.102 ; dato~768  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -2.250     ; 10.427     ;
-; -14.022 ; dato~327  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.209     ; 9.395      ;
-; -13.957 ; dato~792  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.441     ; 9.091      ;
-; -13.716 ; dato~618  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -2.663     ; 9.635      ;
-; -13.701 ; dato~655  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.907     ; 8.376      ;
-; -13.693 ; dato~831  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -4.305     ; 7.970      ;
-; -13.667 ; dato~48   ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.790     ; 8.452      ;
-; -13.608 ; dato~223  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -4.391     ; 7.799      ;
-; -13.593 ; dato~776  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.346     ; 8.822      ;
-; -13.562 ; dato~263  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -5.395     ; 6.749      ;
-; -13.525 ; dato~921  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -3.866     ; 8.523      ;
-; -13.515 ; dato~696  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.159     ; 8.931      ;
-; -13.501 ; dato~611  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.881     ; 8.202      ;
-; -13.480 ; dato~518  ; datoSalida[6]$latch ; en           ; en          ; 0.500        ; -4.551     ; 7.791      ;
-; -13.441 ; dato~894  ; datoSalida[6]$latch ; en           ; en          ; 0.500        ; -2.652     ; 9.651      ;
-; -13.440 ; dato~955  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.027     ; 8.995      ;
-; -13.439 ; dato~987  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.657     ; 8.364      ;
-; -13.431 ; dato~1016 ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.723     ; 8.283      ;
-; -13.426 ; dato~298  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -5.897     ; 6.111      ;
-; -13.404 ; dato~159  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.624     ; 8.362      ;
-; -13.398 ; dato~578  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -3.603     ; 8.377      ;
-; -13.372 ; dato~957  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -3.692     ; 8.544      ;
-; -13.360 ; dato~985  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -3.572     ; 8.652      ;
-; -13.358 ; dato~602  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -3.688     ; 8.252      ;
-; -13.334 ; dato~664  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.124     ; 8.785      ;
-; -13.296 ; dato~1021 ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -3.041     ; 9.119      ;
-; -13.288 ; dato~650  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -4.042     ; 7.828      ;
-; -13.278 ; dato~375  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.447     ; 8.413      ;
-; -13.276 ; dato~40   ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.392     ; 8.459      ;
-; -13.273 ; dato~646  ; datoSalida[6]$latch ; en           ; en          ; 0.500        ; -2.072     ; 10.063     ;
-; -13.259 ; dato~594  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -3.327     ; 8.514      ;
-; -13.253 ; dato~543  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.851     ; 7.984      ;
-; -13.244 ; dato~735  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.957     ; 7.869      ;
-; -13.239 ; dato~678  ; datoSalida[6]$latch ; en           ; en          ; 0.500        ; -2.428     ; 9.673      ;
-; -13.217 ; dato~32   ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.502     ; 8.290      ;
-; -13.200 ; dato~989  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -3.379     ; 8.685      ;
-; -13.184 ; dato~503  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.305     ; 8.461      ;
-; -13.182 ; dato~532  ; datoSalida[4]$latch ; en           ; en          ; 0.500        ; -4.697     ; 7.347      ;
-; -13.182 ; dato~951  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.128     ; 8.636      ;
-; -13.179 ; dato~823  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.821     ; 7.940      ;
-; -13.178 ; dato~479  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -2.896     ; 8.864      ;
-; -13.177 ; dato~919  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.422     ; 8.337      ;
-; -13.176 ; dato~984  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.975     ; 7.776      ;
-; -13.162 ; dato~444  ; datoSalida[4]$latch ; en           ; en          ; 0.500        ; -4.685     ; 7.339      ;
-; -13.162 ; dato~324  ; datoSalida[4]$latch ; en           ; en          ; 0.500        ; -3.203     ; 8.821      ;
-; -13.153 ; dato~1000 ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.143     ; 8.585      ;
-; -13.141 ; dato~847  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.407     ; 8.316      ;
-; -13.130 ; dato~703  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.567     ; 8.145      ;
-; -13.125 ; dato~864  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -2.712     ; 8.988      ;
-; -13.111 ; dato~872  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -2.682     ; 9.004      ;
-; -13.105 ; dato~243  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -2.892     ; 8.795      ;
-; -13.103 ; dato~589  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -4.165     ; 7.802      ;
-; -13.092 ; dato~343  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -2.876     ; 8.798      ;
-; -13.085 ; dato~760  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.363     ; 8.297      ;
-; -13.081 ; dato~303  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -5.924     ; 5.739      ;
-; -13.076 ; dato~383  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.480     ; 8.178      ;
-; -13.076 ; dato~767  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.930     ; 7.728      ;
-; -13.073 ; dato~257  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -5.386     ; 6.551      ;
-; -13.068 ; dato~513  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -4.514     ; 7.418      ;
-; -13.057 ; dato~649  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -3.897     ; 8.024      ;
-; -13.049 ; dato~720  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.540     ; 8.084      ;
-; -13.042 ; dato~739  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.026     ; 8.598      ;
-; -13.034 ; dato~546  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -2.848     ; 8.768      ;
-; -13.028 ; dato~301  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -5.896     ; 5.996      ;
-; -13.023 ; dato~1019 ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.656     ; 7.949      ;
-; -13.022 ; dato~24   ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -4.544     ; 7.053      ;
-; -13.019 ; dato~656  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -3.809     ; 7.785      ;
-; -13.013 ; dato~944  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -2.181     ; 9.407      ;
-; -13.010 ; dato~610  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -3.906     ; 7.686      ;
-; -13.005 ; dato~351  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.574     ; 8.013      ;
-; -13.005 ; dato~609  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -3.776     ; 8.093      ;
-; -13.004 ; dato~923  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.863     ; 7.723      ;
-; -12.996 ; dato~67   ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -4.754     ; 6.824      ;
-; -12.992 ; dato~970  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -1.710     ; 9.864      ;
-; -12.992 ; dato~931  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.067     ; 8.507      ;
-; -12.992 ; dato~940  ; datoSalida[4]$latch ; en           ; en          ; 0.500        ; -2.082     ; 9.772      ;
-; -12.990 ; dato~993  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -2.502     ; 9.352      ;
-; -12.990 ; dato~577  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -3.782     ; 8.072      ;
-; -12.988 ; dato~964  ; datoSalida[4]$latch ; en           ; en          ; 0.500        ; -2.116     ; 9.734      ;
-; -12.979 ; dato~443  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.099     ; 8.462      ;
-; -12.959 ; dato~876  ; datoSalida[4]$latch ; en           ; en          ; 0.500        ; -3.369     ; 8.452      ;
-; -12.954 ; dato~535  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -3.732     ; 7.804      ;
-; -12.953 ; dato~835  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -3.130     ; 8.405      ;
-; -12.952 ; dato~1008 ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -2.227     ; 9.300      ;
-; -12.947 ; dato~915  ; datoSalida[3]$latch ; en           ; en          ; 0.500        ; -2.837     ; 8.692      ;
-; -12.945 ; dato~207  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -4.848     ; 6.679      ;
-; -12.943 ; dato~674  ; datoSalida[2]$latch ; en           ; en          ; 0.500        ; -2.761     ; 8.764      ;
-; -12.938 ; dato~775  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -2.974     ; 8.546      ;
-; -12.936 ; dato~661  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -2.824     ; 8.976      ;
-; -12.936 ; dato~836  ; datoSalida[4]$latch ; en           ; en          ; 0.500        ; -1.042     ; 10.756     ;
-; -12.924 ; dato~936  ; datoSalida[0]$latch ; en           ; en          ; 0.500        ; -2.707     ; 8.792      ;
-; -12.920 ; dato~197  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -4.260     ; 7.524      ;
-; -12.908 ; dato~311  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -5.930     ; 5.560      ;
-; -12.905 ; dato~623  ; datoSalida[7]$latch ; en           ; en          ; 0.500        ; -2.674     ; 8.813      ;
-; -12.904 ; dato~345  ; datoSalida[1]$latch ; en           ; en          ; 0.500        ; -3.562     ; 8.206      ;
-; -12.901 ; dato~229  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -4.045     ; 7.720      ;
-; -12.899 ; dato~157  ; datoSalida[5]$latch ; en           ; en          ; 0.500        ; -4.611     ; 7.152      ;
-; -12.888 ; dato~926  ; datoSalida[6]$latch ; en           ; en          ; 0.500        ; -2.422     ; 9.328      ;
-+---------+-----------+---------------------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'en'                                                                                                                       ;
++---------+-----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node             ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; -14.067 ; memoria:mem|dato~427  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.293     ; 9.670      ;
+; -13.915 ; memoria:mem|dato~876  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -3.857     ; 8.929      ;
+; -13.911 ; memoria:mem|dato~307  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -6.019     ; 6.788      ;
+; -13.864 ; memoria:mem|dato~1003 ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -5.497     ; 7.263      ;
+; -13.842 ; memoria:mem|dato~836  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -5.326     ; 7.387      ;
+; -13.837 ; memoria:mem|dato~677  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -3.424     ; 8.924      ;
+; -13.687 ; memoria:mem|dato~884  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -5.185     ; 7.373      ;
+; -13.678 ; memoria:mem|dato~259  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -6.184     ; 6.390      ;
+; -13.611 ; memoria:mem|dato~761  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -4.360     ; 7.841      ;
+; -13.585 ; memoria:mem|dato~688  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -4.580     ; 7.860      ;
+; -13.561 ; memoria:mem|dato~299  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -6.209     ; 6.248      ;
+; -13.536 ; memoria:mem|dato~429  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -5.315     ; 6.732      ;
+; -13.525 ; memoria:mem|dato~454  ; memoria:mem|datoSalida[6] ; en           ; en          ; 0.500        ; -2.989     ; 9.407      ;
+; -13.512 ; memoria:mem|dato~788  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.489     ; 7.894      ;
+; -13.505 ; memoria:mem|dato~908  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.213     ; 8.163      ;
+; -13.491 ; memoria:mem|dato~823  ; memoria:mem|datoSalida[7] ; en           ; en          ; 0.500        ; -4.406     ; 7.674      ;
+; -13.488 ; memoria:mem|dato~309  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -5.908     ; 6.091      ;
+; -13.484 ; memoria:mem|dato~390  ; memoria:mem|datoSalida[6] ; en           ; en          ; 0.500        ; -4.049     ; 8.306      ;
+; -13.470 ; memoria:mem|dato~860  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -5.209     ; 7.132      ;
+; -13.469 ; memoria:mem|dato~696  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -3.501     ; 8.823      ;
+; -13.463 ; memoria:mem|dato~306  ; memoria:mem|datoSalida[2] ; en           ; en          ; 0.500        ; -5.878     ; 6.160      ;
+; -13.445 ; memoria:mem|dato~596  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -3.375     ; 8.941      ;
+; -13.432 ; memoria:mem|dato~881  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -3.844     ; 8.178      ;
+; -13.414 ; memoria:mem|dato~449  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -2.984     ; 9.020      ;
+; -13.407 ; memoria:mem|dato~523  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.281     ; 9.022      ;
+; -13.403 ; memoria:mem|dato~547  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -4.480     ; 7.819      ;
+; -13.395 ; memoria:mem|dato~563  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.855     ; 8.436      ;
+; -13.370 ; memoria:mem|dato~675  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.592     ; 8.674      ;
+; -13.361 ; memoria:mem|dato~595  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.527     ; 8.730      ;
+; -13.334 ; memoria:mem|dato~816  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -5.791     ; 6.398      ;
+; -13.314 ; memoria:mem|dato~665  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -4.468     ; 7.436      ;
+; -13.310 ; memoria:mem|dato~568  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -5.120     ; 7.045      ;
+; -13.308 ; memoria:mem|dato~571  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -4.348     ; 7.856      ;
+; -13.304 ; memoria:mem|dato~868  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.975     ; 7.200      ;
+; -13.275 ; memoria:mem|dato~301  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -5.904     ; 5.882      ;
+; -13.274 ; memoria:mem|dato~331  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -4.192     ; 7.978      ;
+; -13.248 ; memoria:mem|dato~587  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -4.927     ; 7.217      ;
+; -13.231 ; memoria:mem|dato~555  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.135     ; 8.992      ;
+; -13.223 ; memoria:mem|dato~940  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -3.970     ; 8.124      ;
+; -13.223 ; memoria:mem|dato~351  ; memoria:mem|datoSalida[7] ; en           ; en          ; 0.500        ; -3.626     ; 8.186      ;
+; -13.187 ; memoria:mem|dato~411  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.667     ; 8.416      ;
+; -13.180 ; memoria:mem|dato~554  ; memoria:mem|datoSalida[2] ; en           ; en          ; 0.500        ; -5.056     ; 6.699      ;
+; -13.171 ; memoria:mem|dato~1019 ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -4.847     ; 7.220      ;
+; -13.168 ; memoria:mem|dato~556  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.286     ; 7.753      ;
+; -13.164 ; memoria:mem|dato~812  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.828     ; 7.207      ;
+; -13.158 ; memoria:mem|dato~195  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -1.436     ; 10.618     ;
+; -13.152 ; memoria:mem|dato~539  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.285     ; 8.763      ;
+; -13.142 ; memoria:mem|dato~572  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -3.595     ; 8.418      ;
+; -13.133 ; memoria:mem|dato~856  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -4.220     ; 7.768      ;
+; -13.125 ; memoria:mem|dato~459  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.560     ; 8.461      ;
+; -13.123 ; memoria:mem|dato~517  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -3.497     ; 8.137      ;
+; -13.109 ; memoria:mem|dato~583  ; memoria:mem|datoSalida[7] ; en           ; en          ; 0.500        ; -4.631     ; 7.067      ;
+; -13.100 ; memoria:mem|dato~1004 ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.059     ; 7.912      ;
+; -13.078 ; memoria:mem|dato~685  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -3.616     ; 7.973      ;
+; -13.073 ; memoria:mem|dato~557  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -5.046     ; 6.538      ;
+; -13.071 ; memoria:mem|dato~55   ; memoria:mem|datoSalida[7] ; en           ; en          ; 0.500        ; -1.740     ; 9.920      ;
+; -13.065 ; memoria:mem|dato~697  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -3.403     ; 8.252      ;
+; -13.060 ; memoria:mem|dato~709  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -3.180     ; 8.391      ;
+; -13.058 ; memoria:mem|dato~1001 ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -3.627     ; 8.021      ;
+; -13.057 ; memoria:mem|dato~486  ; memoria:mem|datoSalida[6] ; en           ; en          ; 0.500        ; -4.528     ; 7.400      ;
+; -13.056 ; memoria:mem|dato~873  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -3.859     ; 7.787      ;
+; -13.056 ; memoria:mem|dato~11   ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -1.683     ; 10.269     ;
+; -13.055 ; memoria:mem|dato~263  ; memoria:mem|datoSalida[7] ; en           ; en          ; 0.500        ; -6.039     ; 5.605      ;
+; -13.052 ; memoria:mem|dato~199  ; memoria:mem|datoSalida[7] ; en           ; en          ; 0.500        ; -1.041     ; 10.600     ;
+; -13.051 ; memoria:mem|dato~740  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.941     ; 6.981      ;
+; -13.046 ; memoria:mem|dato~531  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.349     ; 8.593      ;
+; -13.043 ; memoria:mem|dato~515  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.564     ; 8.375      ;
+; -13.041 ; memoria:mem|dato~892  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.821     ; 7.091      ;
+; -13.036 ; memoria:mem|dato~512  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -3.808     ; 8.083      ;
+; -13.035 ; memoria:mem|dato~536  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -3.132     ; 8.758      ;
+; -13.021 ; memoria:mem|dato~491  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.143     ; 8.774      ;
+; -13.020 ; memoria:mem|dato~261  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -6.040     ; 5.491      ;
+; -13.013 ; memoria:mem|dato~657  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -3.477     ; 8.126      ;
+; -13.013 ; memoria:mem|dato~809  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -4.606     ; 6.997      ;
+; -13.010 ; memoria:mem|dato~883  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.643     ; 8.263      ;
+; -13.001 ; memoria:mem|dato~310  ; memoria:mem|datoSalida[6] ; en           ; en          ; 0.500        ; -5.875     ; 5.997      ;
+; -12.999 ; memoria:mem|dato~573  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -4.864     ; 6.646      ;
+; -12.991 ; memoria:mem|dato~726  ; memoria:mem|datoSalida[6] ; en           ; en          ; 0.500        ; -4.841     ; 7.021      ;
+; -12.983 ; memoria:mem|dato~658  ; memoria:mem|datoSalida[2] ; en           ; en          ; 0.500        ; -4.860     ; 6.698      ;
+; -12.980 ; memoria:mem|dato~524  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -3.498     ; 8.353      ;
+; -12.978 ; memoria:mem|dato~944  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -4.377     ; 7.456      ;
+; -12.978 ; memoria:mem|dato~923  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.372     ; 8.502      ;
+; -12.978 ; memoria:mem|dato~953  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -3.823     ; 7.745      ;
+; -12.977 ; memoria:mem|dato~844  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -4.864     ; 6.984      ;
+; -12.966 ; memoria:mem|dato~603  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -3.123     ; 8.739      ;
+; -12.963 ; memoria:mem|dato~514  ; memoria:mem|datoSalida[2] ; en           ; en          ; 0.500        ; -4.085     ; 7.453      ;
+; -12.962 ; memoria:mem|dato~986  ; memoria:mem|datoSalida[2] ; en           ; en          ; 0.500        ; -4.109     ; 7.428      ;
+; -12.962 ; memoria:mem|dato~525  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -3.645     ; 7.828      ;
+; -12.959 ; memoria:mem|dato~1018 ; memoria:mem|datoSalida[2] ; en           ; en          ; 0.500        ; -4.259     ; 7.275      ;
+; -12.946 ; memoria:mem|dato~752  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -4.560     ; 7.241      ;
+; -12.940 ; memoria:mem|dato~912  ; memoria:mem|datoSalida[0] ; en           ; en          ; 0.500        ; -4.771     ; 7.024      ;
+; -12.931 ; memoria:mem|dato~820  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -5.368     ; 6.434      ;
+; -12.930 ; memoria:mem|dato~645  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -3.490     ; 7.951      ;
+; -12.929 ; memoria:mem|dato~972  ; memoria:mem|datoSalida[4] ; en           ; en          ; 0.500        ; -3.900     ; 7.900      ;
+; -12.928 ; memoria:mem|dato~1015 ; memoria:mem|datoSalida[7] ; en           ; en          ; 0.500        ; -2.894     ; 8.623      ;
+; -12.924 ; memoria:mem|dato~749  ; memoria:mem|datoSalida[5] ; en           ; en          ; 0.500        ; -3.592     ; 7.843      ;
+; -12.921 ; memoria:mem|dato~705  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -2.520     ; 8.991      ;
+; -12.912 ; memoria:mem|dato~913  ; memoria:mem|datoSalida[1] ; en           ; en          ; 0.500        ; -4.626     ; 6.876      ;
+; -12.904 ; memoria:mem|dato~875  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -5.211     ; 6.589      ;
+; -12.902 ; memoria:mem|dato~995  ; memoria:mem|datoSalida[3] ; en           ; en          ; 0.500        ; -5.622     ; 6.176      ;
++---------+-----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Hold: 'en'                                                                                                    ;
-+-------+-----------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------+---------------------+--------------+-------------+--------------+------------+------------+
-; 7.025 ; dato~490  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -0.750     ; 5.775      ;
-; 8.268 ; dato~470  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.595     ; 5.173      ;
-; 8.301 ; dato~312  ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.729     ; 5.072      ;
-; 8.366 ; dato~110  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.091     ; 5.775      ;
-; 8.482 ; dato~314  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -2.741     ; 5.241      ;
-; 8.547 ; dato~45   ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -2.274     ; 5.773      ;
-; 8.561 ; dato~457  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -0.785     ; 7.276      ;
-; 8.616 ; dato~319  ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -2.356     ; 5.760      ;
-; 8.643 ; dato~489  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -1.138     ; 7.005      ;
-; 8.701 ; dato~748  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.543     ; 5.658      ;
-; 8.781 ; dato~488  ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.120     ; 6.161      ;
-; 8.789 ; dato~315  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -3.065     ; 5.224      ;
-; 8.792 ; dato~252  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.944     ; 5.348      ;
-; 8.920 ; dato~456  ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.148     ; 6.272      ;
-; 9.006 ; dato~747  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.615     ; 5.891      ;
-; 9.016 ; dato~779  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.220     ; 6.296      ;
-; 9.035 ; dato~109  ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -3.390     ; 5.145      ;
-; 9.060 ; dato~436  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -3.236     ; 5.324      ;
-; 9.102 ; dato~313  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -3.067     ; 5.535      ;
-; 9.127 ; dato~571  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.603     ; 6.024      ;
-; 9.160 ; dato~425  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -1.821     ; 6.839      ;
-; 9.181 ; dato~105  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -2.738     ; 5.943      ;
-; 9.184 ; dato~39   ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -2.192     ; 6.492      ;
-; 9.189 ; dato~393  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -2.043     ; 6.646      ;
-; 9.243 ; dato~174  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.544     ; 6.199      ;
-; 9.288 ; dato~402  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -2.749     ; 6.039      ;
-; 9.290 ; dato~469  ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -2.388     ; 6.402      ;
-; 9.309 ; dato~318  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.738     ; 6.071      ;
-; 9.335 ; dato~974  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.382     ; 6.453      ;
-; 9.339 ; dato~37   ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -2.164     ; 6.675      ;
-; 9.342 ; dato~22   ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.112     ; 6.730      ;
-; 9.355 ; dato~434  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -1.718     ; 7.137      ;
-; 9.363 ; dato~384  ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.485     ; 6.378      ;
-; 9.376 ; dato~80   ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.261     ; 6.615      ;
-; 9.405 ; dato~388  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -1.544     ; 7.361      ;
-; 9.420 ; dato~500  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.617     ; 6.303      ;
-; 9.431 ; dato~130  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -3.734     ; 5.197      ;
-; 9.432 ; dato~19   ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.102     ; 6.830      ;
-; 9.435 ; dato~36   ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.821     ; 6.114      ;
-; 9.437 ; dato~494  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.775     ; 6.162      ;
-; 9.437 ; dato~462  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.461     ; 6.476      ;
-; 9.441 ; dato~795  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.812     ; 6.129      ;
-; 9.463 ; dato~57   ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -2.146     ; 6.817      ;
-; 9.478 ; dato~79   ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -2.786     ; 6.192      ;
-; 9.488 ; dato~178  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -3.212     ; 5.776      ;
-; 9.491 ; dato~493  ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -1.112     ; 7.879      ;
-; 9.519 ; dato~573  ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -1.948     ; 7.071      ;
-; 9.525 ; dato~525  ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -2.308     ; 6.717      ;
-; 9.527 ; dato~476  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.887     ; 6.140      ;
-; 9.534 ; dato~827  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.912     ; 6.122      ;
-; 9.569 ; dato~47   ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -4.077     ; 4.992      ;
-; 9.577 ; dato~176  ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.267     ; 6.810      ;
-; 9.579 ; dato~820  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -3.231     ; 5.848      ;
-; 9.588 ; dato~254  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.945     ; 6.143      ;
-; 9.616 ; dato~65   ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -2.923     ; 6.193      ;
-; 9.627 ; dato~759  ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -1.678     ; 7.449      ;
-; 9.627 ; dato~81   ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -2.926     ; 6.201      ;
-; 9.632 ; dato~38   ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -1.817     ; 7.315      ;
-; 9.653 ; dato~23   ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -3.704     ; 5.449      ;
-; 9.666 ; dato~754  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -3.063     ; 6.103      ;
-; 9.672 ; dato~843  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -1.835     ; 7.337      ;
-; 9.674 ; dato~487  ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -1.811     ; 7.363      ;
-; 9.680 ; dato~43   ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.956     ; 6.224      ;
-; 9.689 ; dato~598  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.614     ; 6.575      ;
-; 9.690 ; dato~6    ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -3.708     ; 5.482      ;
-; 9.696 ; dato~460  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.199     ; 6.997      ;
-; 9.710 ; dato~366  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -4.183     ; 5.027      ;
-; 9.721 ; dato~236  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -3.224     ; 5.997      ;
-; 9.723 ; dato~238  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.242     ; 6.981      ;
-; 9.727 ; dato~182  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -3.218     ; 6.009      ;
-; 9.730 ; dato~453  ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -2.620     ; 6.610      ;
-; 9.731 ; dato~465  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -1.557     ; 7.674      ;
-; 9.734 ; dato~106  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -3.410     ; 5.824      ;
-; 9.736 ; dato~492  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.444     ; 6.792      ;
-; 9.740 ; dato~966  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.115     ; 7.125      ;
-; 9.750 ; dato~188  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.570     ; 6.680      ;
-; 9.761 ; dato~424  ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.959     ; 6.302      ;
-; 9.762 ; dato~1013 ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -2.207     ; 7.055      ;
-; 9.788 ; dato~392  ; datoSalida[0]$latch ; en           ; en          ; -0.500       ; -2.708     ; 6.580      ;
-; 9.791 ; dato~570  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -3.647     ; 5.644      ;
-; 9.796 ; dato~146  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -3.558     ; 5.738      ;
-; 9.802 ; dato~783  ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -2.241     ; 7.061      ;
-; 9.810 ; dato~294  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -3.287     ; 6.023      ;
-; 9.833 ; dato~484  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -3.683     ; 5.650      ;
-; 9.840 ; dato~230  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.332     ; 7.008      ;
-; 9.842 ; dato~471  ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -2.861     ; 6.481      ;
-; 9.843 ; dato~149  ; datoSalida[5]$latch ; en           ; en          ; -0.500       ; -2.211     ; 7.132      ;
-; 9.847 ; dato~430  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -3.073     ; 6.274      ;
-; 9.849 ; dato~199  ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -3.190     ; 6.159      ;
-; 9.850 ; dato~426  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -1.417     ; 7.933      ;
-; 9.854 ; dato~787  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -3.252     ; 6.102      ;
-; 9.858 ; dato~491  ; datoSalida[3]$latch ; en           ; en          ; -0.500       ; -2.434     ; 6.924      ;
-; 9.866 ; dato~910  ; datoSalida[6]$latch ; en           ; en          ; -0.500       ; -2.347     ; 7.019      ;
-; 9.869 ; dato~652  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -1.722     ; 7.647      ;
-; 9.870 ; dato~33   ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -3.106     ; 6.264      ;
-; 9.886 ; dato~897  ; datoSalida[1]$latch ; en           ; en          ; -0.500       ; -2.168     ; 7.218      ;
-; 9.891 ; dato~404  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -2.742     ; 6.649      ;
-; 9.905 ; dato~834  ; datoSalida[2]$latch ; en           ; en          ; -0.500       ; -2.376     ; 7.029      ;
-; 9.911 ; dato~452  ; datoSalida[4]$latch ; en           ; en          ; -0.500       ; -3.490     ; 5.921      ;
-; 9.914 ; dato~87   ; datoSalida[7]$latch ; en           ; en          ; -0.500       ; -3.468     ; 5.946      ;
-+-------+-----------+---------------------+--------------+-------------+--------------+------------+------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'en'                                                                                                                     ;
++-------+----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; 7.698 ; memoria:mem|dato~898 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -2.077     ; 5.121      ;
+; 7.733 ; memoria:mem|dato~228 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.033     ; 7.200      ;
+; 7.887 ; memoria:mem|dato~466 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -1.170     ; 6.217      ;
+; 8.243 ; memoria:mem|dato~983 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -2.514     ; 5.229      ;
+; 8.317 ; memoria:mem|dato~25  ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; 0.019      ; 7.836      ;
+; 8.321 ; memoria:mem|dato~122 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -0.447     ; 7.374      ;
+; 8.420 ; memoria:mem|dato~468 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -1.955     ; 5.965      ;
+; 8.459 ; memoria:mem|dato~205 ; memoria:mem|datoSalida[5] ; en           ; en          ; -0.500       ; 0.020      ; 7.979      ;
+; 8.459 ; memoria:mem|dato~49  ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.493     ; 7.466      ;
+; 8.460 ; memoria:mem|dato~234 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; 0.378      ; 8.338      ;
+; 8.575 ; memoria:mem|dato~82  ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -0.448     ; 7.627      ;
+; 8.636 ; memoria:mem|dato~230 ; memoria:mem|datoSalida[6] ; en           ; en          ; -0.500       ; 0.994      ; 9.130      ;
+; 8.654 ; memoria:mem|dato~402 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -2.184     ; 5.970      ;
+; 8.660 ; memoria:mem|dato~471 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -0.751     ; 7.409      ;
+; 8.660 ; memoria:mem|dato~404 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -1.932     ; 6.228      ;
+; 8.700 ; memoria:mem|dato~252 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.055     ; 8.145      ;
+; 8.756 ; memoria:mem|dato~140 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.734     ; 7.522      ;
+; 8.784 ; memoria:mem|dato~233 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.277     ; 8.007      ;
+; 8.809 ; memoria:mem|dato~33  ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.864     ; 7.445      ;
+; 8.827 ; memoria:mem|dato~9   ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.383     ; 7.944      ;
+; 8.850 ; memoria:mem|dato~201 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.400     ; 7.950      ;
+; 8.855 ; memoria:mem|dato~220 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.387     ; 7.968      ;
+; 8.857 ; memoria:mem|dato~204 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.399     ; 7.958      ;
+; 8.901 ; memoria:mem|dato~465 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -1.155     ; 7.246      ;
+; 8.915 ; memoria:mem|dato~121 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -1.382     ; 7.033      ;
+; 8.921 ; memoria:mem|dato~123 ; memoria:mem|datoSalida[3] ; en           ; en          ; -0.500       ; -0.201     ; 8.220      ;
+; 8.927 ; memoria:mem|dato~463 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -3.366     ; 5.061      ;
+; 8.930 ; memoria:mem|dato~272 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -1.782     ; 6.648      ;
+; 8.991 ; memoria:mem|dato~196 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.005     ; 8.486      ;
+; 8.995 ; memoria:mem|dato~408 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.717     ; 5.778      ;
+; 9.024 ; memoria:mem|dato~236 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.271     ; 8.253      ;
+; 9.035 ; memoria:mem|dato~161 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; 0.044      ; 8.579      ;
+; 9.065 ; memoria:mem|dato~896 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -1.928     ; 6.637      ;
+; 9.074 ; memoria:mem|dato~156 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.649     ; 7.925      ;
+; 9.090 ; memoria:mem|dato~500 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -1.616     ; 6.974      ;
+; 9.118 ; memoria:mem|dato~90  ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -0.427     ; 8.191      ;
+; 9.124 ; memoria:mem|dato~202 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -0.415     ; 8.209      ;
+; 9.130 ; memoria:mem|dato~24  ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -0.402     ; 8.228      ;
+; 9.152 ; memoria:mem|dato~57  ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; 0.084      ; 8.736      ;
+; 9.157 ; memoria:mem|dato~231 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; 0.625      ; 9.282      ;
+; 9.159 ; memoria:mem|dato~178 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -0.676     ; 7.983      ;
+; 9.166 ; memoria:mem|dato~265 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -3.925     ; 4.741      ;
+; 9.174 ; memoria:mem|dato~797 ; memoria:mem|datoSalida[5] ; en           ; en          ; -0.500       ; -3.508     ; 5.166      ;
+; 9.186 ; memoria:mem|dato~464 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.183     ; 6.503      ;
+; 9.206 ; memoria:mem|dato~1   ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.399     ; 8.307      ;
+; 9.209 ; memoria:mem|dato~273 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -3.079     ; 5.630      ;
+; 9.224 ; memoria:mem|dato~698 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -2.301     ; 6.423      ;
+; 9.242 ; memoria:mem|dato~416 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -3.599     ; 5.143      ;
+; 9.245 ; memoria:mem|dato~98  ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -0.446     ; 8.299      ;
+; 9.249 ; memoria:mem|dato~56  ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; 0.076      ; 8.825      ;
+; 9.273 ; memoria:mem|dato~72  ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -1.658     ; 7.115      ;
+; 9.293 ; memoria:mem|dato~58  ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; 0.468      ; 9.261      ;
+; 9.298 ; memoria:mem|dato~472 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.372     ; 6.426      ;
+; 9.319 ; memoria:mem|dato~104 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -0.883     ; 7.936      ;
+; 9.322 ; memoria:mem|dato~60  ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; 0.080      ; 8.902      ;
+; 9.328 ; memoria:mem|dato~127 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -0.431     ; 8.397      ;
+; 9.331 ; memoria:mem|dato~962 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -1.977     ; 6.854      ;
+; 9.333 ; memoria:mem|dato~497 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -1.610     ; 7.223      ;
+; 9.340 ; memoria:mem|dato~377 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -2.854     ; 5.986      ;
+; 9.341 ; memoria:mem|dato~41  ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.806     ; 8.035      ;
+; 9.348 ; memoria:mem|dato~606 ; memoria:mem|datoSalida[6] ; en           ; en          ; -0.500       ; -2.608     ; 6.240      ;
+; 9.350 ; memoria:mem|dato~295 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -2.641     ; 6.209      ;
+; 9.354 ; memoria:mem|dato~32  ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.430     ; 6.424      ;
+; 9.364 ; memoria:mem|dato~456 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.945     ; 5.919      ;
+; 9.372 ; memoria:mem|dato~164 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.368     ; 8.504      ;
+; 9.372 ; memoria:mem|dato~504 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.712     ; 6.160      ;
+; 9.376 ; memoria:mem|dato~689 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -2.525     ; 6.351      ;
+; 9.378 ; memoria:mem|dato~783 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -3.078     ; 5.800      ;
+; 9.384 ; memoria:mem|dato~266 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -2.527     ; 6.357      ;
+; 9.393 ; memoria:mem|dato~799 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -3.439     ; 5.454      ;
+; 9.398 ; memoria:mem|dato~488 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.604     ; 6.294      ;
+; 9.402 ; memoria:mem|dato~794 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -4.003     ; 4.899      ;
+; 9.403 ; memoria:mem|dato~384 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -3.783     ; 5.120      ;
+; 9.413 ; memoria:mem|dato~289 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -3.398     ; 5.515      ;
+; 9.431 ; memoria:mem|dato~20  ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.039     ; 8.892      ;
+; 9.455 ; memoria:mem|dato~826 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -4.183     ; 4.772      ;
+; 9.458 ; memoria:mem|dato~48  ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -1.876     ; 7.082      ;
+; 9.460 ; memoria:mem|dato~249 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.048     ; 8.912      ;
+; 9.467 ; memoria:mem|dato~17  ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.040     ; 8.927      ;
+; 9.470 ; memoria:mem|dato~639 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -2.736     ; 6.234      ;
+; 9.471 ; memoria:mem|dato~375 ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -3.214     ; 5.757      ;
+; 9.472 ; memoria:mem|dato~730 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -2.645     ; 6.327      ;
+; 9.480 ; memoria:mem|dato~105 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; 0.405      ; 9.385      ;
+; 9.482 ; memoria:mem|dato~176 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -0.664     ; 8.318      ;
+; 9.509 ; memoria:mem|dato~87  ; memoria:mem|datoSalida[7] ; en           ; en          ; -0.500       ; -1.128     ; 7.881      ;
+; 9.511 ; memoria:mem|dato~280 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.591     ; 6.420      ;
+; 9.524 ; memoria:mem|dato~589 ; memoria:mem|datoSalida[5] ; en           ; en          ; -0.500       ; -3.257     ; 5.767      ;
+; 9.524 ; memoria:mem|dato~114 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -0.804     ; 8.220      ;
+; 9.525 ; memoria:mem|dato~16  ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -0.040     ; 8.985      ;
+; 9.531 ; memoria:mem|dato~240 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -1.269     ; 7.762      ;
+; 9.537 ; memoria:mem|dato~498 ; memoria:mem|datoSalida[2] ; en           ; en          ; -0.500       ; -1.186     ; 7.851      ;
+; 9.537 ; memoria:mem|dato~88  ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -1.687     ; 7.350      ;
+; 9.540 ; memoria:mem|dato~65  ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -0.348     ; 8.692      ;
+; 9.542 ; memoria:mem|dato~400 ; memoria:mem|datoSalida[0] ; en           ; en          ; -0.500       ; -2.329     ; 6.713      ;
+; 9.554 ; memoria:mem|dato~188 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.363     ; 8.691      ;
+; 9.555 ; memoria:mem|dato~534 ; memoria:mem|datoSalida[6] ; en           ; en          ; -0.500       ; -2.141     ; 6.914      ;
+; 9.562 ; memoria:mem|dato~590 ; memoria:mem|datoSalida[6] ; en           ; en          ; -0.500       ; -3.365     ; 5.697      ;
+; 9.565 ; memoria:mem|dato~281 ; memoria:mem|datoSalida[1] ; en           ; en          ; -0.500       ; -2.589     ; 6.476      ;
+; 9.568 ; memoria:mem|dato~284 ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -4.314     ; 4.754      ;
+; 9.577 ; memoria:mem|dato~84  ; memoria:mem|datoSalida[4] ; en           ; en          ; -0.500       ; -0.434     ; 8.643      ;
++-------+----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
 +-------------------------------------------------------------------+
@@ -389,18 +389,18 @@ No dedicated SERDES Transmitter circuitry present in device or used in design
 No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
 
 
-+------------------------------------------------+
-; Unconstrained Paths Summary                    ;
-+---------------------------------+-------+------+
-; Property                        ; Setup ; Hold ;
-+---------------------------------+-------+------+
-; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 15    ; 15   ;
-; Unconstrained Input Port Paths  ; 1080  ; 1080 ;
-; Unconstrained Output Ports      ; 8     ; 8    ;
-; Unconstrained Output Port Paths ; 8     ; 8    ;
-+---------------------------------+-------+------+
++-------------------------------------------------+
+; Unconstrained Paths Summary                     ;
++---------------------------------+-------+-------+
+; Property                        ; Setup ; Hold  ;
++---------------------------------+-------+-------+
+; Illegal Clocks                  ; 0     ; 0     ;
+; Unconstrained Clocks            ; 0     ; 0     ;
+; Unconstrained Input Ports       ; 19    ; 19    ;
+; Unconstrained Input Port Paths  ; 19531 ; 19531 ;
+; Unconstrained Output Ports      ; 9     ; 9     ;
+; Unconstrained Output Port Paths ; 27    ; 27    ;
++---------------------------------+-------+-------+
 
 
 +-------------------------------------+
@@ -412,27 +412,31 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------+-------+------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                             ;
-+----------------+--------------------------------------------------------------------------------------+
-; Input Port     ; Comment                                                                              ;
-+----------------+--------------------------------------------------------------------------------------+
-; datoEntrada[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[0]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[1]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[2]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[3]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[4]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[5]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[6]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+----------------+--------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; a[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -448,30 +452,35 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; datoSalida[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; datoSalida[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; datoSalida[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; zeroFlag      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +---------------+---------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                             ;
-+----------------+--------------------------------------------------------------------------------------+
-; Input Port     ; Comment                                                                              ;
-+----------------+--------------------------------------------------------------------------------------+
-; datoEntrada[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoEntrada[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[0]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[1]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[2]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[3]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[4]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[5]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dir[6]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+----------------+--------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; a[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -487,6 +496,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; datoSalida[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; datoSalida[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; datoSalida[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; zeroFlag      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +---------------+---------------------------------------------------------------------------------------+
 
 
@@ -496,7 +506,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Mar  1 16:46:57 2020
+    Info: Processing started: Mon Mar  2 08:06:10 2020
 Info: Command: quartus_sta actividad06 -c actividad06
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -511,14 +521,14 @@ Info (332105): Deriving Clocks
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -14.299
+Info (332146): Worst-case setup slack is -14.067
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -14.299            -109.279 en 
-Info (332146): Worst-case hold slack is 7.025
+    Info (332119):   -14.067            -109.494 en 
+Info (332146): Worst-case hold slack is 7.698
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.025               0.000 en 
+    Info (332119):     7.698               0.000 en 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
@@ -529,9 +539,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 747 megabytes
-    Info: Processing ended: Sun Mar  1 16:47:02 2020
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 756 megabytes
+    Info: Processing ended: Mon Mar  2 08:06:16 2020
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 

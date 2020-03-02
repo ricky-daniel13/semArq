@@ -8,47 +8,92 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/jorozco/Documentos/semArq/actividad06/simulation/modelsim
-vmemoria
-!s110 1583102924
+vactividad06
+Z1 !s110 1583157994
 !i10b 1
-!s100 M:ACO5Ki6IIImCBWl=ME<1
-I>5E?hXz9_SG4glRf98R7H0
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s100 FTcaoSRaJEn9<DZXJ;<QY1
+IW;<<KaI<oQK=ZbidP<TgE3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1583102765
+w1583157919
+8/home/jorozco/Documentos/semArq/actividad06/actividad06.v
+F/home/jorozco/Documentos/semArq/actividad06/actividad06.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1583157994.000000
+!s107 /home/jorozco/Documentos/semArq/actividad06/actividad06.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/actividad06.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad06
+Z7 tCvgOpt 0
+vALU
+R1
+!i10b 1
+!s100 oVVTml;;?YhheJPEHBYOW1
+I5j1=Z5O_H94LDP]3kH@H]0
+R2
+R0
+w1583098439
+8/home/jorozco/Documentos/semArq/actividad06/ALU.v
+F/home/jorozco/Documentos/semArq/actividad06/ALU.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad06/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/ALU.v|
+!i113 1
+R5
+R6
+R7
+n@a@l@u
+vmemoria
+R1
+!i10b 1
+!s100 86DRCNRHMSnCz:igJXfRI1
+IY2Q]G1]2Z`<?em>AAg^3Y2
+R2
+R0
+w1583155385
 8/home/jorozco/Documentos/semArq/actividad06/memoria.v
 F/home/jorozco/Documentos/semArq/actividad06/memoria.v
 L0 1
-Z2 OV;L;10.5b;63
+R3
 r1
 !s85 0
 31
-!s108 1583102924.000000
+R4
 !s107 /home/jorozco/Documentos/semArq/actividad06/memoria.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/memoria.v|
 !i113 1
-Z3 o-vlog01compat -work work
-Z4 !s92 -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad06
-Z5 tCvgOpt 0
+R5
+R6
+R7
 vmemoria_tb
-!s110 1583102925
-!i10b 1
-!s100 C_J<>EeU@W93NWEnIW>TS1
-I2WXkf>QkzCgTic77GPScZ1
 R1
+!i10b 1
+!s100 TYb5e^aR0iV01]A?FX@3B3
+I?B4lz0I3NVGO^n[=bjmHl3
+R2
 R0
-w1583102913
+w1583156576
 8/home/jorozco/Documentos/semArq/actividad06/memoria_tb.v
 F/home/jorozco/Documentos/semArq/actividad06/memoria_tb.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1583102925.000000
+R4
 !s107 /home/jorozco/Documentos/semArq/actividad06/memoria_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/memoria_tb.v|
 !i113 1
-R3
-R4
 R5
+R6
+R7

@@ -2,7 +2,7 @@ module memoria(
 	input 
 		en,
 		clk,
-	input [6:0]dir,
+	input [7:0]dir,
 	input [7:0]datoEntrada,
 	output reg [7:0]datoSalida
 );

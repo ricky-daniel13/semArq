@@ -6,6 +6,8 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad06 {/home/jorozco/Documentos/semArq/actividad06/memoria.v}
+vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad06 {/home/jorozco/Documentos/semArq/actividad06/actividad06.v}
+vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad06 {/home/jorozco/Documentos/semArq/actividad06/ALU.v}
 
 vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad06 {/home/jorozco/Documentos/semArq/actividad06/memoria_tb.v}
 
