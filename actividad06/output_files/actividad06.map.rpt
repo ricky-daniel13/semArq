@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad06
-Mon Mar  2 08:05:38 2020
+Mon Mar  2 10:06:52 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Mar  2 08:05:38 2020       ;
+; Analysis & Synthesis Status ; Successful - Mon Mar  2 10:06:52 2020       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; actividad06                                 ;
 ; Top-level Entity Name       ; actividad06                                 ;
@@ -453,7 +453,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Mar  2 08:05:21 2020
+    Info: Processing started: Mon Mar  2 10:06:34 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad06 -c actividad06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -466,6 +466,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file memoria
     Info (12023): Found entity 1: memoria_tb File: /home/jorozco/Documentos/semArq/actividad06/memoria_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file actividad06.v
     Info (12023): Found entity 1: actividad06 File: /home/jorozco/Documentos/semArq/actividad06/actividad06.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file actividad06_tb.v
+    Info (12023): Found entity 1: actividad06_v File: /home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v Line: 1
 Info (12127): Elaborating entity "actividad06" for the top level hierarchy
 Warning (12125): Using design file ALU.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: ALU File: /home/jorozco/Documentos/semArq/actividad06/ALU.v Line: 1
@@ -2614,8 +2616,8 @@ Info (21057): Implemented 2086 device resources after synthesis - the final reso
     Info (21061): Implemented 2056 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2086 warnings
     Info: Peak virtual memory: 936 megabytes
-    Info: Processing ended: Mon Mar  2 08:05:38 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Processing ended: Mon Mar  2 10:06:52 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:36
 
 

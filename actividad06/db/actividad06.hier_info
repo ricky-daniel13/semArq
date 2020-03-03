@@ -20,15 +20,15 @@ sel[1] => sel[1].IN1
 sel[2] => sel[2].IN1
 en => en.IN1
 clk => clk.IN1
-datoSalida[0] <= memoria:mem.datoSalida
-datoSalida[1] <= memoria:mem.datoSalida
-datoSalida[2] <= memoria:mem.datoSalida
-datoSalida[3] <= memoria:mem.datoSalida
-datoSalida[4] <= memoria:mem.datoSalida
-datoSalida[5] <= memoria:mem.datoSalida
-datoSalida[6] <= memoria:mem.datoSalida
-datoSalida[7] <= memoria:mem.datoSalida
-zeroFlag <= ALU:alu.zeroFlag
+datoSalida[0] << memoria:mem.datoSalida
+datoSalida[1] << memoria:mem.datoSalida
+datoSalida[2] << memoria:mem.datoSalida
+datoSalida[3] << memoria:mem.datoSalida
+datoSalida[4] << memoria:mem.datoSalida
+datoSalida[5] << memoria:mem.datoSalida
+datoSalida[6] << memoria:mem.datoSalida
+datoSalida[7] << memoria:mem.datoSalida
+zeroFlag << ALU:alu.zeroFlag
 
 
 |actividad06|ALU:alu

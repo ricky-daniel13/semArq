@@ -1,5 +1,5 @@
 EDA Netlist Writer report for actividad06
-Mon Mar  2 08:06:19 2020
+Mon Mar  2 10:07:26 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Mar  2 08:06:19 2020 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar  2 10:07:26 2020 ;
 ; Revision Name             ; actividad06                           ;
 ; Top-level Entity Name     ; actividad06                           ;
 ; Family                    ; MAX V                                 ;
@@ -81,14 +81,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Mar  2 08:06:17 2020
+    Info: Processing started: Mon Mar  2 10:07:25 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off actividad06 -c actividad06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file actividad06.vo in folder "/home/jorozco/Documentos/semArq/actividad06/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1043 megabytes
-    Info: Processing ended: Mon Mar  2 08:06:19 2020
+    Info: Peak virtual memory: 1041 megabytes
+    Info: Processing ended: Mon Mar  2 10:07:27 2020
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

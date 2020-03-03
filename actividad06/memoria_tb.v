@@ -1,7 +1,6 @@
 `timescale 1ns/1ns
 
 module memoria_tb();
-clk = 0;
 reg 
 	en,
 	clk = 1'b0;

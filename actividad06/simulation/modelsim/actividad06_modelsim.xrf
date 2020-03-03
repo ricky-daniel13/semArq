@@ -4,6 +4,7 @@ source_file = 1, /home/jorozco/Documentos/semArq/actividad06/ALU_tb.v
 source_file = 1, /home/jorozco/Documentos/semArq/actividad06/memoria.v
 source_file = 1, /home/jorozco/Documentos/semArq/actividad06/memoria_tb.v
 source_file = 1, /home/jorozco/Documentos/semArq/actividad06/actividad06.v
+source_file = 1, /home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v
 source_file = 1, /home/jorozco/Documentos/semArq/actividad06/ALU.v
 source_file = 1, /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf
 source_file = 1, /home/jorozco/intelFPGA_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc
