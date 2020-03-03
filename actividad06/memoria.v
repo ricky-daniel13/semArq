@@ -7,7 +7,7 @@ module memoria(
 	output reg [7:0]datoSalida
 );
 reg [7:0] dato [0:127];
-always @*
+always @(posedge clk)
 begin
 	if(en)	//enable en 1 = escritura
 	begin

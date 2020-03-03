@@ -21,10 +21,13 @@ actividad06 act(
 	.datoSalida(datoSalida)
 );
 
-always #10
+always #5
 begin
 	clk = !clk;
-	b = b+8'd1;
+	if(clk)
+	begin
+		b = b+8'd1;
+	end
 end
 
 initial
@@ -68,7 +71,8 @@ begin
 	#10;
 	a = 8'd57 - b;	// 9
 	#10;
-	#10;				//9
+	a = 8'd57 - b;	// 9
+	#10;
 	a = 8'd32 - b;	// espacio
 	#10;
 	a = 8'd79 - b;		//O
