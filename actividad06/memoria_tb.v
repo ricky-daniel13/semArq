@@ -6,15 +6,15 @@ reg
 	clk = 1'b0;
 reg [7:0]
 	dir,
-	datoEntrada;
-wire [7:0]datoSalida;
+	dataIn;
+wire [7:0]dataOut;
 
 memoria mem(
 	.en(en),
 	.clk(clk),
 	.dir(dir),
-	.datoEntrada(datoEntrada),
-	.datoSalida(datoSalida)
+	.dataIn(dataIn),
+	.dataOut(dataOut)
 );
 
 always #10 
@@ -25,7 +25,7 @@ end
 initial
 begin
 	en = 1'b1;
-	datoEntrada = 8'd73;
+	dataIn = 8'd73;
 	dir = 8'b0;
 	#10;
 	en = 1'b0;

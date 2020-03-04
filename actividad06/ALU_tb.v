@@ -15,37 +15,37 @@ ALU alu(
 );
 initial
 begin
-	//prueba 1 suma
+	//test 1 sum
 	a = 8'd4;
 	b = 8'd100;
 	sel = 3'b000;
 	#10;
-	//prueba 2 resta
+	//test 2 substraction
 	a = 8'd10;
 	b = 8'd10;
 	sel = 3'b001;
 	#10;
-	//prueba 3 multiplicacion
+	//test 3 multiplication
 	a = 8'd20;
 	b = 8'd10;
 	sel = 3'b010;
 	#10;
-	//prueba 4 division
+	//test 4 division
 	a = 8'd100;
 	b = 8'd2;
 	sel = 3'b011;
 	#10;
-	//prueba 5 AND
+	//test 5 AND
 	a = 8'd122;
 	b = 8'd100;
 	sel = 3'b100;
 	#10;
-	//prueba 6 OR
+	//test 6 OR
 	a = 8'd232;
 	b = 8'd111;
 	sel = 3'b101;
 	#10;
-	//prueba 7 NAND
+	//test 7 NAND
 	a = 8'd122;
 	b = 8'd100;
 	sel = 3'b110;

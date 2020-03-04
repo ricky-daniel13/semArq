@@ -10,19 +10,19 @@ always @*
 begin
 	zeroFlag = 1'b0;
 	case(sel)
-		3'b000:	//Seleccion Suma
+		3'b000:	// Sum
 			res = a+b;
-		3'b001:	//Seleccion Resta
+		3'b001:	// Substraction
 			res = a-b;
-		3'b010:	//Seleccion Multiplicacion
+		3'b010:	// Multiplication
 			res = a*b;
-		3'b011:	//Seleccion Division
+		3'b011:	// Division
 			res = a/b;
-		3'b100:	//Seleccion AND
+		3'b100:	// AND
 			res = a&b;
-		3'b101:	//Seleccion OR
+		3'b101:	// OR
 			res = a|b;
-		3'b110:	//Seleccion NAND
+		3'b110:	// NAND
 			res = ~(a&b);
 		default:
 			res = 8'b0;

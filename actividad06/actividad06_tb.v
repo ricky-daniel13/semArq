@@ -8,7 +8,7 @@ reg [2:0]sel;
 reg
 	en,
 	clk = 1'b0;
-wire [7:0]datoSalida;
+wire [7:0]dataOut;
 wire zeroFlag;
 
 actividad06 act(
@@ -18,7 +18,7 @@ actividad06 act(
 	.zeroFlag(zeroFlag),
 	.en(en),
 	.clk(clk),
-	.datoSalida(datoSalida)
+	.dataOut(dataOut)
 );
 
 always #5
@@ -32,7 +32,7 @@ end
 
 initial
 begin
-	//Pruebas Escritura
+	//Write test
 	a = 8'd74 - b;		//J
 	sel = 3'b000;
 	en = 1'b1;
@@ -43,7 +43,7 @@ begin
 	#10;
 	a = 8'd101 - b;	//e
 	#10;
-	a = 8'd32 - b;	// espacio
+	a = 8'd32 - b;	// space
 	#10;
 	a = 8'd73 - b;		//I
 	#10;
@@ -53,7 +53,7 @@ begin
 	#10;
 	a = 8'd110 - b;	//n
 	#10;
-	a = 8'd32 - b;	// espacio
+	a = 8'd32 - b;	// space
 	#10;
 	a = 8'd50 - b;	// 2
 	#10;
@@ -73,7 +73,7 @@ begin
 	#10;
 	a = 8'd57 - b;	// 9
 	#10;
-	a = 8'd32 - b;	// espacio
+	a = 8'd32 - b;	// space
 	#10;
 	a = 8'd79 - b;		//O
 	#10;
@@ -87,7 +87,7 @@ begin
 	#10;
 	a = 8'd111 - b;	//o
 	#10;
-	a = 8'd32 - b;	// espacio
+	a = 8'd32 - b;	// space
 	#10;
 	a = 8'd68 - b;		//D
 	#10;
@@ -95,7 +95,7 @@ begin
 	#10;
 	a = 8'd51 - b;		//3
 	#10;
-	a = 8'd32 - b;	// espacio
+	a = 8'd32 - b;	// space
 	#10;
 	a = 8'd84 - b;		//T
 	#10;
@@ -109,44 +109,9 @@ begin
 	#10;
 	a = 8'd122 - b;	//z
 	#10;
-	//Pruebas Lectura
+	//Read Test
 	b = 8'b0;
 	en = 1'b0;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
-	#10;
 	#10;
 end
 endmodule

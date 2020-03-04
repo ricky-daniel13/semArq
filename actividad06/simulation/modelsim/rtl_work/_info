@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/home/jorozco/Documentos/semArq/actividad06/simulation/modelsim
 vactividad06
-Z1 !s110 1583243917
+Z1 !s110 1583281599
 !i10b 1
-!s100 FTcaoSRaJEn9<DZXJ;<QY1
-IW;<<KaI<oQK=ZbidP<TgE3
+!s100 H?TH6mHf6`Y5i??Gj1@f?1
+IR>;9coFXQJ>0j[j>4oz^b2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1583157919
+w1583281151
 8/home/jorozco/Documentos/semArq/actividad06/actividad06.v
 F/home/jorozco/Documentos/semArq/actividad06/actividad06.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1583243917.000000
+Z4 !s108 1583281598.000000
 !s107 /home/jorozco/Documentos/semArq/actividad06/actividad06.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/actividad06.v|
 !i113 1
@@ -33,11 +33,11 @@ Z7 tCvgOpt 0
 vactividad06_tb
 R1
 !i10b 1
-!s100 UB1=>;CQdEDdA`4e8HhIn1
-I6M^U3=Em1eW5_ESDzG?`>1
+!s100 @==VV9];_@BOH^3mM5=8A2
+IdHPBg_C2S0BVbjMAFceKa2
 R2
 R0
-w1583243907
+w1583281585
 8/home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v
 F/home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v
 L0 3
@@ -45,7 +45,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z8 !s108 1583281599.000000
 !s107 /home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v|
 !i113 1
@@ -59,7 +59,7 @@ R1
 I5j1=Z5O_H94LDP]3kH@H]0
 R2
 R0
-w1583098439
+w1583281358
 8/home/jorozco/Documentos/semArq/actividad06/ALU.v
 F/home/jorozco/Documentos/semArq/actividad06/ALU.v
 L0 1
@@ -67,7 +67,7 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 /home/jorozco/Documentos/semArq/actividad06/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/ALU.v|
 !i113 1
@@ -76,13 +76,13 @@ R6
 R7
 n@a@l@u
 vmemoria
-R1
+!s110 1583281598
 !i10b 1
-!s100 :DVNI9ldl0i9l>A>YD`YT3
-Img7N=WmDMXf26FWS2n2c=3
+!s100 kH?lGo:idVl?Yh[P?MgQV3
+I[T?dho4:W;WECmQWiFk0V2
 R2
 R0
-w1583242905
+w1583281195
 8/home/jorozco/Documentos/semArq/actividad06/memoria.v
 F/home/jorozco/Documentos/semArq/actividad06/memoria.v
 L0 1
