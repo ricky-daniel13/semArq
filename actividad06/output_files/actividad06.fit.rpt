@@ -1,5 +1,5 @@
 Fitter report for actividad06
-Tue Mar  3 07:42:26 2020
+Wed Mar  4 19:07:48 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue Mar  3 07:42:26 2020       ;
+; Fitter Status         ; Successful - Wed Mar  4 19:07:48 2020       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; actividad06                                 ;
 ; Top-level Entity Name ; actividad06                                 ;
@@ -219,21 +219,21 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                     ;
-+---------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
-+---------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; datoSalida[0] ; P9    ; 4        ; 10           ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; datoSalida[1] ; A10   ; 2        ; 12           ; 14           ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; datoSalida[2] ; M10   ; 4        ; 12           ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; datoSalida[3] ; N9    ; 4        ; 9            ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; datoSalida[4] ; B11   ; 2        ; 14           ; 14           ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; datoSalida[5] ; T11   ; 4        ; 12           ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; datoSalida[6] ; T7    ; 4        ; 8            ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; datoSalida[7] ; R10   ; 4        ; 12           ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; zeroFlag      ; J15   ; 3        ; 21           ; 6            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-+---------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                  ;
++------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
+; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
+; dataOut[0] ; P9    ; 4        ; 10           ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; dataOut[1] ; A10   ; 2        ; 12           ; 14           ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; dataOut[2] ; M10   ; 4        ; 12           ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; dataOut[3] ; N9    ; 4        ; 9            ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; dataOut[4] ; B11   ; 2        ; 14           ; 14           ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; dataOut[5] ; T11   ; 4        ; 12           ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; dataOut[6] ; T7    ; 4        ; 8            ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; dataOut[7] ; R10   ; 4        ; 12           ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; zeroFlag   ; J15   ; 3        ; 21           ; 6            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
++------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 
 
 +------------------------------------------------------------+
@@ -262,7 +262,7 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 ; A7       ; 246        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A8       ; 243        ; 2        ; b[2]           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A9       ; 242        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A10      ; 238        ; 2        ; datoSalida[1]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A10      ; 238        ; 2        ; dataOut[1]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A11      ; 234        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A12      ; 230        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A13      ; 226        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -279,7 +279,7 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 ; B8       ; 244        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B9       ; 240        ; 2        ; a[6]           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B10      ; 236        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B11      ; 232        ; 2        ; datoSalida[4]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B11      ; 232        ; 2        ; dataOut[4]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B12      ; 228        ; 2        ; a[0]           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ; 224        ; 2        ; sel[2]         ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B14      ; 222        ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -438,7 +438,7 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 ; M7       ; 96         ; 4        ; en             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M8       ; 108        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; M9       ; 109        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; M10      ; 110        ; 4        ; datoSalida[2]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; M10      ; 110        ; 4        ; dataOut[2]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M11      ; 116        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; M12      ; 122        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; M13      ; 152        ; 3        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -453,7 +453,7 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 ; N6       ; 88         ; 4        ; b[3]           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N7       ; 94         ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; N8       ; 100        ; 4        ; b[5]           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; N9       ; 102        ; 4        ; datoSalida[3]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; N9       ; 102        ; 4        ; dataOut[3]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N10      ; 112        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; N11      ; 118        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; N12      ; 124        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -469,7 +469,7 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 ; P6       ; 86         ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; P7       ; 92         ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; P8       ; 98         ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; P9       ; 106        ; 4        ; datoSalida[0]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; P9       ; 106        ; 4        ; dataOut[0]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; P10      ; 114        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; P11      ; 120        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; P12      ; 126        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -486,7 +486,7 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 ; R7       ; 97         ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; R8       ; 101        ; 4        ; b[1]           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R9       ; 105        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; R10      ; 111        ; 4        ; datoSalida[7]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R10      ; 111        ; 4        ; dataOut[7]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R11      ; 115        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; R12      ; 119        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; R13      ; 123        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -499,11 +499,11 @@ The pin-out file can be found in /home/jorozco/Documentos/semArq/actividad06/out
 ; T4       ; 87         ; 4        ; b[4]           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; T5       ; 91         ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; T6       ;            ;          ; GNDIO          ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; T7       ; 99         ; 4        ; datoSalida[6]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T7       ; 99         ; 4        ; dataOut[6]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; T8       ; 103        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; T9       ; 104        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; T10      ; 107        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; T11      ; 113        ; 4        ; datoSalida[5]  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T11      ; 113        ; 4        ; dataOut[5]     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; T12      ; 117        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; T13      ; 121        ; 4        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; T14      ;            ; 4        ; VCCIO4         ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -533,42 +533,42 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
 
 
-+---------------------------------------------+
-; I/O Assignment Warnings                     ;
-+---------------+-----------------------------+
-; Pin Name      ; Reason                      ;
-+---------------+-----------------------------+
-; datoSalida[0] ; Missing location assignment ;
-; datoSalida[1] ; Missing location assignment ;
-; datoSalida[2] ; Missing location assignment ;
-; datoSalida[3] ; Missing location assignment ;
-; datoSalida[4] ; Missing location assignment ;
-; datoSalida[5] ; Missing location assignment ;
-; datoSalida[6] ; Missing location assignment ;
-; datoSalida[7] ; Missing location assignment ;
-; zeroFlag      ; Missing location assignment ;
-; b[1]          ; Missing location assignment ;
-; a[1]          ; Missing location assignment ;
-; sel[1]        ; Missing location assignment ;
-; sel[0]        ; Missing location assignment ;
-; sel[2]        ; Missing location assignment ;
-; b[7]          ; Missing location assignment ;
-; b[0]          ; Missing location assignment ;
-; a[0]          ; Missing location assignment ;
-; b[4]          ; Missing location assignment ;
-; a[4]          ; Missing location assignment ;
-; b[6]          ; Missing location assignment ;
-; b[5]          ; Missing location assignment ;
-; b[2]          ; Missing location assignment ;
-; a[2]          ; Missing location assignment ;
-; b[3]          ; Missing location assignment ;
-; a[3]          ; Missing location assignment ;
-; a[6]          ; Missing location assignment ;
-; a[7]          ; Missing location assignment ;
-; a[5]          ; Missing location assignment ;
-; clk           ; Missing location assignment ;
-; en            ; Missing location assignment ;
-+---------------+-----------------------------+
++------------------------------------------+
+; I/O Assignment Warnings                  ;
++------------+-----------------------------+
+; Pin Name   ; Reason                      ;
++------------+-----------------------------+
+; dataOut[0] ; Missing location assignment ;
+; dataOut[1] ; Missing location assignment ;
+; dataOut[2] ; Missing location assignment ;
+; dataOut[3] ; Missing location assignment ;
+; dataOut[4] ; Missing location assignment ;
+; dataOut[5] ; Missing location assignment ;
+; dataOut[6] ; Missing location assignment ;
+; dataOut[7] ; Missing location assignment ;
+; zeroFlag   ; Missing location assignment ;
+; b[1]       ; Missing location assignment ;
+; a[1]       ; Missing location assignment ;
+; sel[1]     ; Missing location assignment ;
+; sel[0]     ; Missing location assignment ;
+; sel[2]     ; Missing location assignment ;
+; b[7]       ; Missing location assignment ;
+; b[0]       ; Missing location assignment ;
+; a[0]       ; Missing location assignment ;
+; b[4]       ; Missing location assignment ;
+; a[4]       ; Missing location assignment ;
+; b[6]       ; Missing location assignment ;
+; b[5]       ; Missing location assignment ;
+; b[2]       ; Missing location assignment ;
+; a[2]       ; Missing location assignment ;
+; b[3]       ; Missing location assignment ;
+; a[3]       ; Missing location assignment ;
+; a[6]       ; Missing location assignment ;
+; a[7]       ; Missing location assignment ;
+; a[5]       ; Missing location assignment ;
+; clk        ; Missing location assignment ;
+; en         ; Missing location assignment ;
++------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -595,42 +595,42 @@ Note: User assignments will override these defaults. The user specified values a
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------+
-; Delay Chain Summary                      ;
-+---------------+----------+---------------+
-; Name          ; Pin Type ; Pad to Core 0 ;
-+---------------+----------+---------------+
-; datoSalida[0] ; Output   ; --            ;
-; datoSalida[1] ; Output   ; --            ;
-; datoSalida[2] ; Output   ; --            ;
-; datoSalida[3] ; Output   ; --            ;
-; datoSalida[4] ; Output   ; --            ;
-; datoSalida[5] ; Output   ; --            ;
-; datoSalida[6] ; Output   ; --            ;
-; datoSalida[7] ; Output   ; --            ;
-; zeroFlag      ; Output   ; --            ;
-; b[1]          ; Input    ; (1)           ;
-; a[1]          ; Input    ; (1)           ;
-; sel[1]        ; Input    ; (1)           ;
-; sel[0]        ; Input    ; (1)           ;
-; sel[2]        ; Input    ; (1)           ;
-; b[7]          ; Input    ; (1)           ;
-; b[0]          ; Input    ; (1)           ;
-; a[0]          ; Input    ; (1)           ;
-; b[4]          ; Input    ; (1)           ;
-; a[4]          ; Input    ; (1)           ;
-; b[6]          ; Input    ; (1)           ;
-; b[5]          ; Input    ; (1)           ;
-; b[2]          ; Input    ; (1)           ;
-; a[2]          ; Input    ; (1)           ;
-; b[3]          ; Input    ; (1)           ;
-; a[3]          ; Input    ; (1)           ;
-; a[6]          ; Input    ; (1)           ;
-; a[7]          ; Input    ; (1)           ;
-; a[5]          ; Input    ; (1)           ;
-; clk           ; Input    ; (0)           ;
-; en            ; Input    ; (1)           ;
-+---------------+----------+---------------+
++---------------------------------------+
+; Delay Chain Summary                   ;
++------------+----------+---------------+
+; Name       ; Pin Type ; Pad to Core 0 ;
++------------+----------+---------------+
+; dataOut[0] ; Output   ; --            ;
+; dataOut[1] ; Output   ; --            ;
+; dataOut[2] ; Output   ; --            ;
+; dataOut[3] ; Output   ; --            ;
+; dataOut[4] ; Output   ; --            ;
+; dataOut[5] ; Output   ; --            ;
+; dataOut[6] ; Output   ; --            ;
+; dataOut[7] ; Output   ; --            ;
+; zeroFlag   ; Output   ; --            ;
+; b[1]       ; Input    ; (1)           ;
+; a[1]       ; Input    ; (1)           ;
+; sel[1]     ; Input    ; (1)           ;
+; sel[0]     ; Input    ; (1)           ;
+; sel[2]     ; Input    ; (1)           ;
+; b[7]       ; Input    ; (1)           ;
+; b[0]       ; Input    ; (1)           ;
+; a[0]       ; Input    ; (1)           ;
+; b[4]       ; Input    ; (1)           ;
+; a[4]       ; Input    ; (1)           ;
+; b[6]       ; Input    ; (1)           ;
+; b[5]       ; Input    ; (1)           ;
+; b[2]       ; Input    ; (1)           ;
+; a[2]       ; Input    ; (1)           ;
+; b[3]       ; Input    ; (1)           ;
+; a[3]       ; Input    ; (1)           ;
+; a[6]       ; Input    ; (1)           ;
+; a[7]       ; Input    ; (1)           ;
+; a[5]       ; Input    ; (1)           ;
+; clk        ; Input    ; (0)           ;
+; en         ; Input    ; (1)           ;
++------------+----------+---------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
@@ -640,134 +640,134 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+---------------+---------+--------------+--------+----------------------+------------------+
 ; clk                   ; PIN_H5        ; 1032    ; Clock        ; yes    ; Global Clock         ; GCLK0            ;
 ; en                    ; PIN_M7        ; 42      ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1706 ; LC_X16_Y10_N5 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1708 ; LC_X16_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1710 ; LC_X13_Y11_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1712 ; LC_X8_Y9_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1714 ; LC_X8_Y7_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1716 ; LC_X8_Y4_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1718 ; LC_X8_Y5_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1720 ; LC_X16_Y5_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1722 ; LC_X15_Y7_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1724 ; LC_X15_Y7_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1726 ; LC_X16_Y6_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1728 ; LC_X16_Y5_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1730 ; LC_X9_Y4_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1732 ; LC_X9_Y4_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1734 ; LC_X9_Y4_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1736 ; LC_X9_Y4_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1737 ; LC_X15_Y6_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1738 ; LC_X8_Y4_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1739 ; LC_X17_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1740 ; LC_X16_Y5_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1741 ; LC_X14_Y10_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1742 ; LC_X14_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1743 ; LC_X15_Y10_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1744 ; LC_X16_Y10_N7 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1745 ; LC_X14_Y10_N7 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1746 ; LC_X13_Y11_N1 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1747 ; LC_X13_Y11_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1748 ; LC_X15_Y10_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1749 ; LC_X8_Y5_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1750 ; LC_X16_Y5_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1751 ; LC_X18_Y8_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1752 ; LC_X18_Y6_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1753 ; LC_X6_Y7_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1754 ; LC_X8_Y7_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1755 ; LC_X5_Y5_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1756 ; LC_X7_Y6_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1757 ; LC_X8_Y4_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1758 ; LC_X16_Y8_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1759 ; LC_X16_Y8_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1760 ; LC_X16_Y5_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1761 ; LC_X16_Y10_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1762 ; LC_X15_Y6_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1763 ; LC_X16_Y10_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1764 ; LC_X15_Y10_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1765 ; LC_X16_Y5_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1766 ; LC_X8_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1767 ; LC_X16_Y5_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1768 ; LC_X18_Y6_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1769 ; LC_X5_Y9_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1770 ; LC_X8_Y7_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1771 ; LC_X5_Y9_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1772 ; LC_X4_Y11_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1773 ; LC_X6_Y7_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1774 ; LC_X7_Y6_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1775 ; LC_X5_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1776 ; LC_X5_Y5_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1777 ; LC_X5_Y7_N5   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1778 ; LC_X6_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1779 ; LC_X4_Y6_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1780 ; LC_X4_Y6_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1781 ; LC_X2_Y7_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1782 ; LC_X2_Y7_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1783 ; LC_X2_Y7_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1784 ; LC_X4_Y11_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1786 ; LC_X16_Y10_N1 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1787 ; LC_X10_Y11_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1788 ; LC_X17_Y10_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1789 ; LC_X17_Y10_N5 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1790 ; LC_X10_Y10_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1791 ; LC_X16_Y10_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1792 ; LC_X15_Y10_N6 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1793 ; LC_X10_Y11_N6 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1794 ; LC_X10_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1795 ; LC_X8_Y9_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1796 ; LC_X10_Y11_N3 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1797 ; LC_X15_Y10_N5 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1798 ; LC_X6_Y10_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1799 ; LC_X16_Y10_N6 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1800 ; LC_X18_Y8_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1801 ; LC_X18_Y8_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1803 ; LC_X10_Y11_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1804 ; LC_X8_Y10_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1805 ; LC_X7_Y11_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1806 ; LC_X8_Y9_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1807 ; LC_X10_Y5_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1808 ; LC_X10_Y5_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1809 ; LC_X7_Y5_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1810 ; LC_X7_Y5_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1811 ; LC_X9_Y10_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1812 ; LC_X11_Y7_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1813 ; LC_X10_Y7_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1814 ; LC_X7_Y6_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1815 ; LC_X13_Y4_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1816 ; LC_X13_Y4_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1817 ; LC_X14_Y5_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1818 ; LC_X13_Y4_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1819 ; LC_X8_Y10_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1820 ; LC_X7_Y6_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1821 ; LC_X14_Y5_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1822 ; LC_X7_Y6_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1823 ; LC_X9_Y10_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1824 ; LC_X10_Y11_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1825 ; LC_X9_Y10_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1826 ; LC_X8_Y10_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1827 ; LC_X7_Y11_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1828 ; LC_X7_Y5_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1829 ; LC_X8_Y10_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1830 ; LC_X9_Y10_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1831 ; LC_X7_Y5_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1832 ; LC_X7_Y5_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1833 ; LC_X7_Y6_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1834 ; LC_X7_Y5_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1835 ; LC_X8_Y10_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1836 ; LC_X6_Y9_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1837 ; LC_X14_Y10_N1 ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1838 ; LC_X4_Y11_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1839 ; LC_X6_Y9_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1840 ; LC_X6_Y11_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1841 ; LC_X5_Y7_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1842 ; LC_X6_Y10_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1843 ; LC_X5_Y7_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1844 ; LC_X6_Y11_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1845 ; LC_X8_Y10_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1846 ; LC_X4_Y8_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1847 ; LC_X8_Y10_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1848 ; LC_X3_Y10_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1849 ; LC_X3_Y10_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; memoria:mem|dato~1850 ; LC_X4_Y11_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1706 ; LC_X16_Y10_N5 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1708 ; LC_X16_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1710 ; LC_X13_Y11_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1712 ; LC_X8_Y9_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1714 ; LC_X8_Y7_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1716 ; LC_X8_Y4_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1718 ; LC_X8_Y5_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1720 ; LC_X16_Y5_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1722 ; LC_X15_Y7_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1724 ; LC_X15_Y7_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1726 ; LC_X16_Y6_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1728 ; LC_X16_Y5_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1730 ; LC_X9_Y4_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1732 ; LC_X9_Y4_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1734 ; LC_X9_Y4_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1736 ; LC_X9_Y4_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1737 ; LC_X15_Y6_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1738 ; LC_X8_Y4_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1739 ; LC_X17_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1740 ; LC_X16_Y5_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1741 ; LC_X14_Y10_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1742 ; LC_X14_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1743 ; LC_X15_Y10_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1744 ; LC_X16_Y10_N7 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1745 ; LC_X14_Y10_N7 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1746 ; LC_X13_Y11_N1 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1747 ; LC_X13_Y11_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1748 ; LC_X15_Y10_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1749 ; LC_X8_Y5_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1750 ; LC_X16_Y5_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1751 ; LC_X18_Y8_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1752 ; LC_X18_Y6_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1753 ; LC_X6_Y7_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1754 ; LC_X8_Y7_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1755 ; LC_X5_Y5_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1756 ; LC_X7_Y6_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1757 ; LC_X8_Y4_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1758 ; LC_X16_Y8_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1759 ; LC_X16_Y8_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1760 ; LC_X16_Y5_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1761 ; LC_X16_Y10_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1762 ; LC_X15_Y6_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1763 ; LC_X16_Y10_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1764 ; LC_X15_Y10_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1765 ; LC_X16_Y5_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1766 ; LC_X8_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1767 ; LC_X16_Y5_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1768 ; LC_X18_Y6_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1769 ; LC_X5_Y9_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1770 ; LC_X8_Y7_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1771 ; LC_X5_Y9_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1772 ; LC_X4_Y11_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1773 ; LC_X6_Y7_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1774 ; LC_X7_Y6_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1775 ; LC_X5_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1776 ; LC_X5_Y5_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1777 ; LC_X5_Y7_N5   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1778 ; LC_X6_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1779 ; LC_X4_Y6_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1780 ; LC_X4_Y6_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1781 ; LC_X2_Y7_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1782 ; LC_X2_Y7_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1783 ; LC_X2_Y7_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1784 ; LC_X4_Y11_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1786 ; LC_X16_Y10_N1 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1787 ; LC_X10_Y11_N0 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1788 ; LC_X17_Y10_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1789 ; LC_X17_Y10_N5 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1790 ; LC_X10_Y10_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1791 ; LC_X16_Y10_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1792 ; LC_X15_Y10_N6 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1793 ; LC_X10_Y11_N6 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1794 ; LC_X10_Y10_N4 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1795 ; LC_X8_Y9_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1796 ; LC_X10_Y11_N3 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1797 ; LC_X15_Y10_N5 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1798 ; LC_X6_Y10_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1799 ; LC_X16_Y10_N6 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1800 ; LC_X18_Y8_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1801 ; LC_X18_Y8_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1803 ; LC_X10_Y11_N9 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1804 ; LC_X8_Y10_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1805 ; LC_X7_Y11_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1806 ; LC_X8_Y9_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1807 ; LC_X10_Y5_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1808 ; LC_X10_Y5_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1809 ; LC_X7_Y5_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1810 ; LC_X7_Y5_N7   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1811 ; LC_X9_Y10_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1812 ; LC_X11_Y7_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1813 ; LC_X10_Y7_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1814 ; LC_X7_Y6_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1815 ; LC_X13_Y4_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1816 ; LC_X13_Y4_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1817 ; LC_X14_Y5_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1818 ; LC_X13_Y4_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1819 ; LC_X8_Y10_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1820 ; LC_X7_Y6_N8   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1821 ; LC_X14_Y5_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1822 ; LC_X7_Y6_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1823 ; LC_X9_Y10_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1824 ; LC_X10_Y11_N2 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1825 ; LC_X9_Y10_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1826 ; LC_X8_Y10_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1827 ; LC_X7_Y11_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1828 ; LC_X7_Y5_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1829 ; LC_X8_Y10_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1830 ; LC_X9_Y10_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1831 ; LC_X7_Y5_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1832 ; LC_X7_Y5_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1833 ; LC_X7_Y6_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1834 ; LC_X7_Y5_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1835 ; LC_X8_Y10_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1836 ; LC_X6_Y9_N4   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1837 ; LC_X14_Y10_N1 ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1838 ; LC_X4_Y11_N5  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1839 ; LC_X6_Y9_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1840 ; LC_X6_Y11_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1841 ; LC_X5_Y7_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1842 ; LC_X6_Y10_N7  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1843 ; LC_X5_Y7_N1   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1844 ; LC_X6_Y11_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1845 ; LC_X8_Y10_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1846 ; LC_X4_Y8_N2   ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1847 ; LC_X8_Y10_N1  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1848 ; LC_X3_Y10_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1849 ; LC_X3_Y10_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; memoria:mem|data~1850 ; LC_X4_Y11_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ;
 +-----------------------+---------------+---------+--------------+--------+----------------------+------------------+
 
 
@@ -963,21 +963,21 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 26% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 30% of the available device resources in the region that extends from location X0_Y0 to location X10_Y14
 Info (170202): The Fitter performed an Auto Fit compilation.  No optimizations were skipped because the design's timing and routability requirements required full optimization.
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:07
-Info (11888): Total time spent on timing analysis during the Fitter is 0.60 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.55 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file /home/jorozco/Documentos/semArq/actividad06/output_files/actividad06.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 1117 megabytes
-    Info: Processing ended: Tue Mar  3 07:42:26 2020
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Processing ended: Wed Mar  4 19:07:48 2020
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +----------------------------+

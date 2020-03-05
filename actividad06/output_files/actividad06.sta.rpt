@@ -1,5 +1,5 @@
 Timing Analyzer report for actividad06
-Tue Mar  3 07:42:34 2020
+Wed Mar  4 19:07:56 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -75,10 +75,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -140,220 +141,220 @@ No paths to report.
 +-------+--------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Setup: 'clk'                                                                                                                     ;
-+--------+-----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node             ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; -8.770 ; memoria:mem|dato~740  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.499      ;
-; -8.676 ; memoria:mem|dato~126  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.405      ;
-; -8.665 ; memoria:mem|dato~644  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.394      ;
-; -8.531 ; memoria:mem|dato~660  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.260      ;
-; -8.446 ; memoria:mem|dato~1005 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.175      ;
-; -8.384 ; memoria:mem|dato~102  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.113      ;
-; -8.381 ; memoria:mem|dato~228  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.110      ;
-; -8.370 ; memoria:mem|dato~755  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.099      ;
-; -8.368 ; memoria:mem|dato~571  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.097      ;
-; -8.358 ; memoria:mem|dato~356  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.087      ;
-; -8.347 ; memoria:mem|dato~250  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.076      ;
-; -8.319 ; memoria:mem|dato~252  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.048      ;
-; -8.297 ; memoria:mem|dato~285  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.026      ;
-; -8.295 ; memoria:mem|dato~859  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.024      ;
-; -8.237 ; memoria:mem|dato~378  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.966      ;
-; -8.217 ; memoria:mem|dato~319  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.946      ;
-; -8.203 ; memoria:mem|dato~148  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.932      ;
-; -8.179 ; memoria:mem|dato~406  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.908      ;
-; -8.155 ; memoria:mem|dato~652  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.884      ;
-; -8.138 ; memoria:mem|dato~1021 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.867      ;
-; -8.134 ; memoria:mem|dato~547  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.863      ;
-; -8.132 ; memoria:mem|dato~156  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.861      ;
-; -8.122 ; memoria:mem|dato~915  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.851      ;
-; -8.116 ; memoria:mem|dato~724  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.845      ;
-; -8.111 ; memoria:mem|dato~124  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.840      ;
-; -8.087 ; memoria:mem|dato~4    ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.816      ;
-; -8.082 ; memoria:mem|dato~226  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.811      ;
-; -8.076 ; memoria:mem|dato~580  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.805      ;
-; -8.071 ; memoria:mem|dato~6    ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.800      ;
-; -8.051 ; memoria:mem|dato~799  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.780      ;
-; -8.038 ; memoria:mem|dato~239  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.767      ;
-; -8.033 ; memoria:mem|dato~404  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.762      ;
-; -8.029 ; memoria:mem|dato~251  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.758      ;
-; -8.019 ; memoria:mem|dato~132  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.748      ;
-; -8.012 ; memoria:mem|dato~757  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.741      ;
-; -8.009 ; memoria:mem|dato~282  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.738      ;
-; -7.989 ; memoria:mem|dato~668  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.718      ;
-; -7.973 ; memoria:mem|dato~540  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.702      ;
-; -7.972 ; memoria:mem|dato~62   ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.701      ;
-; -7.966 ; memoria:mem|dato~234  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.695      ;
-; -7.960 ; memoria:mem|dato~244  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.689      ;
-; -7.949 ; memoria:mem|dato~28   ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.678      ;
-; -7.943 ; memoria:mem|dato~858  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.672      ;
-; -7.905 ; memoria:mem|dato~100  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.634      ;
-; -7.899 ; memoria:mem|dato~143  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.628      ;
-; -7.895 ; memoria:mem|dato~97   ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.624      ;
-; -7.893 ; memoria:mem|dato~756  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.622      ;
-; -7.868 ; memoria:mem|dato~551  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.597      ;
-; -7.865 ; memoria:mem|dato~125  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.594      ;
-; -7.864 ; memoria:mem|dato~412  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.593      ;
-; -7.862 ; memoria:mem|dato~997  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.591      ;
-; -7.855 ; memoria:mem|dato~38   ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.584      ;
-; -7.853 ; memoria:mem|dato~398  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.582      ;
-; -7.847 ; memoria:mem|dato~656  ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.576      ;
-; -7.847 ; memoria:mem|dato~857  ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.576      ;
-; -7.847 ; memoria:mem|dato~60   ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.576      ;
-; -7.843 ; memoria:mem|dato~511  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.572      ;
-; -7.841 ; memoria:mem|dato~832  ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.570      ;
-; -7.838 ; memoria:mem|dato~867  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.567      ;
-; -7.834 ; memoria:mem|dato~286  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.563      ;
-; -7.823 ; memoria:mem|dato~909  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.552      ;
-; -7.819 ; memoria:mem|dato~287  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.548      ;
-; -7.817 ; memoria:mem|dato~146  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.546      ;
-; -7.817 ; memoria:mem|dato~36   ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.546      ;
-; -7.812 ; memoria:mem|dato~154  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.541      ;
-; -7.808 ; memoria:mem|dato~901  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.537      ;
-; -7.806 ; memoria:mem|dato~324  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.535      ;
-; -7.804 ; memoria:mem|dato~284  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.533      ;
-; -7.801 ; memoria:mem|dato~295  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.530      ;
-; -7.796 ; memoria:mem|dato~890  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.525      ;
-; -7.796 ; memoria:mem|dato~487  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.525      ;
-; -7.793 ; memoria:mem|dato~134  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.522      ;
-; -7.792 ; memoria:mem|dato~39   ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.521      ;
-; -7.790 ; memoria:mem|dato~604  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.519      ;
-; -7.790 ; memoria:mem|dato~1007 ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.519      ;
-; -7.784 ; memoria:mem|dato~515  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.513      ;
-; -7.783 ; memoria:mem|dato~34   ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.512      ;
-; -7.778 ; memoria:mem|dato~140  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.507      ;
-; -7.775 ; memoria:mem|dato~354  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.504      ;
-; -7.774 ; memoria:mem|dato~502  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.503      ;
-; -7.766 ; memoria:mem|dato~539  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.495      ;
-; -7.763 ; memoria:mem|dato~393  ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.492      ;
-; -7.762 ; memoria:mem|dato~382  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.491      ;
-; -7.745 ; memoria:mem|dato~139  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.474      ;
-; -7.739 ; memoria:mem|dato~407  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.468      ;
-; -7.737 ; memoria:mem|dato~347  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.466      ;
-; -7.723 ; memoria:mem|dato~486  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.452      ;
-; -7.720 ; memoria:mem|dato~659  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.449      ;
-; -7.719 ; memoria:mem|dato~748  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.448      ;
-; -7.716 ; memoria:mem|dato~377  ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.445      ;
-; -7.714 ; memoria:mem|dato~607  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.443      ;
-; -7.708 ; memoria:mem|dato~353  ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.437      ;
-; -7.706 ; memoria:mem|dato~399  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.435      ;
-; -7.699 ; memoria:mem|dato~289  ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.428      ;
-; -7.697 ; memoria:mem|dato~485  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.426      ;
-; -7.689 ; memoria:mem|dato~574  ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.418      ;
-; -7.688 ; memoria:mem|dato~775  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.417      ;
-; -7.686 ; memoria:mem|dato~863  ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.415      ;
-; -7.681 ; memoria:mem|dato~260  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.410      ;
-; -7.677 ; memoria:mem|dato~63   ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.406      ;
-+--------+-----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                  ;
++--------+-----------------------+------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+------------------------+--------------+-------------+--------------+------------+------------+
+; -8.770 ; memoria:mem|data~740  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.499      ;
+; -8.676 ; memoria:mem|data~126  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.405      ;
+; -8.665 ; memoria:mem|data~644  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.394      ;
+; -8.531 ; memoria:mem|data~660  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.260      ;
+; -8.446 ; memoria:mem|data~1005 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.175      ;
+; -8.384 ; memoria:mem|data~102  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.113      ;
+; -8.381 ; memoria:mem|data~228  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.110      ;
+; -8.370 ; memoria:mem|data~755  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.099      ;
+; -8.368 ; memoria:mem|data~571  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.097      ;
+; -8.358 ; memoria:mem|data~356  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.087      ;
+; -8.347 ; memoria:mem|data~250  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.076      ;
+; -8.319 ; memoria:mem|data~252  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.048      ;
+; -8.297 ; memoria:mem|data~285  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.026      ;
+; -8.295 ; memoria:mem|data~859  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 9.024      ;
+; -8.237 ; memoria:mem|data~378  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.966      ;
+; -8.217 ; memoria:mem|data~319  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.946      ;
+; -8.203 ; memoria:mem|data~148  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.932      ;
+; -8.179 ; memoria:mem|data~406  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.908      ;
+; -8.155 ; memoria:mem|data~652  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.884      ;
+; -8.138 ; memoria:mem|data~1021 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.867      ;
+; -8.134 ; memoria:mem|data~547  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.863      ;
+; -8.132 ; memoria:mem|data~156  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.861      ;
+; -8.122 ; memoria:mem|data~915  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.851      ;
+; -8.116 ; memoria:mem|data~724  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.845      ;
+; -8.111 ; memoria:mem|data~124  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.840      ;
+; -8.087 ; memoria:mem|data~4    ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.816      ;
+; -8.082 ; memoria:mem|data~226  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.811      ;
+; -8.076 ; memoria:mem|data~580  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.805      ;
+; -8.071 ; memoria:mem|data~6    ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.800      ;
+; -8.051 ; memoria:mem|data~799  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.780      ;
+; -8.038 ; memoria:mem|data~239  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.767      ;
+; -8.033 ; memoria:mem|data~404  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.762      ;
+; -8.029 ; memoria:mem|data~251  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.758      ;
+; -8.019 ; memoria:mem|data~132  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.748      ;
+; -8.012 ; memoria:mem|data~757  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.741      ;
+; -8.009 ; memoria:mem|data~282  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.738      ;
+; -7.989 ; memoria:mem|data~668  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.718      ;
+; -7.973 ; memoria:mem|data~540  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.702      ;
+; -7.972 ; memoria:mem|data~62   ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.701      ;
+; -7.966 ; memoria:mem|data~234  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.695      ;
+; -7.960 ; memoria:mem|data~244  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.689      ;
+; -7.949 ; memoria:mem|data~28   ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.678      ;
+; -7.943 ; memoria:mem|data~858  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.672      ;
+; -7.905 ; memoria:mem|data~100  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.634      ;
+; -7.899 ; memoria:mem|data~143  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.628      ;
+; -7.895 ; memoria:mem|data~97   ; memoria:mem|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.624      ;
+; -7.893 ; memoria:mem|data~756  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.622      ;
+; -7.868 ; memoria:mem|data~551  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.597      ;
+; -7.865 ; memoria:mem|data~125  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.594      ;
+; -7.864 ; memoria:mem|data~412  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.593      ;
+; -7.862 ; memoria:mem|data~997  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.591      ;
+; -7.855 ; memoria:mem|data~38   ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.584      ;
+; -7.853 ; memoria:mem|data~398  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.582      ;
+; -7.847 ; memoria:mem|data~656  ; memoria:mem|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.576      ;
+; -7.847 ; memoria:mem|data~857  ; memoria:mem|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.576      ;
+; -7.847 ; memoria:mem|data~60   ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.576      ;
+; -7.843 ; memoria:mem|data~511  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.572      ;
+; -7.841 ; memoria:mem|data~832  ; memoria:mem|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.570      ;
+; -7.838 ; memoria:mem|data~867  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.567      ;
+; -7.834 ; memoria:mem|data~286  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.563      ;
+; -7.823 ; memoria:mem|data~909  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.552      ;
+; -7.819 ; memoria:mem|data~287  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.548      ;
+; -7.817 ; memoria:mem|data~146  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.546      ;
+; -7.817 ; memoria:mem|data~36   ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.546      ;
+; -7.812 ; memoria:mem|data~154  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.541      ;
+; -7.808 ; memoria:mem|data~901  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.537      ;
+; -7.806 ; memoria:mem|data~324  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.535      ;
+; -7.804 ; memoria:mem|data~284  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.533      ;
+; -7.801 ; memoria:mem|data~295  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.530      ;
+; -7.796 ; memoria:mem|data~890  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.525      ;
+; -7.796 ; memoria:mem|data~487  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.525      ;
+; -7.793 ; memoria:mem|data~134  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.522      ;
+; -7.792 ; memoria:mem|data~39   ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.521      ;
+; -7.790 ; memoria:mem|data~604  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.519      ;
+; -7.790 ; memoria:mem|data~1007 ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.519      ;
+; -7.784 ; memoria:mem|data~515  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.513      ;
+; -7.783 ; memoria:mem|data~34   ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.512      ;
+; -7.778 ; memoria:mem|data~140  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.507      ;
+; -7.775 ; memoria:mem|data~354  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.504      ;
+; -7.774 ; memoria:mem|data~502  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.503      ;
+; -7.766 ; memoria:mem|data~539  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.495      ;
+; -7.763 ; memoria:mem|data~393  ; memoria:mem|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.492      ;
+; -7.762 ; memoria:mem|data~382  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.491      ;
+; -7.745 ; memoria:mem|data~139  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.474      ;
+; -7.739 ; memoria:mem|data~407  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.468      ;
+; -7.737 ; memoria:mem|data~347  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.466      ;
+; -7.723 ; memoria:mem|data~486  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.452      ;
+; -7.720 ; memoria:mem|data~659  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.449      ;
+; -7.719 ; memoria:mem|data~748  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.448      ;
+; -7.716 ; memoria:mem|data~377  ; memoria:mem|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.445      ;
+; -7.714 ; memoria:mem|data~607  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.443      ;
+; -7.708 ; memoria:mem|data~353  ; memoria:mem|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.437      ;
+; -7.706 ; memoria:mem|data~399  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.435      ;
+; -7.699 ; memoria:mem|data~289  ; memoria:mem|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.428      ;
+; -7.697 ; memoria:mem|data~485  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.426      ;
+; -7.689 ; memoria:mem|data~574  ; memoria:mem|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.418      ;
+; -7.688 ; memoria:mem|data~775  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.417      ;
+; -7.686 ; memoria:mem|data~863  ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.415      ;
+; -7.681 ; memoria:mem|data~260  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.410      ;
+; -7.677 ; memoria:mem|data~63   ; memoria:mem|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.406      ;
++--------+-----------------------+------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Hold: 'clk'                                                                                                                    ;
-+-------+----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node            ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; 3.691 ; memoria:mem|dato~982 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.870      ;
-; 4.253 ; memoria:mem|dato~730 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.432      ;
-; 4.316 ; memoria:mem|dato~713 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.495      ;
-; 4.444 ; memoria:mem|dato~950 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.623      ;
-; 4.446 ; memoria:mem|dato~267 ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.625      ;
-; 4.498 ; memoria:mem|dato~781 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.677      ;
-; 4.586 ; memoria:mem|dato~464 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.765      ;
-; 4.600 ; memoria:mem|dato~690 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.779      ;
-; 4.790 ; memoria:mem|dato~328 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.969      ;
-; 4.806 ; memoria:mem|dato~719 ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.985      ;
-; 4.813 ; memoria:mem|dato~674 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.992      ;
-; 4.837 ; memoria:mem|dato~21  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.016      ;
-; 4.857 ; memoria:mem|dato~275 ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.036      ;
-; 4.897 ; memoria:mem|dato~82  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.076      ;
-; 4.906 ; memoria:mem|dato~80  ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.085      ;
-; 4.931 ; memoria:mem|dato~712 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.110      ;
-; 4.950 ; memoria:mem|dato~673 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.129      ;
-; 4.971 ; memoria:mem|dato~940 ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.150      ;
-; 4.991 ; memoria:mem|dato~330 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.170      ;
-; 5.000 ; memoria:mem|dato~698 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.179      ;
-; 5.015 ; memoria:mem|dato~465 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.194      ;
-; 5.064 ; memoria:mem|dato~962 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.243      ;
-; 5.064 ; memoria:mem|dato~681 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.243      ;
-; 5.089 ; memoria:mem|dato~780 ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.268      ;
-; 5.093 ; memoria:mem|dato~426 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.272      ;
-; 5.121 ; memoria:mem|dato~779 ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.300      ;
-; 5.130 ; memoria:mem|dato~966 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.309      ;
-; 5.135 ; memoria:mem|dato~83  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.314      ;
-; 5.139 ; memoria:mem|dato~529 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.318      ;
-; 5.145 ; memoria:mem|dato~104 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.324      ;
-; 5.158 ; memoria:mem|dato~107 ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.337      ;
-; 5.179 ; memoria:mem|dato~782 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.358      ;
-; 5.181 ; memoria:mem|dato~717 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.360      ;
-; 5.202 ; memoria:mem|dato~43  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.381      ;
-; 5.206 ; memoria:mem|dato~718 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.385      ;
-; 5.217 ; memoria:mem|dato~687 ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.396      ;
-; 5.224 ; memoria:mem|dato~706 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.403      ;
-; 5.226 ; memoria:mem|dato~448 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.405      ;
-; 5.244 ; memoria:mem|dato~442 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.423      ;
-; 5.248 ; memoria:mem|dato~13  ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.427      ;
-; 5.251 ; memoria:mem|dato~429 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.430      ;
-; 5.251 ; memoria:mem|dato~620 ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.430      ;
-; 5.261 ; memoria:mem|dato~887 ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.440      ;
-; 5.276 ; memoria:mem|dato~469 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.455      ;
-; 5.290 ; memoria:mem|dato~617 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.469      ;
-; 5.307 ; memoria:mem|dato~621 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.486      ;
-; 5.312 ; memoria:mem|dato~309 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.491      ;
-; 5.312 ; memoria:mem|dato~165 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.491      ;
-; 5.322 ; memoria:mem|dato~958 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.501      ;
-; 5.342 ; memoria:mem|dato~680 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.521      ;
-; 5.349 ; memoria:mem|dato~715 ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.528      ;
-; 5.351 ; memoria:mem|dato~689 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.530      ;
-; 5.361 ; memoria:mem|dato~705 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.540      ;
-; 5.382 ; memoria:mem|dato~972 ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.561      ;
-; 5.385 ; memoria:mem|dato~595 ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.564      ;
-; 5.390 ; memoria:mem|dato~734 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.569      ;
-; 5.396 ; memoria:mem|dato~557 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.575      ;
-; 5.400 ; memoria:mem|dato~776 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.579      ;
-; 5.402 ; memoria:mem|dato~338 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.581      ;
-; 5.406 ; memoria:mem|dato~221 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.585      ;
-; 5.414 ; memoria:mem|dato~428 ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.593      ;
-; 5.424 ; memoria:mem|dato~845 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.603      ;
-; 5.428 ; memoria:mem|dato~176 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.607      ;
-; 5.450 ; memoria:mem|dato~445 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.629      ;
-; 5.460 ; memoria:mem|dato~530 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.639      ;
-; 5.470 ; memoria:mem|dato~822 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.649      ;
-; 5.475 ; memoria:mem|dato~930 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.654      ;
-; 5.507 ; memoria:mem|dato~304 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.686      ;
-; 5.514 ; memoria:mem|dato~593 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.693      ;
-; 5.515 ; memoria:mem|dato~216 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.694      ;
-; 5.519 ; memoria:mem|dato~714 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.698      ;
-; 5.524 ; memoria:mem|dato~554 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.703      ;
-; 5.534 ; memoria:mem|dato~336 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.713      ;
-; 5.537 ; memoria:mem|dato~821 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.716      ;
-; 5.541 ; memoria:mem|dato~934 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.720      ;
-; 5.546 ; memoria:mem|dato~75  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.725      ;
-; 5.556 ; memoria:mem|dato~112 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.735      ;
-; 5.561 ; memoria:mem|dato~622 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.740      ;
-; 5.562 ; memoria:mem|dato~40  ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.741      ;
-; 5.569 ; memoria:mem|dato~115 ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.748      ;
-; 5.578 ; memoria:mem|dato~84  ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.757      ;
-; 5.579 ; memoria:mem|dato~754 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.758      ;
-; 5.582 ; memoria:mem|dato~618 ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.761      ;
-; 5.606 ; memoria:mem|dato~217 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.785      ;
-; 5.611 ; memoria:mem|dato~177 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.790      ;
-; 5.613 ; memoria:mem|dato~51  ; memoria:mem|datoSalida[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.792      ;
-; 5.616 ; memoria:mem|dato~729 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.795      ;
-; 5.617 ; memoria:mem|dato~686 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.796      ;
-; 5.617 ; memoria:mem|dato~534 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.796      ;
-; 5.634 ; memoria:mem|dato~556 ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.813      ;
-; 5.635 ; memoria:mem|dato~598 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.814      ;
-; 5.638 ; memoria:mem|dato~449 ; memoria:mem|datoSalida[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.817      ;
-; 5.646 ; memoria:mem|dato~981 ; memoria:mem|datoSalida[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.825      ;
-; 5.647 ; memoria:mem|dato~74  ; memoria:mem|datoSalida[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.826      ;
-; 5.659 ; memoria:mem|dato~72  ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.838      ;
-; 5.660 ; memoria:mem|dato~886 ; memoria:mem|datoSalida[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.839      ;
-; 5.662 ; memoria:mem|dato~628 ; memoria:mem|datoSalida[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.841      ;
-; 5.662 ; memoria:mem|dato~552 ; memoria:mem|datoSalida[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.841      ;
-; 5.670 ; memoria:mem|dato~623 ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.849      ;
-; 5.672 ; memoria:mem|dato~879 ; memoria:mem|datoSalida[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.851      ;
-+-------+----------------------+---------------------------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                 ;
++-------+----------------------+------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+------------------------+--------------+-------------+--------------+------------+------------+
+; 3.691 ; memoria:mem|data~982 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.870      ;
+; 4.253 ; memoria:mem|data~730 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.432      ;
+; 4.316 ; memoria:mem|data~713 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.495      ;
+; 4.444 ; memoria:mem|data~950 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.623      ;
+; 4.446 ; memoria:mem|data~267 ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.625      ;
+; 4.498 ; memoria:mem|data~781 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.677      ;
+; 4.586 ; memoria:mem|data~464 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.765      ;
+; 4.600 ; memoria:mem|data~690 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.779      ;
+; 4.790 ; memoria:mem|data~328 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.969      ;
+; 4.806 ; memoria:mem|data~719 ; memoria:mem|dataOut[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.985      ;
+; 4.813 ; memoria:mem|data~674 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 4.992      ;
+; 4.837 ; memoria:mem|data~21  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.016      ;
+; 4.857 ; memoria:mem|data~275 ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.036      ;
+; 4.897 ; memoria:mem|data~82  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.076      ;
+; 4.906 ; memoria:mem|data~80  ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.085      ;
+; 4.931 ; memoria:mem|data~712 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.110      ;
+; 4.950 ; memoria:mem|data~673 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.129      ;
+; 4.971 ; memoria:mem|data~940 ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.150      ;
+; 4.991 ; memoria:mem|data~330 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.170      ;
+; 5.000 ; memoria:mem|data~698 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.179      ;
+; 5.015 ; memoria:mem|data~465 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.194      ;
+; 5.064 ; memoria:mem|data~962 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.243      ;
+; 5.064 ; memoria:mem|data~681 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.243      ;
+; 5.089 ; memoria:mem|data~780 ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.268      ;
+; 5.093 ; memoria:mem|data~426 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.272      ;
+; 5.121 ; memoria:mem|data~779 ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.300      ;
+; 5.130 ; memoria:mem|data~966 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.309      ;
+; 5.135 ; memoria:mem|data~83  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.314      ;
+; 5.139 ; memoria:mem|data~529 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.318      ;
+; 5.145 ; memoria:mem|data~104 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.324      ;
+; 5.158 ; memoria:mem|data~107 ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.337      ;
+; 5.179 ; memoria:mem|data~782 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.358      ;
+; 5.181 ; memoria:mem|data~717 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.360      ;
+; 5.202 ; memoria:mem|data~43  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.381      ;
+; 5.206 ; memoria:mem|data~718 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.385      ;
+; 5.217 ; memoria:mem|data~687 ; memoria:mem|dataOut[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.396      ;
+; 5.224 ; memoria:mem|data~706 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.403      ;
+; 5.226 ; memoria:mem|data~448 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.405      ;
+; 5.244 ; memoria:mem|data~442 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.423      ;
+; 5.248 ; memoria:mem|data~13  ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.427      ;
+; 5.251 ; memoria:mem|data~429 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.430      ;
+; 5.251 ; memoria:mem|data~620 ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.430      ;
+; 5.261 ; memoria:mem|data~887 ; memoria:mem|dataOut[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.440      ;
+; 5.276 ; memoria:mem|data~469 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.455      ;
+; 5.290 ; memoria:mem|data~617 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.469      ;
+; 5.307 ; memoria:mem|data~621 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.486      ;
+; 5.312 ; memoria:mem|data~309 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.491      ;
+; 5.312 ; memoria:mem|data~165 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.491      ;
+; 5.322 ; memoria:mem|data~958 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.501      ;
+; 5.342 ; memoria:mem|data~680 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.521      ;
+; 5.349 ; memoria:mem|data~715 ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.528      ;
+; 5.351 ; memoria:mem|data~689 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.530      ;
+; 5.361 ; memoria:mem|data~705 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.540      ;
+; 5.382 ; memoria:mem|data~972 ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.561      ;
+; 5.385 ; memoria:mem|data~595 ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.564      ;
+; 5.390 ; memoria:mem|data~734 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.569      ;
+; 5.396 ; memoria:mem|data~557 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.575      ;
+; 5.400 ; memoria:mem|data~776 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.579      ;
+; 5.402 ; memoria:mem|data~338 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.581      ;
+; 5.406 ; memoria:mem|data~221 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.585      ;
+; 5.414 ; memoria:mem|data~428 ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.593      ;
+; 5.424 ; memoria:mem|data~845 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.603      ;
+; 5.428 ; memoria:mem|data~176 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.607      ;
+; 5.450 ; memoria:mem|data~445 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.629      ;
+; 5.460 ; memoria:mem|data~530 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.639      ;
+; 5.470 ; memoria:mem|data~822 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.649      ;
+; 5.475 ; memoria:mem|data~930 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.654      ;
+; 5.507 ; memoria:mem|data~304 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.686      ;
+; 5.514 ; memoria:mem|data~593 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.693      ;
+; 5.515 ; memoria:mem|data~216 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.694      ;
+; 5.519 ; memoria:mem|data~714 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.698      ;
+; 5.524 ; memoria:mem|data~554 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.703      ;
+; 5.534 ; memoria:mem|data~336 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.713      ;
+; 5.537 ; memoria:mem|data~821 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.716      ;
+; 5.541 ; memoria:mem|data~934 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.720      ;
+; 5.546 ; memoria:mem|data~75  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.725      ;
+; 5.556 ; memoria:mem|data~112 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.735      ;
+; 5.561 ; memoria:mem|data~622 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.740      ;
+; 5.562 ; memoria:mem|data~40  ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.741      ;
+; 5.569 ; memoria:mem|data~115 ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.748      ;
+; 5.578 ; memoria:mem|data~84  ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.757      ;
+; 5.579 ; memoria:mem|data~754 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.758      ;
+; 5.582 ; memoria:mem|data~618 ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.761      ;
+; 5.606 ; memoria:mem|data~217 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.785      ;
+; 5.611 ; memoria:mem|data~177 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.790      ;
+; 5.613 ; memoria:mem|data~51  ; memoria:mem|dataOut[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.792      ;
+; 5.616 ; memoria:mem|data~729 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.795      ;
+; 5.617 ; memoria:mem|data~686 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.796      ;
+; 5.617 ; memoria:mem|data~534 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.796      ;
+; 5.634 ; memoria:mem|data~556 ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.813      ;
+; 5.635 ; memoria:mem|data~598 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.814      ;
+; 5.638 ; memoria:mem|data~449 ; memoria:mem|dataOut[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.817      ;
+; 5.646 ; memoria:mem|data~981 ; memoria:mem|dataOut[5] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.825      ;
+; 5.647 ; memoria:mem|data~74  ; memoria:mem|dataOut[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.826      ;
+; 5.659 ; memoria:mem|data~72  ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.838      ;
+; 5.660 ; memoria:mem|data~886 ; memoria:mem|dataOut[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.839      ;
+; 5.662 ; memoria:mem|data~628 ; memoria:mem|dataOut[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.841      ;
+; 5.662 ; memoria:mem|data~552 ; memoria:mem|dataOut[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.841      ;
+; 5.670 ; memoria:mem|data~623 ; memoria:mem|dataOut[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.849      ;
+; 5.672 ; memoria:mem|data~879 ; memoria:mem|dataOut[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 5.851      ;
++-------+----------------------+------------------------+--------------+-------------+--------------+------------+------------+
 
 
 +-------------------------------------------------------------------+
@@ -439,21 +440,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                            ;
-+---------------+---------------------------------------------------------------------------------------+
-; Output Port   ; Comment                                                                               ;
-+---------------+---------------------------------------------------------------------------------------+
-; datoSalida[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; zeroFlag      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------+---------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; dataOut[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; zeroFlag    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -484,21 +485,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                            ;
-+---------------+---------------------------------------------------------------------------------------+
-; Output Port   ; Comment                                                                               ;
-+---------------+---------------------------------------------------------------------------------------+
-; datoSalida[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; datoSalida[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; zeroFlag      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------+---------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; dataOut[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOut[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; zeroFlag    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -507,7 +508,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Mar  3 07:42:30 2020
+    Info: Processing started: Wed Mar  4 19:07:52 2020
 Info: Command: quartus_sta actividad06 -c actividad06
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -540,7 +541,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 754 megabytes
-    Info: Processing ended: Tue Mar  3 07:42:34 2020
+    Info: Processing ended: Wed Mar  4 19:07:56 2020
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

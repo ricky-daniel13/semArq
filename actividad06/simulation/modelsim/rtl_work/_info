@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/jorozco/Documentos/semArq/actividad06/simulation/modelsim
 vactividad06
-Z1 !s110 1583281599
+Z1 !s110 1583370530
 !i10b 1
 !s100 H?TH6mHf6`Y5i??Gj1@f?1
 IR>;9coFXQJ>0j[j>4oz^b2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1583281598.000000
+Z4 !s108 1583370530.000000
 !s107 /home/jorozco/Documentos/semArq/actividad06/actividad06.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/actividad06.v|
 !i113 1
@@ -45,7 +45,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1583281599.000000
+R4
 !s107 /home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v|
 !i113 1
@@ -67,7 +67,7 @@ R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 /home/jorozco/Documentos/semArq/actividad06/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad06|/home/jorozco/Documentos/semArq/actividad06/ALU.v|
 !i113 1
@@ -76,7 +76,7 @@ R6
 R7
 n@a@l@u
 vmemoria
-!s110 1583281598
+R1
 !i10b 1
 !s100 kH?lGo:idVl?Yh[P?MgQV3
 I[T?dho4:W;WECmQWiFk0V2
