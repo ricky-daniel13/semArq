@@ -1,0 +1,26 @@
+Quartus Prime Archive log --	/home/jorozco/Documentos/semArq/actividad06/actividad06_tmp_archive.qarlog
+
+Archive:	/home/jorozco/Documentos/semArq/actividad06/actividad06_tmp_archive.qar
+Date:		Wed Mar 11 07:50:02 2020
+Quartus Prime		19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/jorozco/Documentos/semArq/actividad06/ALU.v
+/home/jorozco/Documentos/semArq/actividad06/ALU_tb.v
+/home/jorozco/Documentos/semArq/actividad06/actividad06.qpf
+/home/jorozco/Documentos/semArq/actividad06/actividad06.qsf
+/home/jorozco/Documentos/semArq/actividad06/actividad06.v
+/home/jorozco/Documentos/semArq/actividad06/actividad06_tb.v
+/home/jorozco/Documentos/semArq/actividad06/memoria.v
+/home/jorozco/Documentos/semArq/actividad06/memoria_tb.v
+/home/jorozco/intelFPGA_lite/19.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 9 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Mar 11 07:50:04 2020
+Source archive file:	/home/jorozco/Documentos/semArq/actividad06/actividad06_tmp_archive.qar
+Archive was extracted into	/home/jorozco/Documentos/semArq/actividad07/
+		 - successfully.
