@@ -1,0 +1,40 @@
+    0000001	//dir 0, op1 1	inst1
+	0000001	//dir 1, op2 1
+    0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst2
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst3
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst4
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst5
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst6
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst7
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst8
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst9
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0
+	0000001	//dir 0, op1 1	inst10
+	0000001	//dir 1, op2 1
+	0000000	//dir 2, sel suma
+	0000000	//dir 3, dir 0

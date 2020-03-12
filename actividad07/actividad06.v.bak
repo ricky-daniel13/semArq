@@ -21,6 +21,7 @@ ALU alu(
 
 memoria mem(
 	.en(en),
+	.clk(clk),
 	.dir(b),
 	.dataIn(data),
 	.dataOut(dataOut)
