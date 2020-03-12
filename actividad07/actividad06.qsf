@@ -71,3 +71,4 @@ set_global_assignment -name EDA_TEST_BENCH_NAME actividad06_tb -section_id eda_s
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id actividad06_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME actividad06_tb -section_id actividad06_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE actividad06_tb.v -section_id actividad06_tb
+set_global_assignment -name VERILOG_FILE rom.v

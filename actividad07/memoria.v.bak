@@ -1,12 +1,13 @@
 module memoria(
 	input 
 		en,
+		clk,
 	input [7:0]dir,
 	input [7:0]dataIn,
 	output reg [7:0]dataOut
 );
 reg [7:0] data [0:127];
-always @*
+always @(posedge clk)
 begin
 	if(en)	//enable en 1 = write
 	begin
