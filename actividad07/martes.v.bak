@@ -1,4 +1,4 @@
-module actividad06(
+module martes(
 	input [7:0]
 		a,
 		b,

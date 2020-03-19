@@ -1,10 +1,10 @@
 module ALU(
-	input [7:0]
+	input [10:0]
 		a,
 		b,
 	input [2:0]sel,
 	output reg zeroFlag,
-	output reg [7:0]res
+	output reg [31:0]res
 );
 always @*
 begin

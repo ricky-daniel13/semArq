@@ -1,0 +1,9 @@
+module bufferrom(
+	input clk, en,
+	input [31:0]inst,
+	output [31:0]ins,
+	output enout
+);
+assign enout = en;
+assign ins = inst;
+endmodule

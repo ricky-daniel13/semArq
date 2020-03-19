@@ -1,0 +1,19 @@
+module buffer(
+	input clk, en,
+	input [31:0]inst,
+	output [31:0]ins,
+	output en
+);
+reg [7:0] data [0:127];
+always @*
+begin
+	if(en)	//enable en 1 = write
+	begin
+		data[dir] = dataIn;
+	end
+	else	//enable en 0 = read
+	begin
+		dataOut = data[dir];
+	end
+end
+endmodule

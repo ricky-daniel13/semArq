@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module actividad06_tb();
+module martes_tb();
 reg [7:0]
 	a,
 	b = 8'b0;

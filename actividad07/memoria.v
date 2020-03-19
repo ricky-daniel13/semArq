@@ -1,11 +1,11 @@
 module memoria(
 	input 
 		en,
-	input [7:0]dir,
-	input [7:0]dataIn,
-	output reg [7:0]dataOut
+	input [6:0]dir,
+	input [31:0]dataIn,
+	output reg [31:0]dataOut
 );
-reg [7:0] data [0:127];
+reg [31:0] data [0:127];
 always @*
 begin
 	if(en)	//enable en 1 = write
