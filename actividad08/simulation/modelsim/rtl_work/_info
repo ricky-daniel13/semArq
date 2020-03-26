@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jorozco/Documentos/semArq/actividad08/simulation/modelsim
+vmemoriaAsin
+Z1 !s110 1585232668
+!i10b 1
+!s100 LGWzz6THeo@D`6CM@Q8]?1
+I6T?3lCX4=9eBEF4GM1nRC1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1585226426
+8/home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v
+F/home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1585232668.000000
+!s107 /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad08|/home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad08
+Z7 tCvgOpt 0
+nmemoria@asin
+vmemoriaAsin_tb
+R1
+!i10b 1
+!s100 `7C57dFCfj5l7<bUUl?a]0
+I2cMU54?n<?STB;QgRk40D3
+R2
+R0
+w1585232656
+8/home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v
+F/home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad08|/home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v|
+!i113 1
+R5
+R6
+R7
+nmemoria@asin_tb

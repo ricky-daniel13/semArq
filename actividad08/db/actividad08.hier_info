@@ -1,0 +1,38 @@
+|memoriaAsin
+en => data.WE
+en => dataOut[7]$latch.LATCH_ENABLE
+en => dataOut[6]$latch.LATCH_ENABLE
+en => dataOut[5]$latch.LATCH_ENABLE
+en => dataOut[4]$latch.LATCH_ENABLE
+en => dataOut[3]$latch.LATCH_ENABLE
+en => dataOut[2]$latch.LATCH_ENABLE
+en => dataOut[1]$latch.LATCH_ENABLE
+en => dataOut[0]$latch.LATCH_ENABLE
+dir[0] => data.RADDR
+dir[0] => data.WADDR
+dir[1] => data.RADDR1
+dir[1] => data.WADDR1
+dir[2] => data.RADDR2
+dir[2] => data.WADDR2
+dir[3] => data.RADDR3
+dir[3] => data.WADDR3
+dir[4] => data.RADDR4
+dir[4] => data.WADDR4
+dataIn[0] => data.DATAIN
+dataIn[1] => data.DATAIN1
+dataIn[2] => data.DATAIN2
+dataIn[3] => data.DATAIN3
+dataIn[4] => data.DATAIN4
+dataIn[5] => data.DATAIN5
+dataIn[6] => data.DATAIN6
+dataIn[7] => data.DATAIN7
+dataOut[0] <= dataOut[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= dataOut[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= dataOut[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= dataOut[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= dataOut[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= dataOut[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= dataOut[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= dataOut[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

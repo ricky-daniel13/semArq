@@ -1,0 +1,13 @@
+module memorias(
+	input 
+		en,
+		clk,
+	input [4:0]dir,
+	input [7:0]dataIn,
+	output reg [7:0]dataOut
+);
+wire en;
+wire [4:0]dir;
+wire [7:0]
+	dataIn,
+	dataOut;
