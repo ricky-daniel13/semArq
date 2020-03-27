@@ -1,21 +1,28 @@
 `timescale 1ns/1ns
 
-module memoriaAsin_tb();
-reg en;
+module memoriaSin_tb();
+reg 
+	en,
+	clk = 1'b1;
 reg [4:0]dir;
 reg [7:0]dataIn;
 wire [7:0]dataOut;
 
-memoriaAsin mem(
+memoriaSin mem(
 	.en(en),
+	.clk(clk),
 	.dir(dir),
 	.dataIn(dataIn),
 	.dataOut(dataOut)
 );
 
-always #10
+always #10 
 begin
-	dir = dir + 1'b1;
+	clk=!clk;
+	if(clk)
+	begin
+		dir = dir + 1'b1;
+	end
 end
 
 initial

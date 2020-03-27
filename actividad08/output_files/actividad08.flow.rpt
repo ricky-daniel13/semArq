@@ -1,5 +1,5 @@
 Flow report for actividad08
-Thu Mar 26 07:46:23 2020
+Fri Mar 27 06:55:13 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Thu Mar 26 07:46:23 2020       ;
+; Flow Status           ; Successful - Fri Mar 27 06:55:13 2020       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; actividad08                                 ;
-; Top-level Entity Name ; memoriaAsin                                 ;
+; Top-level Entity Name ; actividad08                                 ;
 ; Family                ; MAX V                                       ;
-; Total logic elements  ; 480 / 570 ( 84 % )                          ;
-; Total pins            ; 22 / 74 ( 30 % )                            ;
+; Total logic elements  ; 776 / 1,270 ( 61 % )                        ;
+; Total pins            ; 31 / 114 ( 27 % )                           ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
-; Device                ; 5M570ZM100C4                                ;
+; Device                ; 5M1270ZT144C4                               ;
 ; Timing Models         ; Final                                       ;
 +-----------------------+---------------------------------------------+
 
@@ -60,34 +60,41 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/26/2020 07:45:59 ;
+; Start date & time ; 03/27/2020 06:53:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; actividad08         ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                        ;
-+--------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                          ; Default Value ; Entity Name ; Section Id                        ;
-+--------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 26728433180837.158523035901952 ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; memoriaAsin_tb                    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; memoriaAsin_tb                 ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                    ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; memoriaAsin_tb.v               ; --            ; --          ; memoriaAsin_tb                    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; memoriaAsin_tb                 ; --            ; --          ; memoriaAsin_tb                    ;
-; EDA_TEST_BENCH_NAME                  ; memoriaAsin_tb                 ; --            ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                           ; --            ; --          ; eda_simulation                    ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                   ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; memoriaAsin                    ; actividad08   ; --          ; --                                ;
-+--------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                         ;
++--------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 193904264866843.158531363112745 ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; memoriaSin_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; actividad08_tb                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; memoriaAsin_tb                    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; actividad08_tb                  ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; memoriaSin_tb.v                 ; --            ; --          ; memoriaSin_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; actividad08_tb.v                ; --            ; --          ; actividad08_tb                    ;
+; EDA_TEST_BENCH_FILE                  ; memoriaAsin_tb.v                ; --            ; --          ; memoriaAsin_tb                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; memoriaSin_tb                   ; --            ; --          ; memoriaSin_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; actividad08_tb                  ; --            ; --          ; actividad08_tb                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; memoriaAsin_tb                  ; --            ; --          ; memoriaAsin_tb                    ;
+; EDA_TEST_BENCH_NAME                  ; memoriaAsin_tb                  ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; memoriaSin_tb                   ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; actividad08_tb                  ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                            ; --            ; --          ; eda_simulation                    ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                    ; --            ; --          ; --                                ;
++--------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +102,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 901 MB              ; 00:00:28                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 1099 MB             ; 00:00:06                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 814 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 737 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1034 MB             ; 00:00:01                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:38                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 904 MB              ; 00:00:28                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 1104 MB             ; 00:00:10                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 813 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 741 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1038 MB             ; 00:00:01                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad08
-Thu Mar 26 07:46:11 2020
+Fri Mar 27 06:54:03 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -42,13 +42,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Mar 26 07:46:11 2020       ;
+; Analysis & Synthesis Status ; Successful - Fri Mar 27 06:54:03 2020       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; actividad08                                 ;
-; Top-level Entity Name       ; memoriaAsin                                 ;
+; Top-level Entity Name       ; actividad08                                 ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 480                                         ;
-; Total pins                  ; 22                                          ;
+; Total logic elements        ; 904                                         ;
+; Total pins                  ; 31                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -59,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; memoriaAsin        ; actividad08        ;
+; Top-level entity name                                            ; actividad08        ; actividad08        ;
 ; Family name                                                      ; MAX V              ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -146,160 +146,164 @@ https://fpgasoftware.intel.com/eula.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
 ; memoriaAsin.v                    ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v ;         ;
+; memoriaSin.v                     ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad08/memoriaSin.v  ;         ;
+; actividad08.v                    ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad08/actividad08.v ;         ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Total logic elements                        ; 480    ;
-;     -- Combinational with no register       ; 480    ;
-;     -- Register only                        ; 0      ;
-;     -- Combinational with a register        ; 0      ;
-;                                             ;        ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 176    ;
-;     -- 3 input functions                    ; 304    ;
-;     -- 2 input functions                    ; 0      ;
-;     -- 1 input functions                    ; 0      ;
-;     -- 0 input functions                    ; 0      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 480    ;
-;     -- arithmetic mode                      ; 0      ;
-;     -- qfbk mode                            ; 0      ;
-;     -- register cascade mode                ; 0      ;
-;     -- synchronous clear/load mode          ; 0      ;
-;     -- asynchronous clear/load mode         ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-; I/O pins                                    ; 22     ;
-; Maximum fan-out node                        ; dir[2] ;
-; Maximum fan-out                             ; 76     ;
-; Total fan-out                               ; 1624   ;
-; Average fan-out                             ; 3.24   ;
-+---------------------------------------------+--------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 904   ;
+;     -- Combinational with no register       ; 640   ;
+;     -- Register only                        ; 256   ;
+;     -- Combinational with a register        ; 8     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 336   ;
+;     -- 3 input functions                    ; 312   ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 904   ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 264   ;
+; I/O pins                                    ; 31    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 264   ;
+; Total fan-out                               ; 3080  ;
+; Average fan-out                             ; 3.29  ;
++---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |memoriaAsin               ; 480 (480)   ; 0            ; 0          ; 22   ; 0            ; 480 (480)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memoriaAsin        ; memoriaAsin ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                          ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name           ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+-------------+--------------+
+; |actividad08               ; 904 (0)     ; 264          ; 0          ; 31   ; 0            ; 640 (0)      ; 256 (0)           ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |actividad08                  ; actividad08 ; work         ;
+;    |memoriaAsin:mema|      ; 432 (432)   ; 0            ; 0          ; 0    ; 0            ; 432 (432)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |actividad08|memoriaAsin:mema ; memoriaAsin ; work         ;
+;    |memoriaSin:mems|       ; 472 (472)   ; 264          ; 0          ; 0    ; 0            ; 208 (208)    ; 256 (256)         ; 8 (8)            ; 0 (0)           ; 0 (0)      ; |actividad08|memoriaSin:mems  ; memoriaSin  ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                 ;
-+------------------------------------------------------+---------------------+------------------------+
-; Latch Name                                           ; Latch Enable Signal ; Free of Timing Hazards ;
-+------------------------------------------------------+---------------------+------------------------+
-; dataOut[0]$latch                                     ; en                  ; yes                    ;
-; dataOut[1]$latch                                     ; en                  ; yes                    ;
-; dataOut[2]$latch                                     ; en                  ; yes                    ;
-; dataOut[3]$latch                                     ; en                  ; yes                    ;
-; dataOut[4]$latch                                     ; en                  ; yes                    ;
-; dataOut[5]$latch                                     ; en                  ; yes                    ;
-; dataOut[6]$latch                                     ; en                  ; yes                    ;
-; dataOut[7]$latch                                     ; en                  ; yes                    ;
-; data~80                                              ; rtl~0               ; yes                    ;
-; data~72                                              ; rtl~1               ; yes                    ;
-; data~64                                              ; rtl~2               ; yes                    ;
-; data~88                                              ; rtl~3               ; yes                    ;
-; data~40                                              ; rtl~4               ; yes                    ;
-; data~48                                              ; rtl~5               ; yes                    ;
-; data~32                                              ; rtl~6               ; yes                    ;
-; data~56                                              ; rtl~7               ; yes                    ;
-; data~16                                              ; rtl~8               ; yes                    ;
-; data~8                                               ; rtl~9               ; yes                    ;
-; data~0                                               ; rtl~10              ; yes                    ;
-; data~24                                              ; rtl~11              ; yes                    ;
-; data~104                                             ; rtl~12              ; yes                    ;
-; data~112                                             ; rtl~13              ; yes                    ;
-; data~96                                              ; rtl~14              ; yes                    ;
-; data~120                                             ; rtl~15              ; yes                    ;
-; data~176                                             ; rtl~16              ; yes                    ;
-; data~208                                             ; rtl~17              ; yes                    ;
-; data~144                                             ; rtl~18              ; yes                    ;
-; data~240                                             ; rtl~19              ; yes                    ;
-; data~200                                             ; rtl~20              ; yes                    ;
-; data~168                                             ; rtl~21              ; yes                    ;
-; data~136                                             ; rtl~22              ; yes                    ;
-; data~232                                             ; rtl~23              ; yes                    ;
-; data~160                                             ; rtl~24              ; yes                    ;
-; data~192                                             ; rtl~25              ; yes                    ;
-; data~128                                             ; rtl~26              ; yes                    ;
-; data~224                                             ; rtl~27              ; yes                    ;
-; data~216                                             ; rtl~28              ; yes                    ;
-; data~184                                             ; rtl~29              ; yes                    ;
-; data~152                                             ; rtl~30              ; yes                    ;
-; data~248                                             ; rtl~31              ; yes                    ;
-; data~49                                              ; rtl~5               ; yes                    ;
-; data~41                                              ; rtl~4               ; yes                    ;
-; data~33                                              ; rtl~6               ; yes                    ;
-; data~57                                              ; rtl~7               ; yes                    ;
-; data~73                                              ; rtl~1               ; yes                    ;
-; data~81                                              ; rtl~0               ; yes                    ;
-; data~65                                              ; rtl~2               ; yes                    ;
-; data~89                                              ; rtl~3               ; yes                    ;
-; data~9                                               ; rtl~9               ; yes                    ;
-; data~17                                              ; rtl~8               ; yes                    ;
-; data~1                                               ; rtl~10              ; yes                    ;
-; data~25                                              ; rtl~11              ; yes                    ;
-; data~113                                             ; rtl~13              ; yes                    ;
-; data~105                                             ; rtl~12              ; yes                    ;
-; data~97                                              ; rtl~14              ; yes                    ;
-; data~121                                             ; rtl~15              ; yes                    ;
-; data~169                                             ; rtl~21              ; yes                    ;
-; data~201                                             ; rtl~20              ; yes                    ;
-; data~137                                             ; rtl~22              ; yes                    ;
-; data~233                                             ; rtl~23              ; yes                    ;
-; data~209                                             ; rtl~17              ; yes                    ;
-; data~177                                             ; rtl~16              ; yes                    ;
-; data~145                                             ; rtl~18              ; yes                    ;
-; data~241                                             ; rtl~19              ; yes                    ;
-; data~193                                             ; rtl~25              ; yes                    ;
-; data~161                                             ; rtl~24              ; yes                    ;
-; data~129                                             ; rtl~26              ; yes                    ;
-; data~225                                             ; rtl~27              ; yes                    ;
-; data~185                                             ; rtl~29              ; yes                    ;
-; data~217                                             ; rtl~28              ; yes                    ;
-; data~153                                             ; rtl~30              ; yes                    ;
-; data~249                                             ; rtl~31              ; yes                    ;
-; data~82                                              ; rtl~0               ; yes                    ;
-; data~74                                              ; rtl~1               ; yes                    ;
-; data~66                                              ; rtl~2               ; yes                    ;
-; data~90                                              ; rtl~3               ; yes                    ;
-; data~42                                              ; rtl~4               ; yes                    ;
-; data~50                                              ; rtl~5               ; yes                    ;
-; data~34                                              ; rtl~6               ; yes                    ;
-; data~58                                              ; rtl~7               ; yes                    ;
-; data~18                                              ; rtl~8               ; yes                    ;
-; data~10                                              ; rtl~9               ; yes                    ;
-; data~2                                               ; rtl~10              ; yes                    ;
-; data~26                                              ; rtl~11              ; yes                    ;
-; data~106                                             ; rtl~12              ; yes                    ;
-; data~114                                             ; rtl~13              ; yes                    ;
-; data~98                                              ; rtl~14              ; yes                    ;
-; data~122                                             ; rtl~15              ; yes                    ;
-; data~178                                             ; rtl~16              ; yes                    ;
-; data~210                                             ; rtl~17              ; yes                    ;
-; data~146                                             ; rtl~18              ; yes                    ;
-; data~242                                             ; rtl~19              ; yes                    ;
-; data~202                                             ; rtl~20              ; yes                    ;
-; data~170                                             ; rtl~21              ; yes                    ;
-; data~138                                             ; rtl~22              ; yes                    ;
-; data~234                                             ; rtl~23              ; yes                    ;
-; data~162                                             ; rtl~24              ; yes                    ;
-; data~194                                             ; rtl~25              ; yes                    ;
-; data~130                                             ; rtl~26              ; yes                    ;
-; data~226                                             ; rtl~27              ; yes                    ;
-; Number of user-specified and inferred latches = 264  ;                     ;                        ;
-+------------------------------------------------------+---------------------+------------------------+
++------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                  ;
++------------------------------------------------------+----------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal  ; Free of Timing Hazards ;
++------------------------------------------------------+----------------------+------------------------+
+; memoriaAsin:mema|dataOut[0]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|dataOut[1]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|dataOut[2]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|dataOut[3]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|dataOut[4]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|dataOut[5]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|dataOut[6]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|dataOut[7]                          ; en                   ; yes                    ;
+; memoriaAsin:mema|data~80                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~72                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~64                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~88                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~40                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~48                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~32                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~56                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~16                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~8                              ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~0                              ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~24                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~104                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~112                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~96                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~120                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~176                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~208                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~144                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~240                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~200                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~168                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~136                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~232                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~160                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~192                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~128                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~224                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~216                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~184                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~152                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~248                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~49                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~41                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~33                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~57                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~73                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~81                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~65                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~89                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~9                              ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~17                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~1                              ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~25                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~113                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~105                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~97                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~121                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~169                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~201                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~137                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~233                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~209                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~177                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~145                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~241                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~193                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~161                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~129                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~225                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~185                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~217                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~153                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~249                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~82                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~74                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~66                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~90                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~42                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~50                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~34                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~58                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~18                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~10                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~2                              ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~26                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~106                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~114                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~98                             ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~122                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~178                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~210                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~146                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~242                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~202                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~170                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~138                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~234                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~162                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~194                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~130                            ; memoriaSin:mems|data ; yes                    ;
+; memoriaAsin:mema|data~226                            ; memoriaSin:mems|data ; yes                    ;
+; Number of user-specified and inferred latches = 264  ;                      ;                        ;
++------------------------------------------------------+----------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -308,12 +312,12 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 264   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 264   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -324,7 +328,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Mar 26 07:45:58 2020
+    Info: Processing started: Fri Mar 27 06:53:51 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad08 -c actividad08
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -333,10 +337,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file memoria
 Info (12021): Found 1 design units, including 1 entities, in source file memoriaSin.v
     Info (12023): Found entity 1: memoriaSin File: /home/jorozco/Documentos/semArq/actividad08/memoriaSin.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file actividad08.v
-    Info (12023): Found entity 1: memorias File: /home/jorozco/Documentos/semArq/actividad08/actividad08.v Line: 1
+    Info (12023): Found entity 1: actividad08 File: /home/jorozco/Documentos/semArq/actividad08/actividad08.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memoriaAsin_tb.v
     Info (12023): Found entity 1: memoriaAsin_tb File: /home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v Line: 3
-Info (12127): Elaborating entity "memoriaAsin" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file memoriaSin_tb.v
+    Info (12023): Found entity 1: memoriaSin_tb File: /home/jorozco/Documentos/semArq/actividad08/memoriaSin_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file actividad08_tb.v
+    Info (12023): Found entity 1: actividad08_tb File: /home/jorozco/Documentos/semArq/actividad08/actividad08_tb.v Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at actividad08_tb.v(18): created implicit net for "dirs" File: /home/jorozco/Documentos/semArq/actividad08/actividad08_tb.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at actividad08_tb.v(19): created implicit net for "dira" File: /home/jorozco/Documentos/semArq/actividad08/actividad08_tb.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at actividad08_tb.v(20): created implicit net for "dataIns" File: /home/jorozco/Documentos/semArq/actividad08/actividad08_tb.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at actividad08_tb.v(21): created implicit net for "dataIna" File: /home/jorozco/Documentos/semArq/actividad08/actividad08_tb.v Line: 21
+Info (12127): Elaborating entity "actividad08" for the top level hierarchy
+Info (12128): Elaborating entity "memoriaSin" for hierarchy "memoriaSin:mems" File: /home/jorozco/Documentos/semArq/actividad08/actividad08.v Line: 17
+Info (12128): Elaborating entity "memoriaAsin" for hierarchy "memoriaAsin:mema" File: /home/jorozco/Documentos/semArq/actividad08/actividad08.v Line: 24
 Warning (10240): Verilog HDL Always Construct warning at memoriaAsin.v(11): inferring latch(es) for variable "dataOut", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v Line: 11
 Info (10041): Inferred latch for "dataOut[0]" at memoriaAsin.v(17) File: /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v Line: 17
 Info (10041): Inferred latch for "dataOut[1]" at memoriaAsin.v(17) File: /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v Line: 17
@@ -346,14 +360,14 @@ Info (10041): Inferred latch for "dataOut[4]" at memoriaAsin.v(17) File: /home/j
 Info (10041): Inferred latch for "dataOut[5]" at memoriaAsin.v(17) File: /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v Line: 17
 Info (10041): Inferred latch for "dataOut[6]" at memoriaAsin.v(17) File: /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v Line: 17
 Info (10041): Inferred latch for "dataOut[7]" at memoriaAsin.v(17) File: /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v Line: 17
-Info (21057): Implemented 502 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 480 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 901 megabytes
-    Info: Processing ended: Thu Mar 26 07:46:11 2020
-    Info: Elapsed time: 00:00:13
+Info (21057): Implemented 935 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 904 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 904 megabytes
+    Info: Processing ended: Fri Mar 27 06:54:03 2020
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:28
 
 

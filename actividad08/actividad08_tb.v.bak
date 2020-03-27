@@ -1,0 +1,45 @@
+`timescale 1ns/1ns
+
+module actividad08_tb();
+
+reg
+	en,
+	clk;
+reg [4:0]
+	dirs,
+	dira;
+reg [7:0]
+	dataIns,
+	dataIna,
+	dataOuts,
+	dataOuta;
+
+actividad08 memorias
+(
+		.en(en),
+		.clk(clk),
+		.dirs(dirs),
+		.dira(dira),
+		.dataIns(dataIns),
+		.dataIna(dataIna),
+		.dataOuts(dataOuts),
+		.dataOuta(dataOuta)
+);
+always #10 
+begin
+	clk=!clk;
+	if(clk)
+	begin
+		dir = dir + 1'b1;
+	end
+end
+
+initial
+begin
+	$readmemb("nombre.mem", memorias.mems.data);
+	$readmemb("nombre.mem", memorias.mema.data);
+	en = 0;
+	dir = 0;
+	#10;
+end
+endmodule

@@ -11,43 +11,55 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad08 {/home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:24:28 on Mar 26,2020
+# Start time: 07:08:07 on Mar 27,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad08" /home/jorozco/Documentos/semArq/actividad08/memoriaAsin.v 
 # -- Compiling module memoriaAsin
 # 
 # Top level modules:
 # 	memoriaAsin
-# End time: 08:24:28 on Mar 26,2020, Elapsed time: 0:00:00
+# End time: 07:08:07 on Mar 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad08 {/home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v}
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad08 {/home/jorozco/Documentos/semArq/actividad08/memoriaSin.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:24:28 on Mar 26,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad08" /home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v 
-# -- Compiling module memoriaAsin_tb
+# Start time: 07:08:07 on Mar 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad08" /home/jorozco/Documentos/semArq/actividad08/memoriaSin.v 
+# -- Compiling module memoriaSin
 # 
 # Top level modules:
-# 	memoriaAsin_tb
-# End time: 08:24:28 on Mar 26,2020, Elapsed time: 0:00:00
+# 	memoriaSin
+# End time: 07:08:08 on Mar 27,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad08 {/home/jorozco/Documentos/semArq/actividad08/actividad08.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:08:08 on Mar 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad08" /home/jorozco/Documentos/semArq/actividad08/actividad08.v 
+# -- Compiling module actividad08
+# 
+# Top level modules:
+# 	actividad08
+# End time: 07:08:08 on Mar 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  memoriaAsin_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" memoriaAsin_tb 
-# Start time: 08:24:28 on Mar 26,2020
-# Loading work.memoriaAsin_tb
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad08 {/home/jorozco/Documentos/semArq/actividad08/actividad08_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:08:08 on Mar 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad08" /home/jorozco/Documentos/semArq/actividad08/actividad08_tb.v 
+# -- Compiling module actividad08_tb
+# 
+# Top level modules:
+# 	actividad08_tb
+# End time: 07:08:08 on Mar 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  actividad08_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" actividad08_tb 
+# Start time: 07:08:08 on Mar 27,2020
+# Loading work.actividad08_tb
+# Loading work.actividad08
+# Loading work.memoriaSin
 # Loading work.memoriaAsin
 # 
 # add wave *
-# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
-# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
-# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
-# ** Error: Cannot lock WLF file: "vsim.wlf"
-#           errno 11: Resource temporarily unavailable.
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jorozco  Hostname: jorozco-HP-ProBook-440-G3  ProcessID: 17381
-#           Attempting to use alternate WLF file "./wlftoaFeIW".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftoaFeIW
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -55,6 +67,6 @@
 # run -all
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
 # Break key hit
-# Break in Module memoriaAsin_tb at /home/jorozco/Documentos/semArq/actividad08/memoriaAsin_tb.v line 16
-# End time: 08:26:37 on Mar 26,2020, Elapsed time: 0:02:09
-# Errors: 4, Warnings: 3
+# Simulation stop requested.
+# End time: 07:12:51 on Mar 27,2020, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 1

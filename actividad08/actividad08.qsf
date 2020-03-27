@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY memoriaAsin
+set_global_assignment -name TOP_LEVEL_ENTITY actividad08
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "06:27:44  MARCH 26, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
@@ -56,8 +56,18 @@ set_global_assignment -name VERILOG_FILE memoriaSin.v
 set_global_assignment -name VERILOG_FILE actividad08.v
 set_global_assignment -name VERILOG_FILE memoriaAsin_tb.v
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH memoriaAsin_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH actividad08_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME memoriaAsin_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id memoriaAsin_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME memoriaAsin_tb -section_id memoriaAsin_tb
+set_global_assignment -name VERILOG_FILE memoriaSin_tb.v
+set_global_assignment -name EDA_TEST_BENCH_NAME memoriaSin_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id memoriaSin_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME memoriaSin_tb -section_id memoriaSin_tb
+set_global_assignment -name VERILOG_FILE actividad08_tb.v
+set_global_assignment -name EDA_TEST_BENCH_NAME actividad08_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id actividad08_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME actividad08_tb -section_id actividad08_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE memoriaAsin_tb.v -section_id memoriaAsin_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE memoriaSin_tb.v -section_id memoriaSin_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE actividad08_tb.v -section_id actividad08_tb

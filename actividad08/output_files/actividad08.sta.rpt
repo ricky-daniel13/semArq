@@ -1,5 +1,5 @@
 Timing Analyzer report for actividad08
-Thu Mar 26 07:46:21 2020
+Fri Mar 27 06:55:11 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -17,18 +17,20 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   9. Removal Summary
  10. Minimum Pulse Width Summary
  11. Setup: 'en'
- 12. Hold: 'en'
- 13. Setup Transfers
- 14. Hold Transfers
- 15. Report TCCS
- 16. Report RSKM
- 17. Unconstrained Paths Summary
- 18. Clock Status Summary
- 19. Unconstrained Input Ports
- 20. Unconstrained Output Ports
+ 12. Setup: 'clk'
+ 13. Hold: 'clk'
+ 14. Hold: 'en'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
  21. Unconstrained Input Ports
  22. Unconstrained Output Ports
- 23. Timing Analyzer Messages
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. Timing Analyzer Messages
 
 
 
@@ -59,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer       ; Legacy Timing Analyzer                              ;
 ; Revision Name         ; actividad08                                         ;
 ; Device Family         ; MAX V                                               ;
-; Device Name           ; 5M570ZM100C4                                        ;
+; Device Name           ; 5M1270ZT144C4                                       ;
 ; Timing Models         ; Final                                               ;
 ; Delay Model           ; Slow Model                                          ;
 ; Rise/Fall Delays      ; Unavailable                                         ;
@@ -79,7 +81,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -88,17 +90,19 @@ https://fpgasoftware.intel.com/eula.
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
 ; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
 ; en         ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { en }  ;
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
 
 
-+-------------------------------------------------+
-; Fmax Summary                                    ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 29.74 MHz ; 29.74 MHz       ; en         ;      ;
-+-----------+-----------------+------------+------+
++--------------------------------------------------+
+; Fmax Summary                                     ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 46.65 MHz  ; 46.65 MHz       ; en         ;      ;
+; 142.71 MHz ; 142.71 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -107,7 +111,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+---------+---------------+
 ; Clock ; Slack   ; End Point TNS ;
 +-------+---------+---------------+
-; en    ; -16.314 ; -121.929      ;
+; en    ; -10.218 ; -79.235       ;
+; clk   ; -6.007  ; -637.636      ;
 +-------+---------+---------------+
 
 
@@ -116,7 +121,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; en    ; 6.777 ; 0.000         ;
+; clk   ; 1.728 ; 0.000         ;
+; en    ; 5.835 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -137,224 +143,441 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
+; clk   ; -2.289 ; -2.289        ;
 ; en    ; -2.289 ; -2.289        ;
 +-------+--------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Setup: 'en'                                                                                                  ;
-+---------+-----------+------------------+--------------+-------------+--------------+------------+------------+
-; Slack   ; From Node ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+---------+-----------+------------------+--------------+-------------+--------------+------------+------------+
-; -16.314 ; data~133  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -4.520     ; 9.249      ;
-; -15.910 ; data~134  ; dataOut[6]$latch ; en           ; en          ; 0.500        ; -4.215     ; 9.125      ;
-; -15.871 ; data~196  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -5.453     ; 6.943      ;
-; -15.797 ; data~199  ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -3.130     ; 10.602     ;
-; -15.259 ; data~193  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -3.135     ; 8.657      ;
-; -15.227 ; data~198  ; dataOut[6]$latch ; en           ; en          ; 0.500        ; -4.594     ; 8.063      ;
-; -15.094 ; data~132  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -5.064     ; 6.555      ;
-; -14.793 ; data~129  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -4.609     ; 6.717      ;
-; -14.667 ; data~135  ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -4.278     ; 8.324      ;
-; -14.554 ; data~89   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -3.119     ; 7.968      ;
-; -14.461 ; data~131  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -4.563     ; 7.823      ;
-; -14.457 ; data~128  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -4.207     ; 8.176      ;
-; -14.443 ; data~220  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.521     ; 10.447     ;
-; -14.430 ; data~192  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -4.576     ; 7.780      ;
-; -14.326 ; data~92   ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -4.811     ; 6.040      ;
-; -14.294 ; data~33   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -3.063     ; 7.764      ;
-; -14.288 ; data~195  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -3.143     ; 9.070      ;
-; -14.250 ; data~91   ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -5.373     ; 6.802      ;
-; -14.091 ; data~228  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.545     ; 10.071     ;
-; -14.039 ; data~204  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -4.091     ; 6.473      ;
-; -14.016 ; data~117  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -0.844     ; 10.627     ;
-; -13.930 ; data~57   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -2.919     ; 7.544      ;
-; -13.901 ; data~93   ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -3.081     ; 8.275      ;
-; -13.860 ; data~194  ; dataOut[2]$latch ; en           ; en          ; 0.500        ; -4.237     ; 7.547      ;
-; -13.849 ; data~65   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -0.442     ; 9.940      ;
-; -13.840 ; data~109  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.245     ; 9.050      ;
-; -13.837 ; data~197  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.010     ; 9.282      ;
-; -13.820 ; data~175  ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -2.209     ; 9.546      ;
-; -13.714 ; data~164  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.490     ; 9.749      ;
-; -13.682 ; data~147  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -2.231     ; 9.376      ;
-; -13.647 ; data~130  ; dataOut[2]$latch ; en           ; en          ; 0.500        ; -4.448     ; 7.123      ;
-; -13.561 ; data~177  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -1.428     ; 8.666      ;
-; -13.512 ; data~165  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.088     ; 8.879      ;
-; -13.467 ; data~217  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -0.512     ; 9.488      ;
-; -13.464 ; data~179  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -2.419     ; 8.970      ;
-; -13.425 ; data~169  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -3.027     ; 6.931      ;
-; -13.419 ; data~153  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -0.468     ; 9.484      ;
-; -13.410 ; data~176  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -2.927     ; 8.409      ;
-; -13.391 ; data~49   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -2.701     ; 7.223      ;
-; -13.379 ; data~81   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -3.208     ; 6.704      ;
-; -13.369 ; data~148  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; 0.088      ; 9.982      ;
-; -13.324 ; data~244  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.544     ; 9.305      ;
-; -13.320 ; data~225  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -0.528     ; 9.325      ;
-; -13.273 ; data~241  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -1.407     ; 8.399      ;
-; -13.271 ; data~229  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.146     ; 8.580      ;
-; -13.206 ; data~25   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -1.116     ; 8.623      ;
-; -13.194 ; data~172  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -3.249     ; 6.470      ;
-; -13.179 ; data~180  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.955     ; 8.749      ;
-; -13.096 ; data~183  ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -2.501     ; 8.530      ;
-; -13.039 ; data~124  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.497     ; 9.067      ;
-; -13.023 ; data~161  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -1.790     ; 7.766      ;
-; -13.014 ; data~139  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -3.069     ; 7.870      ;
-; -13.007 ; data~149  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.180     ; 8.282      ;
-; -12.997 ; data~140  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -3.438     ; 6.084      ;
-; -12.970 ; data~215  ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -3.024     ; 7.881      ;
-; -12.964 ; data~232  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -3.173     ; 7.717      ;
-; -12.899 ; data~94   ; dataOut[6]$latch ; en           ; en          ; 0.500        ; -4.519     ; 5.810      ;
-; -12.899 ; data~223  ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -1.949     ; 8.885      ;
-; -12.853 ; data~41   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -2.676     ; 6.710      ;
-; -12.847 ; data~122  ; dataOut[2]$latch ; en           ; en          ; 0.500        ; -0.492     ; 10.279     ;
-; -12.847 ; data~136  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -2.864     ; 7.909      ;
-; -12.826 ; data~171  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -2.226     ; 8.525      ;
-; -12.808 ; data~44   ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -2.679     ; 6.654      ;
-; -12.768 ; data~249  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; 0.044      ; 9.345      ;
-; -12.705 ; data~144  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -1.777     ; 8.854      ;
-; -12.702 ; data~188  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.432     ; 8.795      ;
-; -12.697 ; data~252  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.459     ; 8.763      ;
-; -12.682 ; data~200  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -2.543     ; 8.065      ;
-; -12.667 ; data~185  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; 0.000      ; 9.200      ;
-; -12.664 ; data~236  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -2.935     ; 6.254      ;
-; -12.656 ; data~52   ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -2.706     ; 6.475      ;
-; -12.641 ; data~12   ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -0.567     ; 8.599      ;
-; -12.641 ; data~36   ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -3.076     ; 6.090      ;
-; -12.602 ; data~73   ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -2.850     ; 6.285      ;
-; -12.585 ; data~28   ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -1.498     ; 7.612      ;
-; -12.569 ; data~230  ; dataOut[6]$latch ; en           ; en          ; 0.500        ; -0.560     ; 9.439      ;
-; -12.562 ; data~156  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; -1.375     ; 7.712      ;
-; -12.545 ; data~243  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -1.855     ; 8.615      ;
-; -12.520 ; data~101  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -1.284     ; 8.691      ;
-; -12.465 ; data~145  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -1.424     ; 7.574      ;
-; -12.463 ; data~88   ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -4.437     ; 5.952      ;
-; -12.457 ; data~146  ; dataOut[2]$latch ; en           ; en          ; 0.500        ; -1.398     ; 8.983      ;
-; -12.455 ; data~227  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -2.192     ; 8.188      ;
-; -12.425 ; data~201  ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -2.213     ; 6.745      ;
-; -12.423 ; data~37   ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.574     ; 7.304      ;
-; -12.412 ; data~166  ; dataOut[6]$latch ; en           ; en          ; 0.500        ; -0.503     ; 9.339      ;
-; -12.397 ; data~211  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -1.825     ; 8.497      ;
-; -12.386 ; data~163  ; dataOut[3]$latch ; en           ; en          ; 0.500        ; -2.140     ; 8.171      ;
-; -12.343 ; data~95   ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -2.401     ; 7.877      ;
-; -12.326 ; data~159  ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -1.751     ; 8.510      ;
-; -12.321 ; data~1    ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -3.172     ; 5.682      ;
-; -12.320 ; data~31   ; dataOut[7]$latch ; en           ; en          ; 0.500        ; -1.119     ; 9.136      ;
-; -12.315 ; data~157  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.292     ; 7.478      ;
-; -12.310 ; data~173  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -2.176     ; 7.589      ;
-; -12.308 ; data~212  ; dataOut[4]$latch ; en           ; en          ; 0.500        ; 0.092      ; 8.925      ;
-; -12.303 ; data~208  ; dataOut[0]$latch ; en           ; en          ; 0.500        ; -1.804     ; 8.425      ;
-; -12.301 ; data~245  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -1.800     ; 7.956      ;
-; -12.285 ; data~237  ; dataOut[5]$latch ; en           ; en          ; 0.500        ; -1.728     ; 8.012      ;
-; -12.237 ; data~142  ; dataOut[6]$latch ; en           ; en          ; 0.500        ; -2.882     ; 6.785      ;
-; -12.217 ; data~9    ; dataOut[1]$latch ; en           ; en          ; 0.500        ; -0.553     ; 8.197      ;
-+---------+-----------+------------------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'en'                                                                                                                             ;
++---------+---------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                 ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+---------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -10.218 ; memoriaAsin:mema|data~14  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -2.144     ; 6.573      ;
+; -10.152 ; memoriaAsin:mema|data~21  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.559     ; 6.368      ;
+; -10.045 ; memoriaAsin:mema|data~5   ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.173     ; 6.647      ;
+; -9.955  ; memoriaAsin:mema|data~93  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -1.256     ; 7.474      ;
+; -9.948  ; memoriaAsin:mema|data~39  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -2.030     ; 6.789      ;
+; -9.923  ; memoriaAsin:mema|data~6   ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -2.113     ; 6.309      ;
+; -9.897  ; memoriaAsin:mema|data~34  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -2.000     ; 6.760      ;
+; -9.890  ; memoriaAsin:mema|data~58  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -2.105     ; 6.648      ;
+; -9.883  ; memoriaAsin:mema|data~7   ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -2.279     ; 6.475      ;
+; -9.868  ; memoriaAsin:mema|data~15  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -3.024     ; 5.715      ;
+; -9.863  ; memoriaAsin:mema|data~208 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -4.964     ; 3.795      ;
+; -9.817  ; memoriaAsin:mema|data~36  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -2.030     ; 6.644      ;
+; -9.769  ; memoriaAsin:mema|data~142 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.835     ; 6.433      ;
+; -9.712  ; memoriaAsin:mema|data~37  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.189     ; 6.298      ;
+; -9.702  ; memoriaAsin:mema|data~33  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -2.198     ; 6.279      ;
+; -9.694  ; memoriaAsin:mema|data~138 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -2.196     ; 6.361      ;
+; -9.687  ; memoriaAsin:mema|data~210 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -4.799     ; 3.751      ;
+; -9.679  ; memoriaAsin:mema|data~212 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -4.906     ; 3.630      ;
+; -9.638  ; memoriaAsin:mema|data~211 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; 0.500        ; -4.827     ; 3.673      ;
+; -9.630  ; memoriaAsin:mema|data~94  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.098     ; 7.031      ;
+; -9.624  ; memoriaAsin:mema|data~13  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -0.615     ; 7.784      ;
+; -9.624  ; memoriaAsin:mema|data~194 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -1.785     ; 6.702      ;
+; -9.609  ; memoriaAsin:mema|data~106 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -1.108     ; 7.364      ;
+; -9.605  ; memoriaAsin:mema|data~238 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.051     ; 7.053      ;
+; -9.604  ; memoriaAsin:mema|data~120 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -2.378     ; 6.122      ;
+; -9.549  ; memoriaAsin:mema|data~213 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -5.073     ; 3.251      ;
+; -9.532  ; memoriaAsin:mema|data~23  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -2.261     ; 6.142      ;
+; -9.503  ; memoriaAsin:mema|data~180 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -4.497     ; 3.863      ;
+; -9.497  ; memoriaAsin:mema|data~215 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -4.794     ; 3.574      ;
+; -9.483  ; memoriaAsin:mema|data~160 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.544     ; 6.835      ;
+; -9.443  ; memoriaAsin:mema|data~50  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -1.834     ; 6.472      ;
+; -9.432  ; memoriaAsin:mema|data~57  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -1.749     ; 6.458      ;
+; -9.432  ; memoriaAsin:mema|data~88  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -2.524     ; 5.804      ;
+; -9.422  ; memoriaAsin:mema|data~176 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -4.679     ; 3.639      ;
+; -9.404  ; memoriaAsin:mema|data~60  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.954     ; 6.307      ;
+; -9.401  ; memoriaAsin:mema|data~156 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -2.153     ; 6.105      ;
+; -9.386  ; memoriaAsin:mema|data~29  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -1.918     ; 6.243      ;
+; -9.375  ; memoriaAsin:mema|data~209 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -5.070     ; 3.080      ;
+; -9.353  ; memoriaAsin:mema|data~76  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.077     ; 7.133      ;
+; -9.348  ; memoriaAsin:mema|data~188 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.813     ; 6.392      ;
+; -9.339  ; memoriaAsin:mema|data~52  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.862     ; 6.334      ;
+; -9.325  ; memoriaAsin:mema|data~8   ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -2.205     ; 6.016      ;
+; -9.317  ; memoriaAsin:mema|data~134 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.643     ; 6.173      ;
+; -9.315  ; memoriaAsin:mema|data~128 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.944     ; 6.267      ;
+; -9.305  ; memoriaAsin:mema|data~32  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -2.189     ; 6.012      ;
+; -9.304  ; memoriaAsin:mema|data~31  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -2.334     ; 5.841      ;
+; -9.289  ; memoriaAsin:mema|data~45  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.030     ; 6.034      ;
+; -9.285  ; memoriaAsin:mema|data~73  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -1.899     ; 6.161      ;
+; -9.269  ; memoriaAsin:mema|data~12  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -3.024     ; 5.102      ;
+; -9.245  ; memoriaAsin:mema|data~214 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -4.828     ; 2.916      ;
+; -9.219  ; memoriaAsin:mema|data~61  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.113     ; 5.881      ;
+; -9.208  ; memoriaAsin:mema|data~9   ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -1.265     ; 6.718      ;
+; -9.190  ; memoriaAsin:mema|data~2   ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -1.989     ; 6.064      ;
+; -9.187  ; memoriaAsin:mema|data~126 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -2.329     ; 5.357      ;
+; -9.175  ; memoriaAsin:mema|data~226 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -0.755     ; 7.283      ;
+; -9.170  ; memoriaAsin:mema|data~92  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.092     ; 6.935      ;
+; -9.162  ; memoriaAsin:mema|data~205 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.148     ; 5.789      ;
+; -9.160  ; memoriaAsin:mema|data~4   ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -2.277     ; 5.740      ;
+; -9.152  ; memoriaAsin:mema|data~96  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -2.182     ; 5.866      ;
+; -9.146  ; memoriaAsin:mema|data~47  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -1.876     ; 6.141      ;
+; -9.129  ; memoriaAsin:mema|data~132 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.165     ; 6.821      ;
+; -9.127  ; memoriaAsin:mema|data~89  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -0.560     ; 7.342      ;
+; -9.122  ; memoriaAsin:mema|data~80  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.967     ; 6.051      ;
+; -9.111  ; memoriaAsin:mema|data~85  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.072     ; 5.814      ;
+; -9.108  ; memoriaAsin:mema|data~20  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.267     ; 6.698      ;
+; -9.103  ; memoriaAsin:mema|data~136 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -2.375     ; 5.624      ;
+; -9.102  ; memoriaAsin:mema|data~35  ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; 0.500        ; -1.702     ; 6.262      ;
+; -9.085  ; memoriaAsin:mema|data~22  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.885     ; 5.699      ;
+; -9.083  ; memoriaAsin:mema|data~19  ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; 0.500        ; -2.078     ; 5.867      ;
+; -9.076  ; memoriaAsin:mema|data~232 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.211     ; 6.761      ;
+; -9.060  ; memoriaAsin:mema|data~83  ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; 0.500        ; -1.114     ; 6.808      ;
+; -9.057  ; memoriaAsin:mema|data~192 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.971     ; 5.982      ;
+; -9.037  ; memoriaAsin:mema|data~11  ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; 0.500        ; -1.782     ; 6.117      ;
+; -9.024  ; memoriaAsin:mema|data~116 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -2.141     ; 5.740      ;
+; -9.023  ; memoriaAsin:mema|data~157 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.555     ; 5.243      ;
+; -9.011  ; memoriaAsin:mema|data~236 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -0.388     ; 7.480      ;
+; -8.995  ; memoriaAsin:mema|data~72  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.996     ; 5.895      ;
+; -8.992  ; memoriaAsin:mema|data~178 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -4.066     ; 3.789      ;
+; -8.983  ; memoriaAsin:mema|data~183 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -4.512     ; 3.342      ;
+; -8.982  ; memoriaAsin:mema|data~77  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; 0.500        ; -2.346     ; 5.411      ;
+; -8.972  ; memoriaAsin:mema|data~42  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -1.457     ; 6.378      ;
+; -8.970  ; memoriaAsin:mema|data~170 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -2.142     ; 5.691      ;
+; -8.963  ; memoriaAsin:mema|data~78  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.494     ; 5.968      ;
+; -8.963  ; memoriaAsin:mema|data~200 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.202     ; 6.657      ;
+; -8.961  ; memoriaAsin:mema|data~67  ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; 0.500        ; -1.576     ; 6.247      ;
+; -8.955  ; memoriaAsin:mema|data~100 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.634     ; 6.178      ;
+; -8.946  ; memoriaAsin:mema|data~234 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -1.768     ; 6.041      ;
+; -8.940  ; memoriaAsin:mema|data~130 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; 0.500        ; -1.759     ; 6.044      ;
+; -8.933  ; memoriaAsin:mema|data~86  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.719     ; 5.713      ;
+; -8.930  ; memoriaAsin:mema|data~63  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -0.286     ; 7.515      ;
+; -8.923  ; memoriaAsin:mema|data~196 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; 0.500        ; -1.468     ; 6.312      ;
+; -8.910  ; memoriaAsin:mema|data~102 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -1.784     ; 5.625      ;
+; -8.899  ; memoriaAsin:mema|data~16  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.268     ; 6.527      ;
+; -8.899  ; memoriaAsin:mema|data~48  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -1.736     ; 6.059      ;
+; -8.890  ; memoriaAsin:mema|data~41  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -2.045     ; 5.620      ;
+; -8.869  ; memoriaAsin:mema|data~24  ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; 0.500        ; -0.567     ; 7.198      ;
+; -8.869  ; memoriaAsin:mema|data~25  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; 0.500        ; -1.962     ; 5.682      ;
+; -8.867  ; memoriaAsin:mema|data~230 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -0.789     ; 6.577      ;
+; -8.848  ; memoriaAsin:mema|data~206 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; 0.500        ; -2.024     ; 5.323      ;
+; -8.846  ; memoriaAsin:mema|data~55  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; 0.500        ; -1.534     ; 6.183      ;
++---------+---------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Hold: 'en'                                                                                                 ;
-+-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
-; 6.777 ; data~10   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; 0.210      ; 6.487      ;
-; 6.822 ; data~18   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -0.509     ; 5.813      ;
-; 6.895 ; data~16   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -0.517     ; 5.878      ;
-; 6.900 ; data~14   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -0.571     ; 5.829      ;
-; 7.338 ; data~42   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -0.502     ; 6.336      ;
-; 7.461 ; data~137  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; 0.157      ; 7.118      ;
-; 7.473 ; data~22   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -0.536     ; 6.437      ;
-; 7.539 ; data~13   ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -0.515     ; 6.524      ;
-; 7.571 ; data~15   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; -0.549     ; 6.522      ;
-; 7.598 ; data~105  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -0.875     ; 6.223      ;
-; 7.637 ; data~4    ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -3.186     ; 3.951      ;
-; 7.892 ; data~6    ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -3.201     ; 4.191      ;
-; 7.989 ; data~126  ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -1.354     ; 6.135      ;
-; 7.991 ; data~50   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -0.528     ; 6.963      ;
-; 7.996 ; data~71   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; -1.766     ; 5.730      ;
-; 8.098 ; data~17   ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -0.512     ; 7.086      ;
-; 8.099 ; data~46   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -0.519     ; 7.080      ;
-; 8.191 ; data~60   ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -1.325     ; 6.366      ;
-; 8.199 ; data~72   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -2.796     ; 4.903      ;
-; 8.210 ; data~75   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -2.791     ; 4.919      ;
-; 8.220 ; data~121  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -0.889     ; 6.831      ;
-; 8.235 ; data~58   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -0.511     ; 7.224      ;
-; 8.237 ; data~202  ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -1.781     ; 5.956      ;
-; 8.286 ; data~78   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -2.808     ; 4.978      ;
-; 8.296 ; data~64   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -1.821     ; 5.975      ;
-; 8.298 ; data~76   ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -2.781     ; 5.017      ;
-; 8.300 ; data~2    ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -3.172     ; 4.628      ;
-; 8.303 ; data~51   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; 0.129      ; 7.932      ;
-; 8.307 ; data~74   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -2.768     ; 5.039      ;
-; 8.332 ; data~87   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; -3.174     ; 4.658      ;
-; 8.338 ; data~203  ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -1.012     ; 6.826      ;
-; 8.345 ; data~0    ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -3.233     ; 4.612      ;
-; 8.347 ; data~70   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -1.794     ; 6.053      ;
-; 8.377 ; data~61   ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -1.673     ; 6.204      ;
-; 8.377 ; data~68   ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -1.813     ; 6.064      ;
-; 8.381 ; data~38   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; 0.111      ; 7.992      ;
-; 8.388 ; data~97   ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -0.861     ; 7.027      ;
-; 8.434 ; data~79   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; -2.764     ; 5.170      ;
-; 8.470 ; data~24   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -0.405     ; 7.565      ;
-; 8.478 ; data~233  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -0.885     ; 7.093      ;
-; 8.481 ; data~8    ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -0.557     ; 7.424      ;
-; 8.486 ; data~234  ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -1.680     ; 6.306      ;
-; 8.557 ; data~30   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -1.148     ; 6.909      ;
-; 8.563 ; data~118  ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -2.432     ; 5.631      ;
-; 8.577 ; data~53   ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -2.749     ; 5.328      ;
-; 8.593 ; data~125  ; dataOut[5]$latch ; en           ; en          ; -0.500       ; 0.250      ; 8.343      ;
-; 8.610 ; data~238  ; dataOut[6]$latch ; en           ; en          ; -0.500       ; 0.140      ; 8.250      ;
-; 8.636 ; data~66   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -1.278     ; 6.858      ;
-; 8.660 ; data~29   ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -1.087     ; 7.073      ;
-; 8.678 ; data~20   ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -1.695     ; 6.483      ;
-; 8.707 ; data~83   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -3.153     ; 5.054      ;
-; 8.728 ; data~48   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -0.970     ; 7.258      ;
-; 8.729 ; data~3    ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -3.232     ; 4.997      ;
-; 8.736 ; data~5    ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -3.132     ; 5.104      ;
-; 8.772 ; data~138  ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -1.759     ; 6.513      ;
-; 8.819 ; data~47   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; -1.648     ; 6.671      ;
-; 8.824 ; data~23   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; 0.214      ; 8.538      ;
-; 8.842 ; data~123  ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -1.342     ; 7.000      ;
-; 8.845 ; data~206  ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -1.862     ; 6.483      ;
-; 8.853 ; data~26   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -1.125     ; 7.228      ;
-; 8.870 ; data~34   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -0.531     ; 7.839      ;
-; 8.884 ; data~113  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; 0.174      ; 8.558      ;
-; 8.901 ; data~108  ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -0.881     ; 7.520      ;
-; 8.905 ; data~63   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; -0.507     ; 7.898      ;
-; 8.909 ; data~116  ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -2.292     ; 6.117      ;
-; 8.912 ; data~100  ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -1.896     ; 6.516      ;
-; 8.926 ; data~162  ; dataOut[2]$latch ; en           ; en          ; -0.500       ; 0.175      ; 8.601      ;
-; 8.945 ; data~35   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -0.542     ; 7.903      ;
-; 8.956 ; data~174  ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -0.528     ; 7.928      ;
-; 8.958 ; data~209  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -0.982     ; 7.476      ;
-; 9.082 ; data~219  ; dataOut[3]$latch ; en           ; en          ; -0.500       ; 0.148      ; 8.730      ;
-; 9.104 ; data~80   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -3.187     ; 5.417      ;
-; 9.150 ; data~77   ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -2.728     ; 5.922      ;
-; 9.192 ; data~84   ; dataOut[4]$latch ; en           ; en          ; -0.500       ; -3.170     ; 5.522      ;
-; 9.197 ; data~86   ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -3.205     ; 5.492      ;
-; 9.204 ; data~82   ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -3.142     ; 5.562      ;
-; 9.209 ; data~19   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -0.521     ; 8.188      ;
-; 9.250 ; data~9    ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -0.553     ; 8.197      ;
-; 9.278 ; data~55   ; dataOut[7]$latch ; en           ; en          ; -0.500       ; -2.655     ; 6.123      ;
-; 9.282 ; data~115  ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -0.977     ; 7.805      ;
-; 9.283 ; data~85   ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -3.138     ; 5.645      ;
-; 9.306 ; data~221  ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -1.717     ; 7.089      ;
-; 9.326 ; data~178  ; dataOut[2]$latch ; en           ; en          ; -0.500       ; -1.054     ; 7.772      ;
-; 9.333 ; data~212  ; dataOut[4]$latch ; en           ; en          ; -0.500       ; 0.092      ; 8.925      ;
-; 9.354 ; data~1    ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -3.172     ; 5.682      ;
-; 9.360 ; data~205  ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -1.693     ; 7.167      ;
-; 9.384 ; data~214  ; dataOut[6]$latch ; en           ; en          ; -0.500       ; -1.819     ; 7.065      ;
-; 9.401 ; data~43   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -2.150     ; 6.751      ;
-; 9.413 ; data~155  ; dataOut[3]$latch ; en           ; en          ; -0.500       ; 0.157      ; 9.070      ;
-; 9.436 ; data~56   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; 0.175      ; 9.111      ;
-; 9.443 ; data~253  ; dataOut[5]$latch ; en           ; en          ; -0.500       ; 0.081      ; 9.024      ;
-; 9.448 ; data~45   ; dataOut[5]$latch ; en           ; en          ; -0.500       ; -2.025     ; 6.923      ;
-; 9.458 ; data~201  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -2.213     ; 6.745      ;
-; 9.482 ; data~191  ; dataOut[7]$latch ; en           ; en          ; -0.500       ; 0.013      ; 8.995      ;
-; 9.486 ; data~112  ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -2.253     ; 6.733      ;
-; 9.490 ; data~40   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; 0.178      ; 9.168      ;
-; 9.498 ; data~145  ; dataOut[1]$latch ; en           ; en          ; -0.500       ; -1.424     ; 7.574      ;
-; 9.512 ; data~32   ; dataOut[0]$latch ; en           ; en          ; -0.500       ; -1.388     ; 7.624      ;
-; 9.515 ; data~27   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -1.135     ; 7.880      ;
-; 9.519 ; data~59   ; dataOut[3]$latch ; en           ; en          ; -0.500       ; -1.941     ; 7.078      ;
-+-------+-----------+------------------+--------------+-------------+--------------+------------+------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                         ;
++--------+--------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; -6.007 ; memoriaSin:mems|data~98  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.736      ;
+; -5.958 ; memoriaSin:mems|data~246 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.687      ;
+; -5.928 ; memoriaSin:mems|data~91  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.657      ;
+; -5.893 ; memoriaSin:mems|data~124 ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.622      ;
+; -5.821 ; memoriaSin:mems|data~66  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.550      ;
+; -5.815 ; memoriaSin:mems|data~146 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.544      ;
+; -5.808 ; memoriaSin:mems|data~150 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.537      ;
+; -5.781 ; memoriaSin:mems|data~137 ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.510      ;
+; -5.777 ; memoriaSin:mems|data~67  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.506      ;
+; -5.775 ; memoriaSin:mems|data~30  ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.504      ;
+; -5.752 ; memoriaSin:mems|data~134 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.481      ;
+; -5.749 ; memoriaSin:mems|data~121 ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.478      ;
+; -5.733 ; memoriaSin:mems|data~122 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.462      ;
+; -5.726 ; memoriaSin:mems|data~229 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.455      ;
+; -5.698 ; memoriaSin:mems|data~35  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.427      ;
+; -5.689 ; memoriaSin:mems|data~2   ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.418      ;
+; -5.678 ; memoriaSin:mems|data~58  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.407      ;
+; -5.674 ; memoriaSin:mems|data~126 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.403      ;
+; -5.673 ; memoriaSin:mems|data~34  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.402      ;
+; -5.649 ; memoriaSin:mems|data~234 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.378      ;
+; -5.633 ; memoriaSin:mems|data~253 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.362      ;
+; -5.631 ; memoriaSin:mems|data~230 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.360      ;
+; -5.596 ; memoriaSin:mems|data~242 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.325      ;
+; -5.587 ; memoriaSin:mems|data~158 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.316      ;
+; -5.576 ; memoriaSin:mems|data~233 ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.305      ;
+; -5.560 ; memoriaSin:mems|data~141 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.289      ;
+; -5.557 ; memoriaSin:mems|data~226 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.286      ;
+; -5.532 ; memoriaSin:mems|data~92  ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.261      ;
+; -5.520 ; memoriaSin:mems|data~250 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.249      ;
+; -5.519 ; memoriaSin:mems|data~100 ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.248      ;
+; -5.482 ; memoriaSin:mems|data~95  ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.211      ;
+; -5.482 ; memoriaSin:mems|data~130 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.211      ;
+; -5.477 ; memoriaSin:mems|data~38  ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.206      ;
+; -5.473 ; memoriaSin:mems|data~68  ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.202      ;
+; -5.462 ; memoriaSin:mems|data~228 ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.191      ;
+; -5.460 ; memoriaSin:mems|data~140 ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.189      ;
+; -5.453 ; memoriaSin:mems|data~152 ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.182      ;
+; -5.439 ; memoriaSin:mems|data~96  ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.168      ;
+; -5.436 ; memoriaSin:mems|data~59  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.165      ;
+; -5.432 ; memoriaSin:mems|data~36  ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.161      ;
+; -5.412 ; memoriaSin:mems|data~74  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.141      ;
+; -5.411 ; memoriaSin:mems|data~138 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.140      ;
+; -5.406 ; memoriaSin:mems|data~154 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.135      ;
+; -5.372 ; memoriaSin:mems|data~3   ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.101      ;
+; -5.371 ; memoriaSin:mems|data~31  ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.100      ;
+; -5.360 ; memoriaSin:mems|data~71  ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.089      ;
+; -5.357 ; memoriaSin:mems|data~60  ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.086      ;
+; -5.355 ; memoriaSin:mems|data~133 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.084      ;
+; -5.354 ; memoriaSin:mems|data~5   ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.083      ;
+; -5.287 ; memoriaSin:mems|data~63  ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.016      ;
+; -5.266 ; memoriaSin:mems|data~10  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.995      ;
+; -5.265 ; memoriaSin:mems|data~39  ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.994      ;
+; -5.263 ; memoriaSin:mems|data~248 ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.992      ;
+; -5.259 ; memoriaSin:mems|data~231 ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.988      ;
+; -5.244 ; memoriaSin:mems|data~128 ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.973      ;
+; -5.240 ; memoriaSin:mems|data~103 ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.969      ;
+; -5.225 ; memoriaSin:mems|data~120 ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.954      ;
+; -5.218 ; memoriaSin:mems|data~62  ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.947      ;
+; -5.200 ; memoriaSin:mems|data~102 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.929      ;
+; -5.178 ; memoriaSin:mems|data~190 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.907      ;
+; -5.176 ; memoriaSin:mems|data~125 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.905      ;
+; -5.175 ; memoriaSin:mems|data~123 ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.904      ;
+; -5.170 ; memoriaSin:mems|data~90  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.899      ;
+; -5.162 ; memoriaSin:mems|data~6   ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.891      ;
+; -5.152 ; memoriaSin:mems|data~249 ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.881      ;
+; -5.103 ; memoriaSin:mems|data~225 ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.832      ;
+; -5.097 ; memoriaSin:mems|data~239 ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.826      ;
+; -5.080 ; memoriaSin:mems|data~210 ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.809      ;
+; -5.071 ; memoriaSin:mems|data~24  ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.800      ;
+; -5.069 ; memoriaSin:mems|data~157 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.798      ;
+; -5.063 ; memoriaSin:mems|data~28  ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.792      ;
+; -5.056 ; memoriaSin:mems|data~224 ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.785      ;
+; -5.048 ; memoriaSin:mems|data~97  ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.777      ;
+; -5.044 ; memoriaSin:mems|data~70  ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.773      ;
+; -5.035 ; memoriaSin:mems|data~94  ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.764      ;
+; -5.030 ; memoriaSin:mems|data~61  ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.759      ;
+; -5.020 ; memoriaSin:mems|data~237 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.749      ;
+; -5.014 ; memoriaSin:mems|data~4   ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.743      ;
+; -4.989 ; memoriaSin:mems|data~83  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.718      ;
+; -4.987 ; memoriaSin:mems|data~65  ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.716      ;
+; -4.986 ; memoriaSin:mems|data~7   ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.715      ;
+; -4.958 ; memoriaSin:mems|data~19  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.687      ;
+; -4.956 ; memoriaSin:mems|data~43  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.685      ;
+; -4.948 ; memoriaSin:mems|data~29  ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.677      ;
+; -4.946 ; memoriaSin:mems|data~165 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.675      ;
+; -4.943 ; memoriaSin:mems|data~236 ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.672      ;
+; -4.941 ; memoriaSin:mems|data~50  ; memoriaSin:mems|dataOut[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.670      ;
+; -4.922 ; memoriaSin:mems|data~99  ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.651      ;
+; -4.919 ; memoriaSin:mems|data~238 ; memoriaSin:mems|dataOut[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.648      ;
+; -4.918 ; memoriaSin:mems|data~33  ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.647      ;
+; -4.899 ; memoriaSin:mems|data~241 ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.628      ;
+; -4.897 ; memoriaSin:mems|data~145 ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.626      ;
+; -4.896 ; memoriaSin:mems|data~155 ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.625      ;
+; -4.888 ; memoriaSin:mems|data~139 ; memoriaSin:mems|dataOut[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.617      ;
+; -4.867 ; memoriaSin:mems|data~245 ; memoriaSin:mems|dataOut[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.596      ;
+; -4.855 ; memoriaSin:mems|data~32  ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.584      ;
+; -4.850 ; memoriaSin:mems|data~132 ; memoriaSin:mems|dataOut[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.579      ;
+; -4.849 ; memoriaSin:mems|data~136 ; memoriaSin:mems|dataOut[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.578      ;
+; -4.848 ; memoriaSin:mems|data~127 ; memoriaSin:mems|dataOut[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.577      ;
+; -4.843 ; memoriaSin:mems|data~89  ; memoriaSin:mems|dataOut[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.572      ;
++--------+--------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                          ;
++-------+-----------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+----------------------------+--------------+-------------+--------------+------------+------------+
+; 1.728 ; en        ; memoriaSin:mems|dataOut[2] ; en           ; clk         ; 0.000        ; 3.103      ; 5.010      ;
+; 1.745 ; en        ; memoriaSin:mems|dataOut[1] ; en           ; clk         ; 0.000        ; 3.103      ; 5.027      ;
+; 1.825 ; en        ; memoriaSin:mems|data~64    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.825 ; en        ; memoriaSin:mems|data~65    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.825 ; en        ; memoriaSin:mems|data~66    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.825 ; en        ; memoriaSin:mems|data~67    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.825 ; en        ; memoriaSin:mems|data~68    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.825 ; en        ; memoriaSin:mems|data~69    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.825 ; en        ; memoriaSin:mems|data~70    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.825 ; en        ; memoriaSin:mems|data~71    ; en           ; clk         ; 0.000        ; 3.103      ; 5.107      ;
+; 1.854 ; en        ; memoriaSin:mems|data~240   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.854 ; en        ; memoriaSin:mems|data~241   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.854 ; en        ; memoriaSin:mems|data~242   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.854 ; en        ; memoriaSin:mems|data~243   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.854 ; en        ; memoriaSin:mems|data~244   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.854 ; en        ; memoriaSin:mems|data~245   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.854 ; en        ; memoriaSin:mems|data~246   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.854 ; en        ; memoriaSin:mems|data~247   ; en           ; clk         ; 0.000        ; 3.103      ; 5.136      ;
+; 1.862 ; en        ; memoriaSin:mems|data~80    ; en           ; clk         ; 0.000        ; 3.103      ; 5.144      ;
+; 1.862 ; en        ; memoriaSin:mems|data~81    ; en           ; clk         ; 0.000        ; 3.103      ; 5.144      ;
+; 1.862 ; en        ; memoriaSin:mems|data~82    ; en           ; clk         ; 0.000        ; 3.103      ; 5.144      ;
+; 1.862 ; en        ; memoriaSin:mems|data~84    ; en           ; clk         ; 0.000        ; 3.103      ; 5.144      ;
+; 1.862 ; en        ; memoriaSin:mems|data~87    ; en           ; clk         ; 0.000        ; 3.103      ; 5.144      ;
+; 1.864 ; en        ; memoriaSin:mems|data~249   ; en           ; clk         ; 0.000        ; 3.103      ; 5.146      ;
+; 1.864 ; en        ; memoriaSin:mems|data~250   ; en           ; clk         ; 0.000        ; 3.103      ; 5.146      ;
+; 1.864 ; en        ; memoriaSin:mems|data~251   ; en           ; clk         ; 0.000        ; 3.103      ; 5.146      ;
+; 1.864 ; en        ; memoriaSin:mems|data~252   ; en           ; clk         ; 0.000        ; 3.103      ; 5.146      ;
+; 1.864 ; en        ; memoriaSin:mems|data~253   ; en           ; clk         ; 0.000        ; 3.103      ; 5.146      ;
+; 1.864 ; en        ; memoriaSin:mems|data~254   ; en           ; clk         ; 0.000        ; 3.103      ; 5.146      ;
+; 1.864 ; en        ; memoriaSin:mems|data~255   ; en           ; clk         ; 0.000        ; 3.103      ; 5.146      ;
+; 1.866 ; en        ; memoriaSin:mems|data~188   ; en           ; clk         ; 0.000        ; 3.103      ; 5.148      ;
+; 1.866 ; en        ; memoriaSin:mems|data~190   ; en           ; clk         ; 0.000        ; 3.103      ; 5.148      ;
+; 1.866 ; en        ; memoriaSin:mems|data~191   ; en           ; clk         ; 0.000        ; 3.103      ; 5.148      ;
+; 1.867 ; en        ; memoriaSin:mems|data~3     ; en           ; clk         ; 0.000        ; 3.103      ; 5.149      ;
+; 1.867 ; en        ; memoriaSin:mems|data~4     ; en           ; clk         ; 0.000        ; 3.103      ; 5.149      ;
+; 1.867 ; en        ; memoriaSin:mems|data~6     ; en           ; clk         ; 0.000        ; 3.103      ; 5.149      ;
+; 1.867 ; en        ; memoriaSin:mems|data~7     ; en           ; clk         ; 0.000        ; 3.103      ; 5.149      ;
+; 1.873 ; en        ; memoriaSin:mems|data~169   ; en           ; clk         ; 0.000        ; 3.103      ; 5.155      ;
+; 1.873 ; en        ; memoriaSin:mems|data~170   ; en           ; clk         ; 0.000        ; 3.103      ; 5.155      ;
+; 1.873 ; en        ; memoriaSin:mems|data~172   ; en           ; clk         ; 0.000        ; 3.103      ; 5.155      ;
+; 1.873 ; en        ; memoriaSin:mems|data~174   ; en           ; clk         ; 0.000        ; 3.103      ; 5.155      ;
+; 1.873 ; en        ; memoriaSin:mems|data~175   ; en           ; clk         ; 0.000        ; 3.103      ; 5.155      ;
+; 1.879 ; en        ; memoriaSin:mems|data~96    ; en           ; clk         ; 0.000        ; 3.103      ; 5.161      ;
+; 1.879 ; en        ; memoriaSin:mems|data~97    ; en           ; clk         ; 0.000        ; 3.103      ; 5.161      ;
+; 1.879 ; en        ; memoriaSin:mems|data~98    ; en           ; clk         ; 0.000        ; 3.103      ; 5.161      ;
+; 1.879 ; en        ; memoriaSin:mems|data~100   ; en           ; clk         ; 0.000        ; 3.103      ; 5.161      ;
+; 1.879 ; en        ; memoriaSin:mems|data~101   ; en           ; clk         ; 0.000        ; 3.103      ; 5.161      ;
+; 1.879 ; en        ; memoriaSin:mems|data~102   ; en           ; clk         ; 0.000        ; 3.103      ; 5.161      ;
+; 1.879 ; en        ; memoriaSin:mems|data~103   ; en           ; clk         ; 0.000        ; 3.103      ; 5.161      ;
+; 1.889 ; en        ; memoriaSin:mems|data~112   ; en           ; clk         ; 0.000        ; 3.103      ; 5.171      ;
+; 1.889 ; en        ; memoriaSin:mems|data~113   ; en           ; clk         ; 0.000        ; 3.103      ; 5.171      ;
+; 1.889 ; en        ; memoriaSin:mems|data~114   ; en           ; clk         ; 0.000        ; 3.103      ; 5.171      ;
+; 1.889 ; en        ; memoriaSin:mems|data~28    ; en           ; clk         ; 0.000        ; 3.103      ; 5.171      ;
+; 1.889 ; en        ; memoriaSin:mems|data~116   ; en           ; clk         ; 0.000        ; 3.103      ; 5.171      ;
+; 1.889 ; en        ; memoriaSin:mems|data~29    ; en           ; clk         ; 0.000        ; 3.103      ; 5.171      ;
+; 1.889 ; en        ; memoriaSin:mems|data~30    ; en           ; clk         ; 0.000        ; 3.103      ; 5.171      ;
+; 1.890 ; en        ; memoriaSin:mems|data~151   ; en           ; clk         ; 0.000        ; 3.103      ; 5.172      ;
+; 1.894 ; en        ; memoriaSin:mems|data~205   ; en           ; clk         ; 0.000        ; 3.103      ; 5.176      ;
+; 1.899 ; en        ; memoriaSin:mems|data~121   ; en           ; clk         ; 0.000        ; 3.103      ; 5.181      ;
+; 1.899 ; en        ; memoriaSin:mems|data~122   ; en           ; clk         ; 0.000        ; 3.103      ; 5.181      ;
+; 1.899 ; en        ; memoriaSin:mems|data~124   ; en           ; clk         ; 0.000        ; 3.103      ; 5.181      ;
+; 1.899 ; en        ; memoriaSin:mems|data~125   ; en           ; clk         ; 0.000        ; 3.103      ; 5.181      ;
+; 1.899 ; en        ; memoriaSin:mems|data~126   ; en           ; clk         ; 0.000        ; 3.103      ; 5.181      ;
+; 1.899 ; en        ; memoriaSin:mems|data~127   ; en           ; clk         ; 0.000        ; 3.103      ; 5.181      ;
+; 1.906 ; en        ; memoriaSin:mems|data~232   ; en           ; clk         ; 0.000        ; 3.103      ; 5.188      ;
+; 1.906 ; en        ; memoriaSin:mems|data~235   ; en           ; clk         ; 0.000        ; 3.103      ; 5.188      ;
+; 1.906 ; en        ; memoriaSin:mems|data~236   ; en           ; clk         ; 0.000        ; 3.103      ; 5.188      ;
+; 1.906 ; en        ; memoriaSin:mems|data~237   ; en           ; clk         ; 0.000        ; 3.103      ; 5.188      ;
+; 1.916 ; en        ; memoriaSin:mems|data~130   ; en           ; clk         ; 0.000        ; 3.103      ; 5.198      ;
+; 1.916 ; en        ; memoriaSin:mems|data~131   ; en           ; clk         ; 0.000        ; 3.103      ; 5.198      ;
+; 1.916 ; en        ; memoriaSin:mems|data~132   ; en           ; clk         ; 0.000        ; 3.103      ; 5.198      ;
+; 1.916 ; en        ; memoriaSin:mems|data~134   ; en           ; clk         ; 0.000        ; 3.103      ; 5.198      ;
+; 1.916 ; en        ; memoriaSin:mems|data~135   ; en           ; clk         ; 0.000        ; 3.103      ; 5.198      ;
+; 1.919 ; en        ; memoriaSin:mems|data~193   ; en           ; clk         ; 0.000        ; 3.103      ; 5.201      ;
+; 1.919 ; en        ; memoriaSin:mems|data~197   ; en           ; clk         ; 0.000        ; 3.103      ; 5.201      ;
+; 1.926 ; en        ; memoriaSin:mems|dataOut[3] ; en           ; clk         ; 0.000        ; 3.103      ; 5.208      ;
+; 1.926 ; en        ; memoriaSin:mems|data~75    ; en           ; clk         ; 0.000        ; 3.103      ; 5.208      ;
+; 1.926 ; en        ; memoriaSin:mems|data~77    ; en           ; clk         ; 0.000        ; 3.103      ; 5.208      ;
+; 1.927 ; en        ; memoriaSin:mems|data~162   ; en           ; clk         ; 0.000        ; 3.103      ; 5.209      ;
+; 1.927 ; en        ; memoriaSin:mems|data~163   ; en           ; clk         ; 0.000        ; 3.103      ; 5.209      ;
+; 1.927 ; en        ; memoriaSin:mems|data~164   ; en           ; clk         ; 0.000        ; 3.103      ; 5.209      ;
+; 1.927 ; en        ; memoriaSin:mems|data~166   ; en           ; clk         ; 0.000        ; 3.103      ; 5.209      ;
+; 1.927 ; en        ; memoriaSin:mems|data~167   ; en           ; clk         ; 0.000        ; 3.103      ; 5.209      ;
+; 1.928 ; en        ; memoriaSin:mems|data~136   ; en           ; clk         ; 0.000        ; 3.103      ; 5.210      ;
+; 1.928 ; en        ; memoriaSin:mems|data~225   ; en           ; clk         ; 0.000        ; 3.103      ; 5.210      ;
+; 1.928 ; en        ; memoriaSin:mems|data~229   ; en           ; clk         ; 0.000        ; 3.103      ; 5.210      ;
+; 1.928 ; en        ; memoriaSin:mems|data~230   ; en           ; clk         ; 0.000        ; 3.103      ; 5.210      ;
+; 1.948 ; en        ; memoriaSin:mems|data~154   ; en           ; clk         ; 0.000        ; 3.103      ; 5.230      ;
+; 1.948 ; en        ; memoriaSin:mems|data~159   ; en           ; clk         ; 0.000        ; 3.103      ; 5.230      ;
+; 1.952 ; en        ; memoriaSin:mems|data~220   ; en           ; clk         ; 0.000        ; 3.103      ; 5.234      ;
+; 1.952 ; en        ; memoriaSin:mems|data~223   ; en           ; clk         ; 0.000        ; 3.103      ; 5.234      ;
+; 1.955 ; en        ; memoriaSin:mems|data~12    ; en           ; clk         ; 0.000        ; 3.103      ; 5.237      ;
+; 1.975 ; en        ; memoriaSin:mems|dataOut[4] ; en           ; clk         ; 0.000        ; 3.103      ; 5.257      ;
+; 1.979 ; en        ; memoriaSin:mems|data~43    ; en           ; clk         ; 0.000        ; 3.103      ; 5.261      ;
+; 1.979 ; en        ; memoriaSin:mems|data~44    ; en           ; clk         ; 0.000        ; 3.103      ; 5.261      ;
+; 1.979 ; en        ; memoriaSin:mems|data~45    ; en           ; clk         ; 0.000        ; 3.103      ; 5.261      ;
+; 1.979 ; en        ; memoriaSin:mems|data~46    ; en           ; clk         ; 0.000        ; 3.103      ; 5.261      ;
+; 1.990 ; en        ; memoriaSin:mems|data~51    ; en           ; clk         ; 0.000        ; 3.103      ; 5.272      ;
+; 1.990 ; en        ; memoriaSin:mems|data~52    ; en           ; clk         ; 0.000        ; 3.103      ; 5.272      ;
+; 1.990 ; en        ; memoriaSin:mems|data~53    ; en           ; clk         ; 0.000        ; 3.103      ; 5.272      ;
++-------+-----------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'en'                                                                                                                            ;
++-------+---------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; 5.835 ; memoriaAsin:mema|data~135 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.694     ; 3.641      ;
+; 5.881 ; memoriaAsin:mema|data~246 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -2.413     ; 2.968      ;
+; 6.061 ; memoriaAsin:mema|data~82  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.691     ; 3.870      ;
+; 6.103 ; memoriaAsin:mema|data~225 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -0.940     ; 4.663      ;
+; 6.149 ; memoriaAsin:mema|data~254 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -0.400     ; 5.249      ;
+; 6.164 ; memoriaAsin:mema|data~167 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.400     ; 4.264      ;
+; 6.263 ; memoriaAsin:mema|data~193 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.969     ; 3.794      ;
+; 6.283 ; memoriaAsin:mema|data~145 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.869     ; 3.914      ;
+; 6.331 ; memoriaAsin:mema|data~173 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -0.121     ; 5.710      ;
+; 6.361 ; memoriaAsin:mema|data~150 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -2.155     ; 3.706      ;
+; 6.398 ; memoriaAsin:mema|data~218 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -0.787     ; 5.111      ;
+; 6.441 ; memoriaAsin:mema|data~147 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.982     ; 3.959      ;
+; 6.446 ; memoriaAsin:mema|data~222 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.838     ; 4.108      ;
+; 6.449 ; memoriaAsin:mema|data~154 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -0.436     ; 5.513      ;
+; 6.463 ; memoriaAsin:mema|data~151 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.980     ; 3.983      ;
+; 6.521 ; memoriaAsin:mema|data~227 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.603     ; 4.418      ;
+; 6.547 ; memoriaAsin:mema|data~163 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.923     ; 4.124      ;
+; 6.610 ; memoriaAsin:mema|data~233 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.281     ; 4.829      ;
+; 6.616 ; memoriaAsin:mema|data~171 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.334     ; 4.782      ;
+; 6.619 ; memoriaAsin:mema|data~26  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -2.554     ; 3.565      ;
+; 6.632 ; memoriaAsin:mema|data~66  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -0.989     ; 5.143      ;
+; 6.667 ; memoriaAsin:mema|data~199 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.467     ; 4.700      ;
+; 6.701 ; memoriaAsin:mema|data~244 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -2.183     ; 4.018      ;
+; 6.724 ; memoriaAsin:mema|data~90  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.053     ; 5.171      ;
+; 6.728 ; memoriaAsin:mema|data~144 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; -0.500       ; -1.785     ; 4.443      ;
+; 6.732 ; memoriaAsin:mema|data~95  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -2.067     ; 4.165      ;
+; 6.739 ; memoriaAsin:mema|data~113 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.250     ; 4.989      ;
+; 6.792 ; memoriaAsin:mema|data~115 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.307     ; 4.985      ;
+; 6.793 ; memoriaAsin:mema|data~241 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.616     ; 4.677      ;
+; 6.799 ; memoriaAsin:mema|data~190 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -2.431     ; 3.868      ;
+; 6.847 ; memoriaAsin:mema|data~239 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.120     ; 5.227      ;
+; 6.874 ; memoriaAsin:mema|data~46  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.486     ; 4.888      ;
+; 6.887 ; memoriaAsin:mema|data~141 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -1.242     ; 5.145      ;
+; 6.912 ; memoriaAsin:mema|data~62  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -2.136     ; 4.276      ;
+; 6.953 ; memoriaAsin:mema|data~127 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.737     ; 4.716      ;
+; 6.956 ; memoriaAsin:mema|data~224 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; -0.500       ; -1.255     ; 5.201      ;
+; 6.966 ; memoriaAsin:mema|data~146 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.949     ; 4.517      ;
+; 6.976 ; memoriaAsin:mema|data~164 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -1.729     ; 4.747      ;
+; 6.976 ; memoriaAsin:mema|data~107 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.289     ; 5.187      ;
+; 6.987 ; memoriaAsin:mema|data~186 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -0.360     ; 6.127      ;
+; 6.989 ; memoriaAsin:mema|data~219 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.812     ; 4.677      ;
+; 6.993 ; memoriaAsin:mema|data~245 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -2.136     ; 4.357      ;
+; 7.003 ; memoriaAsin:mema|data~175 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.420     ; 5.083      ;
+; 7.027 ; memoriaAsin:mema|data~125 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -1.899     ; 4.628      ;
+; 7.038 ; memoriaAsin:mema|data~247 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -2.682     ; 3.856      ;
+; 7.049 ; memoriaAsin:mema|data~240 ; memoriaAsin:mema|dataOut[0] ; en           ; en          ; -0.500       ; -2.126     ; 4.423      ;
+; 7.054 ; memoriaAsin:mema|data~202 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -2.173     ; 4.381      ;
+; 7.054 ; memoriaAsin:mema|data~148 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -2.287     ; 4.267      ;
+; 7.075 ; memoriaAsin:mema|data~158 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -2.414     ; 4.161      ;
+; 7.099 ; memoriaAsin:mema|data~75  ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.743     ; 4.856      ;
+; 7.116 ; memoriaAsin:mema|data~161 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.563     ; 5.053      ;
+; 7.124 ; memoriaAsin:mema|data~81  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.972     ; 4.652      ;
+; 7.133 ; memoriaAsin:mema|data~124 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -0.389     ; 6.244      ;
+; 7.179 ; memoriaAsin:mema|data~54  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.962     ; 4.717      ;
+; 7.184 ; memoriaAsin:mema|data~30  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.778     ; 4.906      ;
+; 7.218 ; memoriaAsin:mema|data~140 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -2.219     ; 4.499      ;
+; 7.222 ; memoriaAsin:mema|data~70  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.015     ; 5.707      ;
+; 7.227 ; memoriaAsin:mema|data~17  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -0.622     ; 6.105      ;
+; 7.237 ; memoriaAsin:mema|data~111 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.275     ; 5.462      ;
+; 7.240 ; memoriaAsin:mema|data~250 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.051     ; 5.689      ;
+; 7.250 ; memoriaAsin:mema|data~109 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -1.438     ; 5.312      ;
+; 7.271 ; memoriaAsin:mema|data~195 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -2.201     ; 4.570      ;
+; 7.290 ; memoriaAsin:mema|data~191 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.106     ; 5.684      ;
+; 7.295 ; memoriaAsin:mema|data~79  ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.685     ; 5.110      ;
+; 7.308 ; memoriaAsin:mema|data~159 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.981     ; 4.827      ;
+; 7.310 ; memoriaAsin:mema|data~231 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.601     ; 5.209      ;
+; 7.315 ; memoriaAsin:mema|data~101 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -2.415     ; 4.400      ;
+; 7.333 ; memoriaAsin:mema|data~251 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.673     ; 5.160      ;
+; 7.333 ; memoriaAsin:mema|data~65  ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.518     ; 5.315      ;
+; 7.336 ; memoriaAsin:mema|data~98  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.653     ; 5.183      ;
+; 7.364 ; memoriaAsin:mema|data~74  ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.458     ; 5.406      ;
+; 7.369 ; memoriaAsin:mema|data~243 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.458     ; 5.411      ;
+; 7.372 ; memoriaAsin:mema|data~165 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -1.575     ; 5.297      ;
+; 7.377 ; memoriaAsin:mema|data~162 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.352     ; 5.525      ;
+; 7.380 ; memoriaAsin:mema|data~197 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -1.632     ; 5.248      ;
+; 7.381 ; memoriaAsin:mema|data~229 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -0.940     ; 5.941      ;
+; 7.383 ; memoriaAsin:mema|data~181 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -4.231     ; 2.652      ;
+; 7.388 ; memoriaAsin:mema|data~204 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -0.401     ; 6.487      ;
+; 7.391 ; memoriaAsin:mema|data~198 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.678     ; 5.213      ;
+; 7.431 ; memoriaAsin:mema|data~235 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.058     ; 5.873      ;
+; 7.444 ; memoriaAsin:mema|data~223 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.677     ; 5.267      ;
+; 7.451 ; memoriaAsin:mema|data~149 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -2.450     ; 4.501      ;
+; 7.469 ; memoriaAsin:mema|data~172 ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -2.161     ; 4.808      ;
+; 7.473 ; memoriaAsin:mema|data~84  ; memoriaAsin:mema|dataOut[4] ; en           ; en          ; -0.500       ; -1.124     ; 5.849      ;
+; 7.495 ; memoriaAsin:mema|data~169 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.483     ; 5.512      ;
+; 7.525 ; memoriaAsin:mema|data~119 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.101     ; 5.924      ;
+; 7.526 ; memoriaAsin:mema|data~117 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -1.465     ; 5.561      ;
+; 7.533 ; memoriaAsin:mema|data~166 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.661     ; 5.372      ;
+; 7.539 ; memoriaAsin:mema|data~105 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.297     ; 5.742      ;
+; 7.539 ; memoriaAsin:mema|data~187 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.810     ; 5.229      ;
+; 7.548 ; memoriaAsin:mema|data~122 ; memoriaAsin:mema|dataOut[2] ; en           ; en          ; -0.500       ; -1.018     ; 6.030      ;
+; 7.566 ; memoriaAsin:mema|data~91  ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -1.090     ; 5.976      ;
+; 7.578 ; memoriaAsin:mema|data~217 ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -2.275     ; 4.803      ;
+; 7.590 ; memoriaAsin:mema|data~143 ; memoriaAsin:mema|dataOut[7] ; en           ; en          ; -0.500       ; -1.720     ; 5.370      ;
+; 7.591 ; memoriaAsin:mema|data~69  ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -1.921     ; 5.170      ;
+; 7.607 ; memoriaAsin:mema|data~139 ; memoriaAsin:mema|dataOut[3] ; en           ; en          ; -0.500       ; -2.217     ; 4.890      ;
+; 7.607 ; memoriaAsin:mema|data~118 ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -1.774     ; 5.333      ;
+; 7.619 ; memoriaAsin:mema|data~1   ; memoriaAsin:mema|dataOut[1] ; en           ; en          ; -0.500       ; -1.301     ; 5.818      ;
+; 7.631 ; memoriaAsin:mema|data~133 ; memoriaAsin:mema|dataOut[5] ; en           ; en          ; -0.500       ; -2.109     ; 5.022      ;
+; 7.639 ; memoriaAsin:mema|data~38  ; memoriaAsin:mema|dataOut[6] ; en           ; en          ; -0.500       ; -2.347     ; 4.792      ;
++-------+---------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
 +-------------------------------------------------------------------+
@@ -362,6 +585,8 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 256      ; 0        ; 0        ; 0        ;
+; en         ; clk      ; 264      ; 264      ; 0        ; 0        ;
 ; en         ; en       ; 0        ; 256      ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -372,6 +597,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 256      ; 0        ; 0        ; 0        ;
+; en         ; clk      ; 264      ; 264      ; 0        ; 0        ;
 ; en         ; en       ; 0        ; 256      ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -397,9 +624,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 13    ; 13   ;
-; Unconstrained Input Port Paths  ; 296   ; 296  ;
-; Unconstrained Output Ports      ; 8     ; 8    ;
-; Unconstrained Output Port Paths ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 1872  ; 1872 ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
 +---------------------------------+-------+------+
 
 
@@ -408,6 +635,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------+-------+------+-------------+
 ; Target ; Clock ; Type ; Status      ;
 +--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
 ; en     ; en    ; Base ; Constrained ;
 +--------+-------+------+-------------+
 
@@ -438,14 +666,22 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; dataOut[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -475,14 +711,22 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; dataOut[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dataOut[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuta[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataOuts[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -492,7 +736,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Mar 26 07:46:20 2020
+    Info: Processing started: Fri Mar 27 06:55:09 2020
 Info: Command: quartus_sta actividad08 -c actividad08
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -503,31 +747,35 @@ Warning (335093): The Timing Analyzer is analyzing 264 combinational loops as la
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'actividad08.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
     Info (332105): create_clock -period 1.000 -name en en
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -16.314
+Info (332146): Worst-case setup slack is -10.218
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -16.314            -121.929 en 
-Info (332146): Worst-case hold slack is 6.777
+    Info (332119):   -10.218             -79.235 en 
+    Info (332119):    -6.007            -637.636 clk 
+Info (332146): Worst-case hold slack is 1.728
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     6.777               0.000 en 
+    Info (332119):     1.728               0.000 clk 
+    Info (332119):     5.835               0.000 en 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk 
     Info (332119):    -2.289              -2.289 en 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 737 megabytes
-    Info: Processing ended: Thu Mar 26 07:46:21 2020
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 741 megabytes
+    Info: Processing ended: Fri Mar 27 06:55:11 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
