@@ -34,11 +34,8 @@ def funct(fun):
     }
     return fn[fun]
 
-def manual():
-    pass
-
-#Funcion para generar el archivo totalmente automaticamente
-def auto():
+#Funcion para generar el set de instrucciones
+def gen():
     funcs = ['ADD', 'SUBU']
     file = open("MemInst_init.txt", "x")
 
@@ -55,15 +52,4 @@ def auto():
     print("Generado con exito MemInst_init.txt")
     exit()
 
-
-while True:
-    print("Desea insertar las instrucciones o generar todo aleatorio")
-    op = input("((M)anual/(A)utomatico/(S)alir): ")
-    if op.lower() == 'm':
-        manual()
-    elif op.lower() == 'a':
-        auto()
-    elif op.lower() == 's':
-        exit()
-    else:
-        print("Opcion invalida")
+gen()

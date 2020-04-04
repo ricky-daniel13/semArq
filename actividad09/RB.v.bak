@@ -1,0 +1,7 @@
+module RB(
+	input [4:0]
+		readReg1,
+		readReg2,
+		writeReg,s
+	input [31:0]writeData
+);

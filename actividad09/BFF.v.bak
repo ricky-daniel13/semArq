@@ -1,0 +1,15 @@
+module BFF(
+	input clk,
+	input [4:0]
+		rs,
+		rt,
+		rd,
+	output [4:0]
+		rsOut,
+		rtOut,
+		rdOut,
+);
+assign rsOut = rs;
+assign rtOut = rt;
+assign rdOut = rd;
+endmodule
