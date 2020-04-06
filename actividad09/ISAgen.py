@@ -8,8 +8,9 @@ fn =  {
     "NOR": "100111",
     "OR": "100101",
     "XOR": "100110",
-    "ADDU": "100001",
-    "SUBU": "100011"
+    "SUB": "100010",
+    "MULT": "011000",
+    "DIV": "011010"
 }
 #Funcion que devuelve el OpCode
 def opcode():

@@ -6,7 +6,7 @@ reg [6:0]
 	pc = 6'b0;
 reg
 	clk = 1'b1,
-	regWrite;
+	regWrite = 1'b1;	//write
 reg [31:0]writeData;
 wire [5:0]funct;
 wire [31:0]
@@ -34,5 +34,7 @@ initial
 begin
 	$readmemb("MemInst_init.txt", fede.fc.isa);
 	$readmemb("RBdata_init.txt", fede.rb.bank);
+	#100;	//esperamos 100 ns para escribir
+	writeData = 32'd215661399;	//grabare mi codigo
 end
 endmodule

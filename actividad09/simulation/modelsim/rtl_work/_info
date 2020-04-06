@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/jorozco/Documentos/semArq/actividad09/simulation/modelsim
 vBFF
-Z1 !s110 1586190119
+Z1 !s110 1586200697
 !i10b 1
 !s100 ^P1NkBT43zLM?Z?e`<KUC0
 Iz:B36N[YPHb]Pg7bkSLk=1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1586190119.000000
+Z4 !s108 1586200697.000000
 !s107 /home/jorozco/Documentos/semArq/actividad09/BFF.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad09|/home/jorozco/Documentos/semArq/actividad09/BFF.v|
 !i113 1
@@ -55,13 +55,13 @@ R6
 R7
 n@f@e@d@e
 vFEDE_tb
-Z8 !s110 1586190120
+R1
 !i10b 1
-!s100 NBb_Ui^;PCTUlK?YkczgJ0
-Ic8@MOKY=@z<Sz0P01Z`>F2
+!s100 ?IV:`9e;2B>Tal=@i[=To1
+IJYV]]0_ZgL@W>7Yo4k8<L1
 R2
 R0
-w1586189854
+w1586200683
 8/home/jorozco/Documentos/semArq/actividad09/FEDE_tb.v
 F/home/jorozco/Documentos/semArq/actividad09/FEDE_tb.v
 L0 2
@@ -69,7 +69,7 @@ R3
 r1
 !s85 0
 31
-!s108 1586190120.000000
+R4
 !s107 /home/jorozco/Documentos/semArq/actividad09/FEDE_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad09|/home/jorozco/Documentos/semArq/actividad09/FEDE_tb.v|
 !i113 1
@@ -78,7 +78,7 @@ R6
 R7
 n@f@e@d@e_tb
 vfetchCycle
-R8
+R1
 !i10b 1
 !s100 3j]W3T:<c:SBNNKdW=JLY3
 In;C5MaRij[>]gHbk2DXT42
