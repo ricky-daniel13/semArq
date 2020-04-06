@@ -1,0 +1,335 @@
+Analysis & Synthesis report for actividad09
+Mon Apr  6 11:21:24 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "fetchCycle:fc"
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon Apr  6 11:21:24 2020       ;
+; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name               ; actividad09                                 ;
+; Top-level Entity Name       ; FEDE                                        ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 0                                           ;
+; Total pins                  ; 118                                         ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; FEDE               ; actividad09        ;
+; Family name                                                      ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; BFF.v                            ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad09/BFF.v        ;         ;
+; RB.v                             ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad09/RB.v         ;         ;
+; FEDE.v                           ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad09/FEDE.v       ;         ;
+; fetchCycle.v                     ; yes             ; Auto-Found Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad09/fetchCycle.v ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Total logic elements                        ; 0            ;
+;     -- Combinational with no register       ; 0            ;
+;     -- Register only                        ; 0            ;
+;     -- Combinational with a register        ; 0            ;
+;                                             ;              ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 0            ;
+;     -- 2 input functions                    ; 0            ;
+;     -- 1 input functions                    ; 0            ;
+;     -- 0 input functions                    ; 0            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 0            ;
+;     -- arithmetic mode                      ; 0            ;
+;     -- qfbk mode                            ; 0            ;
+;     -- register cascade mode                ; 0            ;
+;     -- synchronous clear/load mode          ; 0            ;
+;     -- asynchronous clear/load mode         ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+; I/O pins                                    ; 118          ;
+; Maximum fan-out node                        ; writeData[0] ;
+; Maximum fan-out                             ; 2            ;
+; Total fan-out                               ; 64           ;
+; Average fan-out                             ; 0.54         ;
++---------------------------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |FEDE                      ; 0 (0)       ; 0            ; 0          ; 118  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |FEDE               ; FEDE        ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; BFF:bff|rdOut[0..4]                    ; Stuck at GND due to stuck port data_in ;
+; BFF:bff|rtOut[0..4]                    ; Stuck at GND due to stuck port data_in ;
+; BFF:bff|rsOut[0..4]                    ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 15 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fetchCycle:fc"                                                                              ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; inst[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; inst[10..6]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Mon Apr  6 11:20:58 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad09 -c actividad09
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (12019): Can't analyze file -- file MemInst.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file BFF.v
+    Info (12023): Found entity 1: BFF File: /home/jorozco/Documentos/semArq/actividad09/BFF.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file RB.v
+    Info (12023): Found entity 1: RB File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fetchCycle_tb.v
+    Info (12023): Found entity 1: fetchCycle_tb File: /home/jorozco/Documentos/semArq/actividad09/fetchCycle_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file BFF_tb.v
+    Info (12023): Found entity 1: BFF_tb File: /home/jorozco/Documentos/semArq/actividad09/BFF_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file RB_tb.v
+    Info (12023): Found entity 1: RB_tb File: /home/jorozco/Documentos/semArq/actividad09/RB_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file FEDE.v
+    Info (12023): Found entity 1: FEDE File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file FEDE_tb.v
+    Info (12023): Found entity 1: FEDE_tb File: /home/jorozco/Documentos/semArq/actividad09/FEDE_tb.v Line: 2
+Info (12127): Elaborating entity "FEDE" for the top level hierarchy
+Warning (12125): Using design file fetchCycle.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: fetchCycle File: /home/jorozco/Documentos/semArq/actividad09/fetchCycle.v Line: 1
+Info (12128): Elaborating entity "fetchCycle" for hierarchy "fetchCycle:fc" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 28
+Warning (10858): Verilog HDL warning at fetchCycle.v(7): object isa used but never assigned File: /home/jorozco/Documentos/semArq/actividad09/fetchCycle.v Line: 7
+Warning (10030): Net "isa" at fetchCycle.v(7) has no driver or initial value, using a default initial value '0' File: /home/jorozco/Documentos/semArq/actividad09/fetchCycle.v Line: 7
+Info (12128): Elaborating entity "BFF" for hierarchy "BFF:bff" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 36
+Info (12128): Elaborating entity "RB" for hierarchy "RB:rb" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 45
+Warning (14026): LATCH primitive "RB:rb|bank~0" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~1" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~2" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~3" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~4" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~5" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~6" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~7" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~8" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~9" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~10" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~11" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~12" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~13" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~14" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~15" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~16" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~17" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~18" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~19" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~20" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~21" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~22" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~23" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~24" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~25" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~26" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~27" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~28" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~29" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~30" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~31" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad09/RB.v Line: 12
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "funct[0]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 9
+    Warning (13410): Pin "funct[1]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 9
+    Warning (13410): Pin "funct[2]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 9
+    Warning (13410): Pin "funct[3]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 9
+    Warning (13410): Pin "funct[4]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 9
+    Warning (13410): Pin "funct[5]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 9
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 3
+    Warning (15610): No output dependent on input pin "dir[0]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 6
+    Warning (15610): No output dependent on input pin "dir[1]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 6
+    Warning (15610): No output dependent on input pin "dir[2]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 6
+    Warning (15610): No output dependent on input pin "dir[3]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 6
+    Warning (15610): No output dependent on input pin "dir[4]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 6
+    Warning (15610): No output dependent on input pin "dir[5]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 6
+    Warning (15610): No output dependent on input pin "dir[6]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 6
+    Warning (15610): No output dependent on input pin "pc[0]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 7
+    Warning (15610): No output dependent on input pin "pc[1]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 7
+    Warning (15610): No output dependent on input pin "pc[2]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 7
+    Warning (15610): No output dependent on input pin "pc[3]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 7
+    Warning (15610): No output dependent on input pin "pc[4]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 7
+    Warning (15610): No output dependent on input pin "pc[5]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 7
+    Warning (15610): No output dependent on input pin "pc[6]" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 7
+    Warning (15610): No output dependent on input pin "regWrite" File: /home/jorozco/Documentos/semArq/actividad09/FEDE.v Line: 4
+Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 48 input pins
+    Info (21059): Implemented 70 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 902 megabytes
+    Info: Processing ended: Mon Apr  6 11:21:24 2020
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:36
+
+

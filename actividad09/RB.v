@@ -1,5 +1,5 @@
 module RB(
-	input regWrite
+	input regWrite,
 	input [4:0]
 		readReg1,
 		readReg2,
@@ -10,4 +10,16 @@ module RB(
 		readData2
 );
 reg [31:0]bank[31:0];
+
+assign readData1 = bank[readReg1];
+assign readData2 = bank[readReg2];
+
+always @*
+begin
+	if(regWrite)
+	begin
+		bank[writeReg] = writeData;
+	end
+end
+
 endmodule

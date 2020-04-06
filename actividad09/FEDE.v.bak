@@ -1,0 +1,9 @@
+module FEDE(
+	input 
+		clk,
+		regWrite,
+	input [31:0]writeData,
+	
+);
+
+endmodule

@@ -1,17 +1,16 @@
 module BFF(
 	input clk,
-	input [14:0]
-		dirs,
-	output [4:0]
+	input [14:0]dirs,
+	output reg [4:0]
 		rsOut,
 		rtOut,
-		rdOut,
+		rdOut
 );
 
 always @(posedge clk)
 begin
-	rsOut = dirs[0:4];
-	rtOut = dirs[5:9];
-	rdOut = dirs[10:14];
+	rsOut = dirs[14:10];
+	rtOut = dirs[9:5];
+	rdOut = dirs[4:0];
 end
 endmodule

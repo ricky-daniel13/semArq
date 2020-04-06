@@ -1,0 +1,93 @@
+# do actividad09_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/jorozco/intelFPGA_lite/19.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad09 {/home/jorozco/Documentos/semArq/actividad09/BFF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:21:59 on Apr 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad09" /home/jorozco/Documentos/semArq/actividad09/BFF.v 
+# -- Compiling module BFF
+# 
+# Top level modules:
+# 	BFF
+# End time: 11:21:59 on Apr 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad09 {/home/jorozco/Documentos/semArq/actividad09/RB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:21:59 on Apr 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad09" /home/jorozco/Documentos/semArq/actividad09/RB.v 
+# -- Compiling module RB
+# 
+# Top level modules:
+# 	RB
+# End time: 11:21:59 on Apr 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad09 {/home/jorozco/Documentos/semArq/actividad09/FEDE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:21:59 on Apr 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad09" /home/jorozco/Documentos/semArq/actividad09/FEDE.v 
+# -- Compiling module FEDE
+# 
+# Top level modules:
+# 	FEDE
+# End time: 11:21:59 on Apr 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad09 {/home/jorozco/Documentos/semArq/actividad09/fetchCycle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:21:59 on Apr 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad09" /home/jorozco/Documentos/semArq/actividad09/fetchCycle.v 
+# -- Compiling module fetchCycle
+# 
+# Top level modules:
+# 	fetchCycle
+# End time: 11:22:00 on Apr 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad09 {/home/jorozco/Documentos/semArq/actividad09/FEDE_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:00 on Apr 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad09" /home/jorozco/Documentos/semArq/actividad09/FEDE_tb.v 
+# -- Compiling module FEDE_tb
+# 
+# Top level modules:
+# 	FEDE_tb
+# End time: 11:22:00 on Apr 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  FEDE_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" FEDE_tb 
+# Start time: 11:22:00 on Apr 06,2020
+# Loading work.FEDE_tb
+# Loading work.FEDE
+# Loading work.fetchCycle
+# Loading work.BFF
+# Loading work.RB
+# 
+# add wave *
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jorozco  Hostname: jorozco-HP-ProBook-440-G3  ProcessID: 12376
+#           Attempting to use alternate WLF file "./wlftlJpI1A".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftlJpI1A
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Break key hit
+# Simulation stop requested.
+# End time: 11:24:17 on Apr 06,2020, Elapsed time: 0:02:17
+# Errors: 4, Warnings: 3
