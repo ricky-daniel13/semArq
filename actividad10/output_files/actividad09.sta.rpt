@@ -1,5 +1,5 @@
 Timing Analyzer report for actividad09
-Mon Apr 27 19:21:05 2020
+Tue Apr 28 08:22:53 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -154,7 +154,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Apr 27 19:21:04 2020
+    Info: Processing started: Tue Apr 28 08:22:52 2020
 Info: Command: quartus_sta actividad10 -c actividad09
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -178,8 +178,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 732 megabytes
-    Info: Processing ended: Mon Apr 27 19:21:05 2020
+    Info: Peak virtual memory: 733 megabytes
+    Info: Processing ended: Tue Apr 28 08:22:53 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

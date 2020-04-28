@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad09
-Mon Apr 27 19:20:58 2020
+Tue Apr 28 08:22:47 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Apr 27 19:20:58 2020       ;
+; Analysis & Synthesis Status ; Successful - Tue Apr 28 08:22:47 2020       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; actividad09                                 ;
 ; Top-level Entity Name       ; DE_EX                                       ;
@@ -402,7 +402,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Apr 27 19:20:44 2020
+    Info: Processing started: Tue Apr 28 08:22:34 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad10 -c actividad09
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -527,9 +527,9 @@ Info (21057): Implemented 35 device resources after synthesis - the final resour
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 33 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 901 megabytes
-    Info: Processing ended: Mon Apr 27 19:20:58 2020
-    Info: Elapsed time: 00:00:14
+    Info: Peak virtual memory: 903 megabytes
+    Info: Processing ended: Tue Apr 28 08:22:47 2020
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:29
 
 

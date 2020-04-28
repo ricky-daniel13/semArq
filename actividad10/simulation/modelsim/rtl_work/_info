@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/jorozco/Documentos/semArq/actividad10/simulation/modelsim
 vALU
-Z1 !s110 1588036166
+Z1 !s110 1588080203
 !i10b 1
 !s100 8X0aW_aSQ6]dL^oVgVV0K2
 IcZa2HR3?CQI3ZIY`O>^<O2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1588036165.000000
+Z4 !s108 1588080203.000000
 !s107 /home/jorozco/Documentos/semArq/actividad10/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/ALU.v|
 !i113 1
@@ -32,7 +32,7 @@ Z6 !s92 -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/activid
 Z7 tCvgOpt 0
 n@a@l@u
 vALUControl
-Z8 !s110 1588036165
+Z8 !s110 1588080202
 !i10b 1
 !s100 97hhiZgHo3VD@hId>Xofz3
 IVeZYNSg>lIR^D?VL0h7PG3
@@ -46,7 +46,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z9 !s108 1588080202.000000
 !s107 /home/jorozco/Documentos/semArq/actividad10/ALUControl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/ALUControl.v|
 !i113 1
@@ -55,7 +55,7 @@ R6
 R7
 n@a@l@u@control
 vBF1
-R8
+R1
 !i10b 1
 !s100 `KUL6g;jDP1D`lg8jlUDb3
 IaCAcHS9c4d71^mf=6I]_<1
@@ -78,7 +78,7 @@ R6
 R7
 n@b@f1
 vBF2
-R8
+R1
 !i10b 1
 !s100 >kH^cSWCP?`V[`I14YGK@1
 If03F@MYn2QdK5mP6aiPDL0
@@ -115,7 +115,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 /home/jorozco/Documentos/semArq/actividad10/BFF.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/BFF.v|
 !i113 1
@@ -124,7 +124,7 @@ R6
 R7
 n@b@f@f
 vDE_EX
-R8
+R1
 !i10b 1
 !s100 :H<QEki[X?a>gI>eOe9<k2
 Ia5Gf4jWZGbI`b=g8hhoU]3
@@ -161,7 +161,7 @@ R3
 r1
 !s85 0
 31
-!s108 1588036166.000000
+R4
 !s107 /home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v|
 !i113 1
@@ -170,7 +170,7 @@ R6
 R7
 n@d@e_@e@x_tb
 vfetchCycle
-R8
+R1
 !i10b 1
 !s100 RX45iid>YY0Q0DYmfeCS01
 I>?K^R:M`C2BdI9cM2lJLe2
@@ -207,7 +207,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 /home/jorozco/Documentos/semArq/actividad10/RB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/RB.v|
 !i113 1

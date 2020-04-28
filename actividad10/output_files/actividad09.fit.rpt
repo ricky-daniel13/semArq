@@ -1,5 +1,5 @@
 Fitter report for actividad09
-Mon Apr 27 19:21:01 2020
+Tue Apr 28 08:22:50 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Mon Apr 27 19:21:01 2020       ;
+; Fitter Status         ; Successful - Tue Apr 28 08:22:50 2020       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; actividad09                                 ;
 ; Top-level Entity Name ; DE_EX                                       ;
@@ -546,9 +546,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file /home/jorozco/Documentos/semArq/actividad10/output_files/actividad09.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1081 megabytes
-    Info: Processing ended: Mon Apr 27 19:21:01 2020
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 1080 megabytes
+    Info: Processing ended: Tue Apr 28 08:22:50 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
