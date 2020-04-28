@@ -2,14 +2,11 @@
 
 module fetchCycle_tb();
 
-reg [6:0]
-	dir,
-	pc = 6'b0;
+reg clk = 1'b1;
 wire [31:0]inst;
 
 fetchCycle fc(
-	.dir(dir),
-	.pc(pc),
+	.clk(clk),
 	.inst(inst)
 );
 
@@ -20,7 +17,6 @@ end
 
 always #10
 begin
-	dir = pc;
-	pc = pc + 4;
+	clk = !clk;
 end
 endmodule

@@ -1,5 +1,5 @@
 Timing Analyzer report for actividad09
-Wed Apr 22 16:05:25 2020
+Mon Apr 27 19:21:05 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -20,12 +20,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
  12. Report TCCS
  13. Report RSKM
  14. Unconstrained Paths Summary
- 15. Clock Status Summary
- 16. Unconstrained Input Ports
- 17. Unconstrained Output Ports
- 18. Unconstrained Input Ports
- 19. Unconstrained Output Ports
- 20. Timing Analyzer Messages
+ 15. Timing Analyzer Messages
 
 
 
@@ -79,13 +74,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                          ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
-; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
 ----------------
@@ -118,13 +110,10 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------+
-; Minimum Pulse Width Summary    ;
-+-------+--------+---------------+
-; Clock ; Slack  ; End Point TNS ;
-+-------+--------+---------------+
-; clk   ; -2.289 ; -2.289        ;
-+-------+--------+---------------+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
 
 
 -------------------
@@ -152,136 +141,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 21    ; 21   ;
-; Unconstrained Input Port Paths  ; 21    ; 21   ;
-; Unconstrained Output Ports      ; 21    ; 21   ;
-; Unconstrained Output Port Paths ; 21    ; 21   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
-
-
-+-------------------------------------+
-; Clock Status Summary                ;
-+--------+-------+------+-------------+
-; Target ; Clock ; Type ; Status      ;
-+--------+-------+------+-------------+
-; clk    ; clk   ; Base ; Constrained ;
-+--------+-------+------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; dirs[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[1]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[3]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[4]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[5]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[11]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[12]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[13]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[14]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[15]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[16]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[17]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[18]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[19]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[20]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[21]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[22]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[23]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[24]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[25]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; funOut[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; dirs[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[1]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[3]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[4]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[5]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[11]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[12]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[13]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[14]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[15]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[16]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[17]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[18]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[19]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[20]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[21]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[22]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[23]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[24]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; dirs[25]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; funOut[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; funOut[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rdOut[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rsOut[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; rtOut[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -290,7 +154,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Apr 22 16:05:24 2020
+    Info: Processing started: Mon Apr 27 19:21:04 2020
 Info: Command: quartus_sta actividad10 -c actividad09
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -299,26 +163,23 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'actividad09.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name clk clk
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info (332140): No fmax paths to report
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case minimum pulse width slack is -2.289
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -2.289              -2.289 clk 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 734 megabytes
-    Info: Processing ended: Wed Apr 22 16:05:25 2020
+    Info: Peak virtual memory: 732 megabytes
+    Info: Processing ended: Mon Apr 27 19:21:05 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -14,7 +14,6 @@ begin
 			sel = 4'b0010; //MULT
         6'b011010: 
 			sel = 4'b0011; //DIV
-        default: sel=4'b0;
     endcase
 end
 

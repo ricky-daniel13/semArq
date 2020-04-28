@@ -11,31 +11,108 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/BFF.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:37 on Apr 22,2020
+# Start time: 20:09:25 on Apr 27,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/BFF.v 
 # -- Compiling module BFF
 # 
 # Top level modules:
 # 	BFF
-# End time: 16:05:37 on Apr 22,2020, Elapsed time: 0:00:00
+# End time: 20:09:25 on Apr 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/BFF_tb.v}
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/RB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:37 on Apr 22,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/BFF_tb.v 
-# -- Compiling module BFF_tb
+# Start time: 20:09:25 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/RB.v 
+# -- Compiling module RB
 # 
 # Top level modules:
-# 	BFF_tb
-# End time: 16:05:37 on Apr 22,2020, Elapsed time: 0:00:00
+# 	RB
+# End time: 20:09:25 on Apr 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/ALUControl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:25 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/ALUControl.v 
+# -- Compiling module ALUControl
+# 
+# Top level modules:
+# 	ALUControl
+# End time: 20:09:25 on Apr 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/DE_EX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:25 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/DE_EX.v 
+# -- Compiling module DE_EX
+# 
+# Top level modules:
+# 	DE_EX
+# End time: 20:09:25 on Apr 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/BF2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:25 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/BF2.v 
+# -- Compiling module BF2
+# 
+# Top level modules:
+# 	BF2
+# End time: 20:09:25 on Apr 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/fetchCycle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:25 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/fetchCycle.v 
+# -- Compiling module fetchCycle
+# 
+# Top level modules:
+# 	fetchCycle
+# End time: 20:09:25 on Apr 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/BF1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:25 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/BF1.v 
+# -- Compiling module BF1
+# 
+# Top level modules:
+# 	BF1
+# End time: 20:09:25 on Apr 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:25 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 20:09:26 on Apr 27,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  BFF_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" BFF_tb 
-# Start time: 16:05:37 on Apr 22,2020
-# Loading work.BFF_tb
+# vlog -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10 {/home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:26 on Apr 27,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jorozco/Documentos/semArq/actividad10" /home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v 
+# -- Compiling module DE_EX_tb
+# 
+# Top level modules:
+# 	DE_EX_tb
+# End time: 20:09:26 on Apr 27,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  DE_EX_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" DE_EX_tb 
+# Start time: 20:09:26 on Apr 27,2020
+# Loading work.DE_EX_tb
+# Loading work.DE_EX
+# Loading work.fetchCycle
 # Loading work.BFF
+# Loading work.ALUControl
+# Loading work.RB
+# Loading work.BF1
+# Loading work.ALU
+# Loading work.BF2
 # 
 # add wave *
 # ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
@@ -44,10 +121,10 @@
 # ** Error: Cannot lock WLF file: "vsim.wlf"
 #           errno 11: Resource temporarily unavailable.
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jorozco  Hostname: jorozco-HP-ProBook-440-G3  ProcessID: 22096
-#           Attempting to use alternate WLF file "./wlftfXlBCY".
+#           File in use by: jorozco  Hostname: jorozco-HP-ProBook-440-G3  ProcessID: 5404
+#           Attempting to use alternate WLF file "./wlftJN5IWP".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfXlBCY
+#           Using alternate file: ./wlftJN5IWP
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -55,6 +132,6 @@
 # run -all
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
 # Break key hit
-# Break in Module BFF_tb at /home/jorozco/Documentos/semArq/actividad10/BFF_tb.v line 30
-# End time: 16:09:40 on Apr 22,2020, Elapsed time: 0:04:03
+# Simulation stop requested.
+# End time: 20:11:05 on Apr 27,2020, Elapsed time: 0:01:39
 # Errors: 4, Warnings: 3

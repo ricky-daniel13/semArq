@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad09
-Wed Apr 22 16:05:17 2020
+Mon Apr 27 19:20:58 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -13,8 +13,10 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Apr 22 16:05:17 2020       ;
+; Analysis & Synthesis Status ; Successful - Mon Apr 27 19:20:58 2020       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; actividad09                                 ;
-; Top-level Entity Name       ; BFF                                         ;
+; Top-level Entity Name       ; DE_EX                                       ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 21                                          ;
-; Total pins                  ; 54                                          ;
+; Total logic elements        ; 0                                           ;
+; Total pins                  ; 35                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -58,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; BFF                ; actividad09        ;
+; Top-level entity name                                            ; DE_EX              ; actividad09        ;
 ; Family name                                                      ; MAX V              ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -139,13 +141,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; BFF.v                            ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad10/BFF.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; BFF.v                            ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad10/BFF.v        ;         ;
+; RB.v                             ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad10/RB.v         ;         ;
+; ALUControl.v                     ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad10/ALUControl.v ;         ;
+; DE_EX.v                          ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad10/DE_EX.v      ;         ;
+; BF2.v                            ; yes             ; User Verilog HDL File        ; /home/jorozco/Documentos/semArq/actividad10/BF2.v        ;         ;
+; fetchCycle.v                     ; yes             ; Auto-Found Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad10/fetchCycle.v ;         ;
+; BF1.v                            ; yes             ; Auto-Found Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad10/BF1.v        ;         ;
+; ALU.v                            ; yes             ; Auto-Found Verilog HDL File  ; /home/jorozco/Documentos/semArq/actividad10/ALU.v        ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -153,9 +162,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 21    ;
+; Total logic elements                        ; 0     ;
 ;     -- Combinational with no register       ; 0     ;
-;     -- Register only                        ; 21    ;
+;     -- Register only                        ; 0     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
@@ -166,19 +175,15 @@ https://fpgasoftware.intel.com/eula.
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 21    ;
+;     -- normal mode                          ; 0     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 21    ;
-; I/O pins                                    ; 54    ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 21    ;
-; Total fan-out                               ; 63    ;
-; Average fan-out                             ; 0.84  ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 35    ;
 +---------------------------------------------+-------+
 
 
@@ -187,9 +192,193 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |BFF                       ; 21 (21)     ; 21           ; 0          ; 54   ; 0            ; 0 (0)        ; 21 (21)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |BFF                ; BFF         ; work         ;
+; |DE_EX                     ; 0 (0)       ; 0            ; 0          ; 35   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DE_EX              ; DE_EX       ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; BF1:bf1|selectorOut[2,3]                ; Stuck at GND due to stuck port data_in ;
+; fetchCycle:fc|inst[0..5,11..25]         ; Stuck at GND due to stuck port data_in ;
+; BFF:bff|funOut[0..5]                    ; Stuck at GND due to stuck port data_in ;
+; BFF:bff|rdOut[0..4]                     ; Stuck at GND due to stuck port data_in ;
+; BFF:bff|rtOut[0..4]                     ; Stuck at GND due to stuck port data_in ;
+; BFF:bff|rsOut[0..4]                     ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|selectorOut[1]                  ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|selectorOut[0]                  ; Stuck at VCC due to stuck port data_in ;
+; BF1:bf1|readData1Out[31]                ; Merged with BF1:bf1|readData2Out[31]   ;
+; BF1:bf1|readData1Out[30]                ; Merged with BF1:bf1|readData2Out[30]   ;
+; BF1:bf1|readData1Out[29]                ; Merged with BF1:bf1|readData2Out[29]   ;
+; BF1:bf1|readData1Out[28]                ; Merged with BF1:bf1|readData2Out[28]   ;
+; BF1:bf1|readData1Out[27]                ; Merged with BF1:bf1|readData2Out[27]   ;
+; BF1:bf1|readData1Out[26]                ; Merged with BF1:bf1|readData2Out[26]   ;
+; BF1:bf1|readData1Out[25]                ; Merged with BF1:bf1|readData2Out[25]   ;
+; BF1:bf1|readData1Out[24]                ; Merged with BF1:bf1|readData2Out[24]   ;
+; BF1:bf1|readData1Out[23]                ; Merged with BF1:bf1|readData2Out[23]   ;
+; BF1:bf1|readData1Out[22]                ; Merged with BF1:bf1|readData2Out[22]   ;
+; BF1:bf1|readData1Out[21]                ; Merged with BF1:bf1|readData2Out[21]   ;
+; BF1:bf1|readData1Out[20]                ; Merged with BF1:bf1|readData2Out[20]   ;
+; BF1:bf1|readData1Out[19]                ; Merged with BF1:bf1|readData2Out[19]   ;
+; BF1:bf1|readData1Out[18]                ; Merged with BF1:bf1|readData2Out[18]   ;
+; BF1:bf1|readData1Out[17]                ; Merged with BF1:bf1|readData2Out[17]   ;
+; BF1:bf1|readData1Out[16]                ; Merged with BF1:bf1|readData2Out[16]   ;
+; BF1:bf1|readData1Out[15]                ; Merged with BF1:bf1|readData2Out[15]   ;
+; BF1:bf1|readData1Out[14]                ; Merged with BF1:bf1|readData2Out[14]   ;
+; BF1:bf1|readData1Out[13]                ; Merged with BF1:bf1|readData2Out[13]   ;
+; BF1:bf1|readData1Out[12]                ; Merged with BF1:bf1|readData2Out[12]   ;
+; BF1:bf1|readData1Out[11]                ; Merged with BF1:bf1|readData2Out[11]   ;
+; BF1:bf1|readData1Out[10]                ; Merged with BF1:bf1|readData2Out[10]   ;
+; BF1:bf1|readData1Out[9]                 ; Merged with BF1:bf1|readData2Out[9]    ;
+; BF1:bf1|readData1Out[8]                 ; Merged with BF1:bf1|readData2Out[8]    ;
+; BF1:bf1|readData1Out[7]                 ; Merged with BF1:bf1|readData2Out[7]    ;
+; BF1:bf1|readData1Out[6]                 ; Merged with BF1:bf1|readData2Out[6]    ;
+; BF1:bf1|readData1Out[5]                 ; Merged with BF1:bf1|readData2Out[5]    ;
+; BF1:bf1|readData1Out[4]                 ; Merged with BF1:bf1|readData2Out[4]    ;
+; BF1:bf1|readData1Out[3]                 ; Merged with BF1:bf1|readData2Out[3]    ;
+; BF1:bf1|readData1Out[2]                 ; Merged with BF1:bf1|readData2Out[2]    ;
+; BF1:bf1|readData1Out[1]                 ; Merged with BF1:bf1|readData2Out[1]    ;
+; BF1:bf1|readData1Out[0]                 ; Merged with BF1:bf1|readData2Out[0]    ;
+; BF1:bf1|readData2Out[31]                ; Lost fanout                            ;
+; BF2:bf2|resOut[0]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[0]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[1]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[1]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[2]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[2]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[3]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[3]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[4]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[4]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[5]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[5]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[6]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[6]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[7]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[7]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[8]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[8]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[9]                       ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[9]                 ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[10]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[10]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[11]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[11]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[12]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[12]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[13]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[13]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[14]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[14]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[15]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[15]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[16]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[16]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[17]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[17]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[18]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[18]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[19]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[19]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[20]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[20]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[21]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[21]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[22]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[22]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[23]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[23]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[24]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[24]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[25]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[25]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[26]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[26]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[27]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[27]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[28]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[28]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[29]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[29]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|resOut[30]                      ; Stuck at GND due to stuck port data_in ;
+; BF1:bf1|readData2Out[30]                ; Stuck at GND due to stuck port data_in ;
+; BF2:bf2|zeroFlagOut                     ; Stuck at VCC due to stuck port data_in ;
+; BF2:bf2|resOut[31]                      ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 143 ;                                        ;
++-----------------------------------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                  ;
++------------------------+---------------------------+-----------------------------------------------------------------------------------------+
+; Register name          ; Reason for Removal        ; Registers Removed due to This Register                                                  ;
++------------------------+---------------------------+-----------------------------------------------------------------------------------------+
+; BF1:bf1|selectorOut[2] ; Stuck at GND              ; BF2:bf2|resOut[0], BF1:bf1|readData2Out[0], BF2:bf2|resOut[1], BF1:bf1|readData2Out[1], ;
+;                        ; due to stuck port data_in ; BF2:bf2|resOut[2], BF1:bf1|readData2Out[2], BF2:bf2|resOut[3], BF1:bf1|readData2Out[3], ;
+;                        ;                           ; BF2:bf2|resOut[4], BF1:bf1|readData2Out[4], BF2:bf2|resOut[5], BF1:bf1|readData2Out[5], ;
+;                        ;                           ; BF2:bf2|resOut[6], BF1:bf1|readData2Out[6], BF2:bf2|resOut[7], BF1:bf1|readData2Out[7], ;
+;                        ;                           ; BF2:bf2|resOut[8], BF1:bf1|readData2Out[8], BF2:bf2|resOut[9], BF1:bf1|readData2Out[9], ;
+;                        ;                           ; BF2:bf2|resOut[10], BF1:bf1|readData2Out[10], BF2:bf2|resOut[11],                       ;
+;                        ;                           ; BF1:bf1|readData2Out[11], BF2:bf2|resOut[12], BF1:bf1|readData2Out[12],                 ;
+;                        ;                           ; BF2:bf2|resOut[13], BF1:bf1|readData2Out[13], BF2:bf2|resOut[14],                       ;
+;                        ;                           ; BF1:bf1|readData2Out[14], BF2:bf2|resOut[15], BF1:bf1|readData2Out[15],                 ;
+;                        ;                           ; BF2:bf2|resOut[16], BF1:bf1|readData2Out[16], BF2:bf2|resOut[17],                       ;
+;                        ;                           ; BF1:bf1|readData2Out[17], BF2:bf2|resOut[18], BF1:bf1|readData2Out[18],                 ;
+;                        ;                           ; BF2:bf2|resOut[19], BF1:bf1|readData2Out[19], BF2:bf2|resOut[20],                       ;
+;                        ;                           ; BF1:bf1|readData2Out[20], BF2:bf2|resOut[21], BF1:bf1|readData2Out[21],                 ;
+;                        ;                           ; BF2:bf2|resOut[22], BF1:bf1|readData2Out[22], BF2:bf2|resOut[23],                       ;
+;                        ;                           ; BF1:bf1|readData2Out[23], BF2:bf2|resOut[24], BF1:bf1|readData2Out[24],                 ;
+;                        ;                           ; BF2:bf2|resOut[25], BF1:bf1|readData2Out[25], BF2:bf2|resOut[26],                       ;
+;                        ;                           ; BF1:bf1|readData2Out[26], BF2:bf2|resOut[27], BF1:bf1|readData2Out[27],                 ;
+;                        ;                           ; BF2:bf2|resOut[28], BF1:bf1|readData2Out[28], BF2:bf2|resOut[29],                       ;
+;                        ;                           ; BF1:bf1|readData2Out[29], BF2:bf2|resOut[30], BF1:bf1|readData2Out[30],                 ;
+;                        ;                           ; BF2:bf2|zeroFlagOut, BF2:bf2|resOut[31]                                                 ;
+; fetchCycle:fc|inst[0]  ; Stuck at GND              ; BFF:bff|funOut[0], BF1:bf1|selectorOut[1], BF1:bf1|selectorOut[0],                      ;
+;                        ; due to stuck port data_in ; BF1:bf1|readData2Out[31]                                                                ;
+; fetchCycle:fc|inst[15] ; Stuck at GND              ; BFF:bff|rdOut[4]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[1]  ; Stuck at GND              ; BFF:bff|funOut[1]                                                                       ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[2]  ; Stuck at GND              ; BFF:bff|funOut[2]                                                                       ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[3]  ; Stuck at GND              ; BFF:bff|funOut[3]                                                                       ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[4]  ; Stuck at GND              ; BFF:bff|funOut[4]                                                                       ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[5]  ; Stuck at GND              ; BFF:bff|funOut[5]                                                                       ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[11] ; Stuck at GND              ; BFF:bff|rdOut[0]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[12] ; Stuck at GND              ; BFF:bff|rdOut[1]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[13] ; Stuck at GND              ; BFF:bff|rdOut[2]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[14] ; Stuck at GND              ; BFF:bff|rdOut[3]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[16] ; Stuck at GND              ; BFF:bff|rtOut[0]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[17] ; Stuck at GND              ; BFF:bff|rtOut[1]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[18] ; Stuck at GND              ; BFF:bff|rtOut[2]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[19] ; Stuck at GND              ; BFF:bff|rtOut[3]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[20] ; Stuck at GND              ; BFF:bff|rtOut[4]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[21] ; Stuck at GND              ; BFF:bff|rsOut[0]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[22] ; Stuck at GND              ; BFF:bff|rsOut[1]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[23] ; Stuck at GND              ; BFF:bff|rsOut[2]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[24] ; Stuck at GND              ; BFF:bff|rsOut[3]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
+; fetchCycle:fc|inst[25] ; Stuck at GND              ; BFF:bff|rsOut[4]                                                                        ;
+;                        ; due to stuck port data_in ;                                                                                         ;
++------------------------+---------------------------+-----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -197,7 +386,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 21    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -213,7 +402,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Apr 22 16:05:02 2020
+    Info: Processing started: Mon Apr 27 19:20:44 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad10 -c actividad09
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -228,31 +417,119 @@ Info (12021): Found 1 design units, including 1 entities, in source file BFF_tb.
     Info (12023): Found entity 1: BFF_tb File: /home/jorozco/Documentos/semArq/actividad10/BFF_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file RB_tb.v
     Info (12023): Found entity 1: RB_tb File: /home/jorozco/Documentos/semArq/actividad10/RB_tb.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file FEDE.v
-    Info (12023): Found entity 1: FEDE File: /home/jorozco/Documentos/semArq/actividad10/FEDE.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file FEDE_tb.v
-    Info (12023): Found entity 1: FEDE_tb File: /home/jorozco/Documentos/semArq/actividad10/FEDE_tb.v Line: 2
-Info (12127): Elaborating entity "BFF" for the top level hierarchy
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "dirs[6]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[7]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[8]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[9]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[10]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[26]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[27]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[28]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[29]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[30]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-    Warning (15610): No output dependent on input pin "dirs[31]" File: /home/jorozco/Documentos/semArq/actividad10/BFF.v Line: 3
-Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 33 input pins
-    Info (21059): Implemented 21 output pins
-    Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 900 megabytes
-    Info: Processing ended: Wed Apr 22 16:05:17 2020
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:28
+Warning (12019): Can't analyze file -- file FEDE.v is missing
+Warning (12019): Can't analyze file -- file FEDE_tb.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ALUControl.v
+    Info (12023): Found entity 1: ALUControl File: /home/jorozco/Documentos/semArq/actividad10/ALUControl.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ALUControl_tb.v
+    Info (12023): Found entity 1: ALUControl_tb File: /home/jorozco/Documentos/semArq/actividad10/ALUControl_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file DE_EX.v
+    Info (12023): Found entity 1: DE_EX File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 1
+Warning (12019): Can't analyze file -- file ../actividad09/BF1.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file BF2.v
+    Info (12023): Found entity 1: BF2 File: /home/jorozco/Documentos/semArq/actividad10/BF2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file DE_EX_tb.v
+    Info (12023): Found entity 1: DE_EX_tb File: /home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v Line: 2
+Info (12127): Elaborating entity "DE_EX" for the top level hierarchy
+Warning (12125): Using design file fetchCycle.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: fetchCycle File: /home/jorozco/Documentos/semArq/actividad10/fetchCycle.v Line: 1
+Info (12128): Elaborating entity "fetchCycle" for hierarchy "fetchCycle:fc" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 32
+Warning (10858): Verilog HDL warning at fetchCycle.v(5): object isa used but never assigned File: /home/jorozco/Documentos/semArq/actividad10/fetchCycle.v Line: 5
+Warning (10230): Verilog HDL assignment warning at fetchCycle.v(10): truncated value with size 32 to match size of target (7) File: /home/jorozco/Documentos/semArq/actividad10/fetchCycle.v Line: 10
+Warning (10030): Net "isa" at fetchCycle.v(5) has no driver or initial value, using a default initial value '0' File: /home/jorozco/Documentos/semArq/actividad10/fetchCycle.v Line: 5
+Info (12128): Elaborating entity "BFF" for hierarchy "BFF:bff" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 41
+Info (12128): Elaborating entity "ALUControl" for hierarchy "ALUControl:aluc" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 46
+Warning (10270): Verilog HDL Case Statement warning at ALUControl.v(8): incomplete case statement has no default case item File: /home/jorozco/Documentos/semArq/actividad10/ALUControl.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at ALUControl.v(8): inferring latch(es) for variable "sel", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/actividad10/ALUControl.v Line: 8
+Info (10041): Inferred latch for "sel[0]" at ALUControl.v(8) File: /home/jorozco/Documentos/semArq/actividad10/ALUControl.v Line: 8
+Info (10041): Inferred latch for "sel[1]" at ALUControl.v(8) File: /home/jorozco/Documentos/semArq/actividad10/ALUControl.v Line: 8
+Info (10041): Inferred latch for "sel[2]" at ALUControl.v(8) File: /home/jorozco/Documentos/semArq/actividad10/ALUControl.v Line: 8
+Info (10041): Inferred latch for "sel[3]" at ALUControl.v(8) File: /home/jorozco/Documentos/semArq/actividad10/ALUControl.v Line: 8
+Info (12128): Elaborating entity "RB" for hierarchy "RB:rb" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 56
+Warning (12125): Using design file BF1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: BF1 File: /home/jorozco/Documentos/semArq/actividad10/BF1.v Line: 1
+Info (12128): Elaborating entity "BF1" for hierarchy "BF1:bf1" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 66
+Warning (12125): Using design file ALU.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ALU File: /home/jorozco/Documentos/semArq/actividad10/ALU.v Line: 1
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 74
+Info (12128): Elaborating entity "BF2" for hierarchy "BF2:bf2" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 82
+Warning (14026): LATCH primitive "RB:rb|bank~0" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~1" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~2" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~3" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~4" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~5" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~6" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~7" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~8" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~9" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~10" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~11" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~12" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~13" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~14" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~15" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~16" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~17" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~18" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~19" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~20" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~21" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~22" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~23" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~24" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~25" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~26" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~27" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~28" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~29" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~30" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (14026): LATCH primitive "RB:rb|bank~31" is permanently enabled File: /home/jorozco/Documentos/semArq/actividad10/RB.v Line: 12
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "zeroFlag" is stuck at VCC File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 5
+    Warning (13410): Pin "res[0]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[1]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[2]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[3]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[4]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[5]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[6]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[7]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[8]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[9]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[10]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[11]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[12]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[13]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[14]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[15]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[16]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[17]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[18]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[19]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[20]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[21]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[22]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[23]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[24]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[25]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[26]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[27]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[28]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[29]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[30]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+    Warning (13410): Pin "res[31]" is stuck at GND File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 7
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "regWrite" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 4
+    Warning (15610): No output dependent on input pin "clk" File: /home/jorozco/Documentos/semArq/actividad10/DE_EX.v Line: 3
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 33 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
+    Info: Peak virtual memory: 901 megabytes
+    Info: Processing ended: Mon Apr 27 19:20:58 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
 
 

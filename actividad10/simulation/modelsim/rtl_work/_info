@@ -8,49 +8,210 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/jorozco/Documentos/semArq/actividad10/simulation/modelsim
-vBFF
-Z1 !s110 1587589537
+vALU
+Z1 !s110 1588036166
 !i10b 1
-!s100 a0oeNC:<0<lihmYb:mQTD2
-I0fkYikFf@KYni814F=KbY2
+!s100 8X0aW_aSQ6]dL^oVgVV0K2
+IcZa2HR3?CQI3ZIY`O>^<O2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1587589494
-8/home/jorozco/Documentos/semArq/actividad10/BFF.v
-F/home/jorozco/Documentos/semArq/actividad10/BFF.v
+w1587648820
+8/home/jorozco/Documentos/semArq/actividad10/ALU.v
+F/home/jorozco/Documentos/semArq/actividad10/ALU.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1587589537.000000
-!s107 /home/jorozco/Documentos/semArq/actividad10/BFF.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/BFF.v|
+Z4 !s108 1588036165.000000
+!s107 /home/jorozco/Documentos/semArq/actividad10/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/ALU.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+/home/jorozco/Documentos/semArq/actividad10
 Z7 tCvgOpt 0
-n@b@f@f
-vBFF_tb
-R1
+n@a@l@u
+vALUControl
+Z8 !s110 1588036165
 !i10b 1
-!s100 `^k4@ZG94V^lKiGYio?]=3
-ImUGQX=]lS0lU=<omZifRm1
+!s100 97hhiZgHo3VD@hId>Xofz3
+IVeZYNSg>lIR^D?VL0h7PG3
 R2
 R0
-w1587589250
-8/home/jorozco/Documentos/semArq/actividad10/BFF_tb.v
-F/home/jorozco/Documentos/semArq/actividad10/BFF_tb.v
-L0 3
+w1587933606
+8/home/jorozco/Documentos/semArq/actividad10/ALUControl.v
+F/home/jorozco/Documentos/semArq/actividad10/ALUControl.v
+L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 /home/jorozco/Documentos/semArq/actividad10/BFF_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/BFF_tb.v|
+!s107 /home/jorozco/Documentos/semArq/actividad10/ALUControl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/ALUControl.v|
 !i113 1
 R5
 R6
 R7
-n@b@f@f_tb
+n@a@l@u@control
+vBF1
+R8
+!i10b 1
+!s100 `KUL6g;jDP1D`lg8jlUDb3
+IaCAcHS9c4d71^mf=6I]_<1
+R2
+R0
+w1588029236
+8/home/jorozco/Documentos/semArq/actividad10/BF1.v
+F/home/jorozco/Documentos/semArq/actividad10/BF1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad10/BF1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/BF1.v|
+!i113 1
+R5
+R6
+R7
+n@b@f1
+vBF2
+R8
+!i10b 1
+!s100 >kH^cSWCP?`V[`I14YGK@1
+If03F@MYn2QdK5mP6aiPDL0
+R2
+R0
+w1588029265
+8/home/jorozco/Documentos/semArq/actividad10/BF2.v
+F/home/jorozco/Documentos/semArq/actividad10/BF2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad10/BF2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/BF2.v|
+!i113 1
+R5
+R6
+R7
+n@b@f2
+vBFF
+R8
+!i10b 1
+!s100 a0oeNC:<0<lihmYb:mQTD2
+I0fkYikFf@KYni814F=KbY2
+R2
+R0
+w1587589494
+8/home/jorozco/Documentos/semArq/actividad10/BFF.v
+F/home/jorozco/Documentos/semArq/actividad10/BFF.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad10/BFF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/BFF.v|
+!i113 1
+R5
+R6
+R7
+n@b@f@f
+vDE_EX
+R8
+!i10b 1
+!s100 :H<QEki[X?a>gI>eOe9<k2
+Ia5Gf4jWZGbI`b=g8hhoU]3
+R2
+R0
+w1588031652
+8/home/jorozco/Documentos/semArq/actividad10/DE_EX.v
+F/home/jorozco/Documentos/semArq/actividad10/DE_EX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad10/DE_EX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/DE_EX.v|
+!i113 1
+R5
+R6
+R7
+n@d@e_@e@x
+vDE_EX_tb
+R1
+!i10b 1
+!s100 1XBLmT==S9?=lk=h`EXDS3
+IiL;UbhgSbjiW<cc;odnW73
+R2
+R0
+w1588036155
+8/home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v
+F/home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1588036166.000000
+!s107 /home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/DE_EX_tb.v|
+!i113 1
+R5
+R6
+R7
+n@d@e_@e@x_tb
+vfetchCycle
+R8
+!i10b 1
+!s100 RX45iid>YY0Q0DYmfeCS01
+I>?K^R:M`C2BdI9cM2lJLe2
+R2
+R0
+w1588029651
+8/home/jorozco/Documentos/semArq/actividad10/fetchCycle.v
+F/home/jorozco/Documentos/semArq/actividad10/fetchCycle.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad10/fetchCycle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/fetchCycle.v|
+!i113 1
+R5
+R6
+R7
+nfetch@cycle
+vRB
+R8
+!i10b 1
+!s100 b9Dg:Y[B9k:^ibn[W8Tcg2
+Ii3I=@]T^VaL;BkKm:62PN2
+R2
+R0
+w1586189443
+8/home/jorozco/Documentos/semArq/actividad10/RB.v
+F/home/jorozco/Documentos/semArq/actividad10/RB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jorozco/Documentos/semArq/actividad10/RB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jorozco/Documentos/semArq/actividad10|/home/jorozco/Documentos/semArq/actividad10/RB.v|
+!i113 1
+R5
+R6
+R7
+n@r@b

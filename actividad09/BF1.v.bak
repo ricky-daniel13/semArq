@@ -1,0 +1,14 @@
+module BF1(
+	input clk,
+	input [3:0]selector,
+	input [31:0]
+		readData1,
+		readData2,
+	output [3:0]selectorOut,
+	output [31:0]
+		readData1Out,
+		readData2Out,
+	
+	
+);
+endmodule

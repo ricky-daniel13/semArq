@@ -1,5 +1,5 @@
 Flow report for actividad09
-Wed Apr 22 16:05:27 2020
+Mon Apr 27 19:21:07 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,13 +41,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Wed Apr 22 16:05:27 2020       ;
+; Flow Status           ; Successful - Mon Apr 27 19:21:07 2020       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; actividad09                                 ;
-; Top-level Entity Name ; BFF                                         ;
+; Top-level Entity Name ; DE_EX                                       ;
 ; Family                ; MAX V                                       ;
-; Total logic elements  ; 21 / 80 ( 26 % )                            ;
-; Total pins            ; 54 / 79 ( 68 % )                            ;
+; Total logic elements  ; 0 / 80 ( 0 % )                              ;
+; Total pins            ; 35 / 79 ( 44 % )                            ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
 ; Device                ; 5M80ZT100C4                                 ;
@@ -60,46 +60,54 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/22/2020 16:05:02 ;
+; Start date & time ; 04/27/2020 19:20:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; actividad09         ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                        ;
-+--------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                          ; Default Value ; Entity Name ; Section Id                        ;
-+--------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 26728433180837.158758950221962 ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; FEDE_tb                           ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; BFF_tb                            ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; RB_tb                             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; fetchCycle_tb                     ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                            ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; BFF_tb                         ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                    ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; FEDE_tb.v                      ; --            ; --          ; FEDE_tb                           ;
-; EDA_TEST_BENCH_FILE                  ; BFF_tb.v                       ; --            ; --          ; BFF_tb                            ;
-; EDA_TEST_BENCH_FILE                  ; RB_tb.v                        ; --            ; --          ; RB_tb                             ;
-; EDA_TEST_BENCH_FILE                  ; fetchCycle_tb.v                ; --            ; --          ; fetchCycle_tb                     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; FEDE_tb                        ; --            ; --          ; FEDE_tb                           ;
-; EDA_TEST_BENCH_MODULE_NAME           ; BFF_tb                         ; --            ; --          ; BFF_tb                            ;
-; EDA_TEST_BENCH_MODULE_NAME           ; RB_tb                          ; --            ; --          ; RB_tb                             ;
-; EDA_TEST_BENCH_MODULE_NAME           ; fetchCycle_tb                  ; --            ; --          ; fetchCycle_tb                     ;
-; EDA_TEST_BENCH_NAME                  ; fetchCycle_tb                  ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; BFF_tb                         ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; RB_tb                          ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; FEDE_tb                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                           ; --            ; --          ; eda_simulation                    ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                   ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; BFF                            ; actividad09   ; --          ; --                                ;
-+--------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                         ;
++--------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 193904264866843.158803324513884 ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; FEDE_tb                           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; DE_EX_tb                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; BFF_tb                            ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; ALUControl_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; RB_tb                             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; fetchCycle_tb                     ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                             ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DE_EX_tb                        ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; FEDE_tb.v                       ; --            ; --          ; FEDE_tb                           ;
+; EDA_TEST_BENCH_FILE                  ; DE_EX_tb.v                      ; --            ; --          ; DE_EX_tb                          ;
+; EDA_TEST_BENCH_FILE                  ; BFF_tb.v                        ; --            ; --          ; BFF_tb                            ;
+; EDA_TEST_BENCH_FILE                  ; ALUControl_tb.v                 ; --            ; --          ; ALUControl_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; RB_tb.v                         ; --            ; --          ; RB_tb                             ;
+; EDA_TEST_BENCH_FILE                  ; fetchCycle_tb.v                 ; --            ; --          ; fetchCycle_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; FEDE_tb                         ; --            ; --          ; FEDE_tb                           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; DE_EX_tb                        ; --            ; --          ; DE_EX_tb                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BFF_tb                          ; --            ; --          ; BFF_tb                            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ALUControl_tb                   ; --            ; --          ; ALUControl_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; RB_tb                           ; --            ; --          ; RB_tb                             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; fetchCycle_tb                   ; --            ; --          ; fetchCycle_tb                     ;
+; EDA_TEST_BENCH_NAME                  ; fetchCycle_tb                   ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; BFF_tb                          ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; RB_tb                           ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; FEDE_tb                         ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; ALUControl_tb                   ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; DE_EX_tb                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                            ; --            ; --          ; eda_simulation                    ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                    ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; DE_EX                           ; actividad09   ; --          ; --                                ;
++--------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -107,12 +115,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 900 MB              ; 00:00:28                           ;
-; Fitter               ; 00:00:03     ; 1.0                     ; 1086 MB             ; 00:00:03                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 813 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 734 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1030 MB             ; 00:00:01                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 901 MB              ; 00:00:29                           ;
+; Fitter               ; 00:00:02     ; 1.0                     ; 1081 MB             ; 00:00:02                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 811 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 732 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1028 MB             ; 00:00:01                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
